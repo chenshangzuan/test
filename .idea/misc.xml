@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/javabasetest/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticsearcher/pom.xml" />
+        <option value="$PROJECT_DIR$/javaagenttest/pom.xml" />
+        <option value="$PROJECT_DIR$/kafkaclient/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmqlistener/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootadminclient/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootadminserver/pom.xml" />
+        <option value="$PROJECT_DIR$/springboottest/pom.xml" />
+        <option value="$PROJECT_DIR$/shardingSphereTest/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.zenlayer.wukongframework:wukong-common-utils:1.0.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-common-utils/1.0.3-SNAPSHOT/wukong-common-utils-1.0.3-20200826.075235-18.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-common-utils/1.0.3-SNAPSHOT/wukong-common-utils-1.0.3-20200826.075235-18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-common-utils/1.0.3-SNAPSHOT/wukong-common-utils-1.0.3-20200826.075235-18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

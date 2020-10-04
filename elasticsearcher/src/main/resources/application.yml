@@ -1,0 +1,10 @@
+server:
+  port: 8004
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: 172.16.5.56:9300,172.16.5.57:9300,172.16.5.58:9300
+      repositories:
+        enabled: true
