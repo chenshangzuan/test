@@ -6,8 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/javaagenttest/java.agent.test.iml" filepath="$PROJECT_DIR$/javaagenttest/java.agent.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasetest/java.base.test.iml" filepath="$PROJECT_DIR$/javabasetest/java.base.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafkaclient/kafka.client.iml" filepath="$PROJECT_DIR$/kafkaclient/kafka.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysqlExtensionTest/mysqlExtensionTest.iml" filepath="$PROJECT_DIR$/mysqlExtensionTest/mysqlExtensionTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmqlistener/rabbitmq.listener.iml" filepath="$PROJECT_DIR$/rabbitmqlistener/rabbitmq.listener.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shardingSphereTest/shardingSphereTest.iml" filepath="$PROJECT_DIR$/shardingSphereTest/shardingSphereTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootadminclient/spring-boot-admin-client.iml" filepath="$PROJECT_DIR$/springbootadminclient/spring-boot-admin-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootadminserver/spring-boot-admin-server.iml" filepath="$PROJECT_DIR$/springbootadminserver/spring-boot-admin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboottest/spring.boot.test.iml" filepath="$PROJECT_DIR$/springboottest/spring.boot.test.iml" />

@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-admin-client" />
         <module name="spring.boot.test" />
+        <module name="mysqlExtensionTest" />
         <module name="kafka.client" />
         <module name="java.base.test" />
-        <module name="rabbitmq.listener" />
-        <module name="shardingSphereTest" />
-        <module name="elasticsearcher" />
         <module name="java.agent.test" />
+        <module name="rabbitmq.listener" />
+        <module name="elasticsearcher" />
+        <module name="spring-boot-admin-client" />
         <module name="spring-boot-admin-server" />
       </profile>
     </annotationProcessing>
@@ -22,8 +22,8 @@
       <module name="java.agent.test" target="1.5" />
       <module name="java.base.test" target="8" />
       <module name="kafka.client" target="1.8" />
+      <module name="mysqlExtensionTest" target="1.8" />
       <module name="rabbitmq.listener" target="1.8" />
-      <module name="shardingSphereTest" target="1.8" />
       <module name="spring-boot-admin-client" target="1.8" />
       <module name="spring-boot-admin-server" target="1.8" />
       <module name="spring.boot.test" target="1.8" />
@@ -33,8 +33,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="elasticsearcher" options="-parameters" />
       <module name="kafka.client" options="-parameters" />
+      <module name="mysqlExtensionTest" options="-parameters" />
       <module name="rabbitmq.listener" options="-parameters" />
-      <module name="shardingSphereTest" options="-parameters" />
       <module name="spring-boot-admin-client" options="-parameters" />
       <module name="spring-boot-admin-server" options="-parameters" />
       <module name="spring.boot.test" options="-parameters" />
