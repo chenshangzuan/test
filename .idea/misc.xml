@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/springbootadminserver/pom.xml" />
         <option value="$PROJECT_DIR$/springboottest/pom.xml" />
         <option value="$PROJECT_DIR$/shardingSphereTest/pom.xml" />
+        <option value="$PROJECT_DIR$/mysqlExtensionTest/pom.xml" />
       </list>
     </option>
   </component>

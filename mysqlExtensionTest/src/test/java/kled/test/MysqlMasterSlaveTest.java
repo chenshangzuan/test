@@ -13,9 +13,9 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * @author: Kled
- * @version: ShardingSphereTest.java, v0.1 2020-10-04 20:22 Kled
+ * @version: MysqlMasterSlaveTest.java, v0.1 2020-10-04 20:22 Kled
  */
-public class ShardingSphereTest extends SpringTestISpringBootApplicationTests {
+public class MysqlMasterSlaveTest extends kled.test.SpringTestISpringBootApplicationTests {
 
     @Autowired
     private UserService userService;
@@ -85,18 +85,21 @@ public class ShardingSphereTest extends SpringTestISpringBootApplicationTests {
         userService.saveOrUpdate(user1);
         System.out.println("create one user, tsms=" + System.currentTimeMillis());
 
-        User user = userService.getOne(Wrappers.<User>lambdaQuery().eq(User::getName, "shardingsphere_x"));
-        if (user != null) {
-            System.out.println("query one user, tsms=" + System.currentTimeMillis());
-        } else {
-            System.out.println("user is not found, tsms=" + System.currentTimeMillis());
+        while (true){
+            User user = userService.getOne(Wrappers.<User>lambdaQuery().eq(User::getName, "shardingsphere_x"));
+            if (user != null) {
+                System.out.println("query one user, tsms=" + System.currentTimeMillis());
+                break;
+            } else {
+                System.out.println("user is not found, tsms=" + System.currentTimeMillis());
+            }
         }
 
         userService.remove(Wrappers.<User>lambdaQuery().eq(User::getName, "shardingsphere_x"));
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         transactionTemplate.execute(new TransactionCallback<Void>() {
             @Override
             public Void doInTransaction(TransactionStatus transactionStatus) {
