@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * @author chenpc
- * @version $Id: localTest.TestJsonFormat.java, v 0.1 2018-03-23 11:52:01 chenpc Exp $
+ * @version $Id: java_base.TestJsonFormat.java, v 0.1 2018-03-23 11:52:01 chenpc Exp $
  */
 public class TestJsonFormat {
 

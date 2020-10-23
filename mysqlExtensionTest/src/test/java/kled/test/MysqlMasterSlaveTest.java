@@ -34,8 +34,9 @@ public class MysqlMasterSlaveTest extends kled.test.SpringTestISpringBootApplica
     public void test1() {
         for (int i = 0; i < 3; i++) {
             User user1 = new User();
-            user1.setName("shardingsphere" + i);
+            user1.setName("shardingsphere_kled" + i);
             userService.saveOrUpdate(user1);
+            System.out.println(user1.getId());
         }
     }
 

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 @Test(groups = "test")
 public class TestngGroupAnotationTest {
 
-    //@localTest.Test(dependsOnGroups = "test", groups = "testMethod")
+    //@java_base.Test(dependsOnGroups = "test", groups = "testMethod")
     @Test(groups = "testMethod")
     public void test1() {
         System.out.println("test group");

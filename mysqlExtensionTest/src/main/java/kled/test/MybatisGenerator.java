@@ -39,7 +39,7 @@ public class MybatisGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/shardingSphereTest/src/main/java/");
+        gc.setOutputDir(projectPath + "/mysqlExtensionTest/src/main/java/");
         gc.setAuthor("kled");
         gc.setOpen(false);
         // service 命名方式
@@ -63,7 +63,7 @@ public class MybatisGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://172.16.5.56:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf-8");
+        dsc.setUrl("jdbc:mysql://172.16.5.56:3306/db1?useUnicode=true&useSSL=false&characterEncoding=utf-8");
         // dsc.setSchemaName("public");
         //dsc.setTypeConvert() 自定义数据库表字段类型转换
         dsc.setDriverName("com.mysql.jdbc.Driver");
@@ -104,7 +104,7 @@ public class MybatisGenerator {
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
                 String moduleName = pc.getModuleName() == null ? "" : pc.getModuleName();
-                return projectPath + "/shardingSphereTest/src/main/resources/mapper/" + moduleName
+                return projectPath + "/mysqlExtensionTest/src/main/resources/mapper/" + moduleName
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
