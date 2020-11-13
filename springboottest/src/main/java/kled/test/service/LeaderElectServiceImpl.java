@@ -4,12 +4,12 @@
  */
 package kled.test.service;
 
+import kled.test.bean.ZookeeperFactory;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.leader.LeaderLatch;
 import org.apache.curator.framework.recipes.leader.LeaderLatchListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import spring.test.bean.ZookeeperFactory;
 
 import javax.annotation.PostConstruct;
 

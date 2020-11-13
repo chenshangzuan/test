@@ -4,11 +4,11 @@
  */
 package kled.test.config;
 
+import kled.test.bean.MyBean1;
+import kled.test.service.LeaderElectService;
+import kled.test.service.LeaderElectServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring.test.bean.MyBean1;
-import spring.test.service.LeaderElectService;
-import spring.test.service.LeaderElectServiceImpl;
 
 @Configuration
 public class ServiceConfig {

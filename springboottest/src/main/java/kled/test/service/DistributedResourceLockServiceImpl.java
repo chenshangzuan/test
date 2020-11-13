@@ -4,10 +4,10 @@
  */
 package kled.test.service;
 
+import kled.test.bean.ZookeeperFactory;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.framework.recipes.locks.InterProcessSemaphoreMutex;
 import org.springframework.beans.factory.annotation.Autowired;
-import spring.test.bean.ZookeeperFactory;
 
 import java.util.concurrent.TimeUnit;
 

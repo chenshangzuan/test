@@ -4,10 +4,10 @@
  */
 package kled.test.config;
 
+import kled.test.bean.ZookeeperFactory;
+import kled.test.service.HelloCurator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring.test.bean.ZookeeperFactory;
-import spring.test.service.HelloCurator;
 
 @Configuration
 public class ZookeeperConfig {

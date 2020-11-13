@@ -10,20 +10,26 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.common.collect.Maps;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.servlet.FlashMapManager;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
+import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
+import org.springframework.web.servlet.support.SessionFlashMapManager;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TimeZone;
+import java.util.*;
 
 @Configuration
-public class WebConfig extends WebMvcConfigurationSupport {
+public class WebConfig extends WebMvcConfigurationSupport{
     //定义时间格式转换器
     @Bean
     public MappingJackson2HttpMessageConverter jackson2HttpMessageConverter() {
@@ -58,5 +64,26 @@ public class WebConfig extends WebMvcConfigurationSupport {
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(jackson2HttpMessageConverter());
         //converters.add(fastJsonHttpMessageConverter());
+    }
+
+    @Bean
+    public SimpleUrlHandlerMapping simpleUrlHandlerMapping(){
+        Map<String, String> urlMaps = Maps.newHashMap();
+        urlMaps.put("/simpleUrl", "simpleUrlController");
+        return new SimpleUrlHandlerMapping(urlMaps);
+    }
+
+    @Bean
+    public FlashMapManager flashMapManager(){
+        return new SessionFlashMapManager();
+    }
+
+    @Bean
+    public SimpleMappingExceptionResolver mySimpleMappingExceptionResolver(){
+        SimpleMappingExceptionResolver simpleMappingExceptionResolver = new SimpleMappingExceptionResolver();
+        Properties mappings = new Properties();
+        mappings.setProperty("kled.test.exception.MyException", "myError");
+        simpleMappingExceptionResolver.setExceptionMappings(mappings);
+        return simpleMappingExceptionResolver;
     }
 }

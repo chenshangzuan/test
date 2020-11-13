@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 //@Priority(1)
 public class MyAspect2 {
 
-    @Pointcut("execution(public * spring.test.controller.HelloController.testAspect(..))")
+    @Pointcut("execution(public * kled.test.controller.HelloController.testAspect(..))")
     public void pointcut1(){}
 
     @Before("pointcut1()")

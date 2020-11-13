@@ -4,9 +4,9 @@
  */
 package kled.test.service;
 
+import kled.test.bean.MyQuartzJobToken;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
-import spring.test.bean.MyQuartzJobToken;
 
 public class HelloQuartZ {
     

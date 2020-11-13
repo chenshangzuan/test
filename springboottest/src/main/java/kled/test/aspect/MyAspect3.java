@@ -4,6 +4,7 @@
  */
 package kled.test.aspect;
 
+import kled.test.controller.HelloController;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
@@ -14,8 +15,7 @@ import org.springframework.stereotype.Component;
 @Order(2)
 //@Priority(2)
 public class MyAspect3 {
-
-    @Pointcut("execution(public * spring.test.controller.HelloController.testAspect(..))")
+    @Pointcut("execution(public * kled.test.controller.HelloController.testAspect(..))")
     public void pointcut1(){}
 
     @Before("pointcut1()")

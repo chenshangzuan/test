@@ -4,6 +4,7 @@
  */
 package kled.test.service;
 
+import kled.test.bean.ZookeeperFactory;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -18,7 +19,6 @@ import org.apache.curator.framework.state.ConnectionStateListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.springframework.beans.factory.annotation.Autowired;
-import spring.test.bean.ZookeeperFactory;
 
 import java.io.Closeable;
 import java.io.IOException;
