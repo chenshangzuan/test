@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="2644" started-at="2020-11-16T02:21:12Z" finished-at="2020-11-16T02:21:14Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="2644" started-at="2020-11-16T02:21:12Z" finished-at="2020-11-16T02:21:14Z">
+      <class name="kled.test.SpringUtilsTest">
+        <test-method status="PASS" signature="testBeanUtils()" name="testBeanUtils" duration-ms="2209" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeanUtils -->
+        <test-method status="PASS" signature="testAopUtils()" name="testAopUtils" duration-ms="2222" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAopUtils -->
+        <test-method status="PASS" signature="testAopProxyUtils()" name="testAopProxyUtils" duration-ms="2223" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAopProxyUtils -->
+        <test-method status="PASS" signature="testClassUtils()" name="testClassUtils" duration-ms="2210" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClassUtils -->
+        <test-method status="PASS" signature="testBeanFactoryUtils()" name="testBeanFactoryUtils" duration-ms="2220" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeanFactoryUtils -->
+        <test-method status="PASS" signature="testContextLoads() throws java.lang.Exception" name="testContextLoads" duration-ms="2241" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContextLoads -->
+        <test-method status="PASS" signature="testAnnotationUtils()" name="testAnnotationUtils" duration-ms="2239" started-at="2020-11-16T10:21:12Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAnnotationUtils -->
+      </class> <!-- kled.test.SpringUtilsTest -->
+      <class name="kled.test.SpringTestISpringBootApplicationTests">
+        <test-method status="PASS" signature="testContextLoads() throws java.lang.Exception" name="testContextLoads" duration-ms="3" started-at="2020-11-16T10:21:14Z" finished-at="2020-11-16T10:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContextLoads -->
+      </class> <!-- kled.test.SpringTestISpringBootApplicationTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+configFile=src/main/resources/generatorConfig.properties
+
+source $configFile
+
+[ "$generatorResourcesDir"x = ""x ] && { echo "ERROR: Miss config [generatorResourcesDir] in generatorConfig.properties";exit 1; }
+[ "$generatorMapperXmlPackage"x = ""x ] && { echo "ERROR: Miss config [generatorMapperXmlPackage] in generatorConfig.properties";exit 1; }
+
+automappingXmlDir=$generatorResourcesDir/${generatorMapperXmlPackage//\./\/}/
+echo $automappingXmlDir
+
+rm -f $automappingXmlDir/*.xml
+echo "Old mapping xml files cleaned."
+
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
