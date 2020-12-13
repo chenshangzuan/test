@@ -1,0 +1,17 @@
+syntax = "proto3";
+package api;
+import "google/api/annotations.proto";
+import "common.proto";
+
+option java_multiple_files = true;
+//功能同package
+//option java_package = "api";
+
+service HelloWorld {
+    rpc Hello(HelloRequest) returns (HelloResponse) {
+        option (google.api.http) = {
+        post: "/hello"
+        body: "*"
+        };
+    }
+}

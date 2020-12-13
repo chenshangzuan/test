@@ -2,16 +2,28 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/elasticsearcher/elasticsearcher.iml" filepath="$PROJECT_DIR$/elasticsearcher/elasticsearcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javaagenttest/java.agent.test.iml" filepath="$PROJECT_DIR$/javaagenttest/java.agent.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javabasetest/java.base.test.iml" filepath="$PROJECT_DIR$/javabasetest/java.base.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kafkaclient/kafka.client.iml" filepath="$PROJECT_DIR$/kafkaclient/kafka.client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysqlExtensionTest/mysql.extension.test.iml" filepath="$PROJECT_DIR$/mysqlExtensionTest/mysql.extension.test.iml" group="java" />
-      <module fileurl="file://$PROJECT_DIR$/rabbitmqlistener/rabbitmq.listener.iml" filepath="$PROJECT_DIR$/rabbitmqlistener/rabbitmq.listener.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootadminclient/spring-boot-admin-client.iml" filepath="$PROJECT_DIR$/springbootadminclient/spring-boot-admin-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootadminserver/spring-boot-admin-server.iml" filepath="$PROJECT_DIR$/springbootadminserver/spring-boot-admin-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboottest/spring.boot.test.iml" filepath="$PROJECT_DIR$/springboottest/spring.boot.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo_api/dubbo.api.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo_api/dubbo.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" group="dubbo" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo.test.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo.test.iml" group="dubbo" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc.iml" filepath="$PROJECT_DIR$/grpc_test/grpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_api/grpc.api.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_api/grpc.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_client/grpc.client.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_client/grpc.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_server/grpc.server.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_server/grpc.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_test.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_base_test/java.base.test.iml" filepath="$PROJECT_DIR$/java_base_test/java.base.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos.test.iml" filepath="$PROJECT_DIR$/nacos_test/nacos.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos.api/nacos_api.iml" filepath="$PROJECT_DIR$/nacos_test/nacos.api/nacos_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" filepath="$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" filepath="$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_test/spring.boot.test.iml" filepath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" group="dubbo" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_monitor/springboot_monitor.iml" filepath="$PROJECT_DIR$/springboot_monitor/springboot_monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/test.iml" filepath="$PROJECT_DIR$/.idea/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" filepath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" />
     </modules>
   </component>
 </project>

@@ -6,40 +6,92 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-admin-client" />
-        <module name="spring.boot.test" />
-        <module name="kafka.client" />
-        <module name="mysql.extension.test" />
-        <module name="rabbitmq.listener" />
-        <module name="elasticsearcher" />
-        <module name="java.agent.test" />
-        <module name="spring-boot-admin-server" />
+        <module name="springboot_monitor" />
+        <module name="zookeeper_test" />
         <module name="java.base.test" />
+        <module name="dubbo.provider" />
+        <module name="dubbo_swagger" />
+        <module name="grpc.server" />
+        <module name="grpc_client" />
+        <module name="nacos_api" />
+        <module name="dubbo.consumer" />
+        <module name="grpc.api" />
+        <module name="grpc.client" />
+        <module name="grpc_server" />
+        <module name="nacos_consumer" />
+        <module name="nacos_provider" />
+        <module name="grpc_api" />
+        <module name="spring.boot.test" />
+        <module name="dubbo.api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbo.api" target="1.8" />
+      <module name="dubbo.consumer" target="1.8" />
+      <module name="dubbo.provider" target="1.8" />
+      <module name="dubbo.test" target="1.8" />
+      <module name="dubbo_api" target="1.5" />
+      <module name="dubbo_consumer" target="1.8" />
+      <module name="dubbo_provider" target="1.8" />
+      <module name="dubbo_swagger" target="1.8" />
+      <module name="dubbo_test" target="1.5" />
       <module name="elasticsearcher" target="1.8" />
-      <module name="java.agent.test" target="1.5" />
+      <module name="grpc" target="1.8" />
+      <module name="grpc.api" target="1.8" />
+      <module name="grpc.client" target="1.8" />
+      <module name="grpc.server" target="1.8" />
+      <module name="grpc_api" target="1.8" />
+      <module name="grpc_client" target="1.8" />
+      <module name="grpc_server" target="1.8" />
+      <module name="grpc_test" target="1.8" />
       <module name="java.base.test" target="8" />
-      <module name="kafka.client" target="1.8" />
+      <module name="java_agent_test" target="1.5" />
+      <module name="java_base_test" target="8" />
+      <module name="kafka_client" target="1.8" />
+      <module name="mybatis_test" target="1.8" />
       <module name="mysql.extension.test" target="1.8" />
       <module name="mysqlExtensionTest" target="1.8" />
+      <module name="nacos.test" target="1.8" />
+      <module name="nacos_api" target="1.8" />
+      <module name="nacos_consumer" target="1.8" />
+      <module name="nacos_provider" target="1.8" />
+      <module name="nacos_test" target="1.5" />
+      <module name="nacosc_consumer" target="1.5" />
       <module name="rabbitmq.listener" target="1.8" />
       <module name="spring-boot-admin-client" target="1.8" />
       <module name="spring-boot-admin-server" target="1.8" />
       <module name="spring.boot.test" target="1.8" />
+      <module name="springboot_monitor" target="1.5" />
+      <module name="zookeeper_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo.api" options="-parameters" />
+      <module name="dubbo.consumer" options="-parameters" />
+      <module name="dubbo.provider" options="-parameters" />
+      <module name="dubbo_consumer" options="-parameters" />
+      <module name="dubbo_provider" options="-parameters" />
+      <module name="dubbo_swagger" options="-parameters" />
       <module name="elasticsearcher" options="-parameters" />
-      <module name="kafka.client" options="-parameters" />
+      <module name="grpc.api" options="-parameters" />
+      <module name="grpc.client" options="-parameters" />
+      <module name="grpc.server" options="-parameters" />
+      <module name="grpc_api" options="-parameters" />
+      <module name="grpc_client" options="-parameters" />
+      <module name="grpc_server" options="-parameters" />
+      <module name="kafka_client" options="-parameters" />
+      <module name="mybatis_test" options="-parameters" />
       <module name="mysql.extension.test" options="-parameters" />
       <module name="mysqlExtensionTest" options="-parameters" />
+      <module name="nacos_api" options="-parameters" />
+      <module name="nacos_consumer" options="-parameters" />
+      <module name="nacos_provider" options="-parameters" />
       <module name="rabbitmq.listener" options="-parameters" />
       <module name="spring-boot-admin-client" options="-parameters" />
       <module name="spring-boot-admin-server" options="-parameters" />
       <module name="spring.boot.test" options="-parameters" />
+      <module name="zookeeper_test" options="-parameters" />
     </option>
   </component>
 </project>

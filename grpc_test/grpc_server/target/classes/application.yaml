@@ -1,0 +1,10 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: local-grpc-server
+
+#默认9090端口
+grpc:
+  server:
+    port: 9092

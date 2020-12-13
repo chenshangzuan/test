@@ -1,10 +1,12 @@
 package common;
 
+import java.io.Serializable;
+
 /**
  * @author: Kled
  * @version: Result.java, v0.1 2020-11-24 22:00 Kled
  */
-public class Result<T> {
+public class Result<T> implements Serializable {
 
     private boolean success;
 

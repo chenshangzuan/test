@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: local-grpc-client
+
+grpc:
+  client:
+    local-grpc-server:
+      address: static://localhost:9092
+      # 不加密方式
+      negotiationType: PLAINTEXT

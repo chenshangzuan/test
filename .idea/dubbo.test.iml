@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/dubbo_test/dubbo_api">
+      <sourceFolder url="file://$MODULE_DIR$/dubbo_test/dubbo_api/src/main/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/dubbo_test/dubbo_consumer">
+      <sourceFolder url="file://$MODULE_DIR$/dubbo_test/dubbo_consumer/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dubbo_test/dubbo_consumer/src/test/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/dubbo_test/dubbo_provider">
+      <sourceFolder url="file://$MODULE_DIR$/dubbo_test/dubbo_provider/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dubbo_test/dubbo_provider/src/main/java" isTestSource="false" />
+    </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

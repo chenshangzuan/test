@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/elasticsearcher" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/kafkaclient" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mysqlExtensionTest" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rabbitmqlistener" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springbootadminclient" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springbootadminserver" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboottest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo_test/dubbo.swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo_test/dubbo_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo_test/dubbo_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc_test/grpc_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc_test/grpc_client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc_test/grpc_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka_client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysql_extension_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos_test/nacos.api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos_test/nacos_consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos_test/nacos_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq_listener" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper_test" charset="UTF-8" />
   </component>
 </project>

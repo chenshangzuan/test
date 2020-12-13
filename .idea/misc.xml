@@ -13,7 +13,25 @@
         <option value="$PROJECT_DIR$/springboottest/pom.xml" />
         <option value="$PROJECT_DIR$/shardingSphereTest/pom.xml" />
         <option value="$PROJECT_DIR$/mysqlExtensionTest/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatistest/pom.xml" />
+        <option value="$PROJECT_DIR$/dubboconsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubboprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbotest1/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos_test/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo_test/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_test/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper_test/pom.xml" />
+        <option value="$PROJECT_DIR$/java_base_test/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc_test/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/nacos_test/nacos.consumer/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
