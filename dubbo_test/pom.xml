@@ -18,7 +18,6 @@
 
     <properties>
         <dubbo.version>2.7.8</dubbo.version>
-        <dubbo-swagger.version>2.0.1</dubbo-swagger.version>
         <curator.version>4.0.1</curator.version>
     </properties>
 
@@ -71,12 +70,6 @@
                 <version>${dubbo.version}</version>
             </dependency>
 
-            <!-- dubbo swagger -->
-            <dependency>
-                <groupId>com.deepoove</groupId>
-                <artifactId>swagger-dubbo</artifactId>
-                <version>${dubbo-swagger.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 

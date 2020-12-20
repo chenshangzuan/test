@@ -26,10 +26,16 @@
         <option value="$PROJECT_DIR$/zookeeper_test/pom.xml" />
         <option value="$PROJECT_DIR$/java_base_test/pom.xml" />
         <option value="$PROJECT_DIR$/grpc_test/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_stater_test/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/grpc_test/grpc_api/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc_test/grpc_client/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc_test/grpc_server/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc_test/pom.xml" />
         <option value="$PROJECT_DIR$/nacos_test/nacos.consumer/pom.xml" />
       </set>
     </option>

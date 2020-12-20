@@ -3,6 +3,7 @@ package kled.test.controller;
 import api.HelloService;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,6 +20,8 @@ public class HelloController {
 
     @RequestMapping(value = "hello")
     public String hello(String msg){
-        return helloService.hello(msg).toString();
+        RpcContext.getContext().setAttachment("attachmentKey", "123");
+        String response =  helloService.hello(msg).toString();
+        return response;
     }
 }

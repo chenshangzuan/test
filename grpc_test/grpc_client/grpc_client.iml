@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../grpc_client/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../grpc_client/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../grpc_client">
-      <sourceFolder url="file://$MODULE_DIR$/../grpc_client/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../grpc_client/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../grpc_client/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../grpc_client/src/test/resources" type="java-test-resource" />
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../grpc_client/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

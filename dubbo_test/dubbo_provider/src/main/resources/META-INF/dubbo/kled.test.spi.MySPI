@@ -1,0 +1,6 @@
+kled=kled.test.spi.impl.KledSPI
+leon=kled.test.spi.impl.LeonSPI
+sam=kled.test.spi.impl.SamSPI
+admin=kled.test.spi.impl.AdaptiveSPI
+firstWrapper=kled.test.spi.impl.FirstWrapperSPI
+secondWrapper=kled.test.spi.impl.SecondWrapperSPI

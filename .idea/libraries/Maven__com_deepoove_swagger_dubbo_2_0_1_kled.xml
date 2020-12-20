@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.deepoove:swagger-dubbo:2.0.1-kled">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/deepoove/swagger-dubbo/2.0.1-kled/swagger-dubbo-2.0.1-kled.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/deepoove/swagger-dubbo/2.0.1-kled/swagger-dubbo-2.0.1-kled-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/deepoove/swagger-dubbo/2.0.1-kled/swagger-dubbo-2.0.1-kled-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

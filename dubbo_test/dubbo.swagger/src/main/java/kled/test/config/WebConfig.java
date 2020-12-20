@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  *
- * @author leon
+ * @author kled
  * @version $Id: WebConfig.java, v 0.1 2017年9月9日 上午10:41:35 leon Exp $
  */
 @Configuration

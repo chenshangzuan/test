@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" filepath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo_api/dubbo.api.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo_api/dubbo.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo.test.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc.iml" filepath="$PROJECT_DIR$/grpc_test/grpc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_api/grpc.api.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_api/grpc.api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_client/grpc.client.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_client/grpc.client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_server/grpc.server.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_server/grpc.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" />

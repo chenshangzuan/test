@@ -11,21 +11,20 @@
         <module name="java.base.test" />
         <module name="dubbo.provider" />
         <module name="dubbo_swagger" />
-        <module name="grpc.server" />
+        <module name="dubbo-swagger-spring-boot-starter" />
         <module name="grpc_client" />
         <module name="nacos_api" />
         <module name="dubbo.consumer" />
-        <module name="grpc.api" />
-        <module name="grpc.client" />
+        <module name="nacos_provider" />
         <module name="grpc_server" />
         <module name="nacos_consumer" />
-        <module name="nacos_provider" />
         <module name="grpc_api" />
         <module name="spring.boot.test" />
         <module name="dubbo.api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbo-swagger-spring-boot-starter" target="1.8" />
       <module name="dubbo.api" target="1.8" />
       <module name="dubbo.consumer" target="1.8" />
       <module name="dubbo.provider" target="1.8" />
@@ -34,6 +33,7 @@
       <module name="dubbo_consumer" target="1.8" />
       <module name="dubbo_provider" target="1.8" />
       <module name="dubbo_swagger" target="1.8" />
+      <module name="dubbo_swagger_springboot_starter" target="1.8" />
       <module name="dubbo_test" target="1.5" />
       <module name="elasticsearcher" target="1.8" />
       <module name="grpc" target="1.8" />
@@ -67,12 +67,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-swagger-spring-boot-starter" options="-parameters" />
       <module name="dubbo.api" options="-parameters" />
       <module name="dubbo.consumer" options="-parameters" />
       <module name="dubbo.provider" options="-parameters" />
       <module name="dubbo_consumer" options="-parameters" />
       <module name="dubbo_provider" options="-parameters" />
       <module name="dubbo_swagger" options="-parameters" />
+      <module name="dubbo_swagger_springboot_starter" options="-parameters" />
       <module name="elasticsearcher" options="-parameters" />
       <module name="grpc.api" options="-parameters" />
       <module name="grpc.client" options="-parameters" />
