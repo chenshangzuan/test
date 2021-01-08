@@ -4,7 +4,6 @@
  */
 package kled.test.config;
 
-import kled.test.bean.HelloSpringBean;
 import kled.test.service.HelloQuartZ;
 import org.springframework.context.annotation.Bean;
 
@@ -14,11 +13,5 @@ public class QuartzConfig {
     @Bean(initMethod = "init")
     public HelloQuartZ helloQuartZ() {
         return new HelloQuartZ();
-    }
-
-    @Bean(initMethod = "init", name = "SpingBean", destroyMethod = "doDestroy")
-    public HelloSpringBean helloSpringBean() {
-        System.out.println("*********");
-        return new HelloSpringBean();
     }
 }

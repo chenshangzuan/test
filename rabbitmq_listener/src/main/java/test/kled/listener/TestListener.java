@@ -5,6 +5,7 @@
 package test.kled.listener;
 
 import org.apache.logging.log4j.util.Strings;
+import org.springframework.amqp.ImmediateAcknowledgeAmqpException;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.annotation.RabbitListeners;
@@ -32,14 +33,17 @@ public class TestListener {
     @RabbitHandler
     //content_type: application/json
     //@RabbitListener(queues = "testQ", containerFactory = "rabbitListenerContainerFactory") //必须注解在方法上才能获取MessageConvert
-    public void test2(@Payload MyMsg message){
-        System.out.println("Bean msg = " + message);
+    public void test2(@Payload MyMsg message) throws InterruptedException {
+        System.out.println("consumer msg = " + message);
     }
 
     @RabbitHandler
     //content_type: application/json
-    public void test3(Map<String, String> message){
-        System.out.println("map msg = " + message);
+    public void test3(Map<String, String> message) throws InterruptedException {
+        throw new ImmediateAcknowledgeAmqpException("message");
+//        System.out.println("start consumer map msg =" + message);
+//        Thread.sleep(5000);
+//        System.out.println("map msg = " + message);
     }
 
     public static class MyMsg{

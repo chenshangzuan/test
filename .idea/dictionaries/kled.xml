@@ -2,6 +2,7 @@
   <dictionary name="kled">
     <words>
       <w>introspector</w>
+      <w>retryer</w>
       <w>synchronizer</w>
     </words>
   </dictionary>

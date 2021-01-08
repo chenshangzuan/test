@@ -4,7 +4,6 @@
  */
 package kled.test.aspect;
 
-import kled.test.controller.HelloController;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;

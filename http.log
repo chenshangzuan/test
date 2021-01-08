@@ -1,0 +1,124 @@
+[FeignClient#doGet] ---> GET http://127.0.0.1:10000/feign/test?msg=%5BGET%5D%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet] Accept: application/json
+[FeignClient#doGet] ---> END HTTP (0-byte body)
+[FeignClient#doGet] <--- HTTP/1.1 200  (40ms)
+[FeignClient#doGet] connection: keep-alive
+[FeignClient#doGet] content-type: application/json
+[FeignClient#doGet] date: Mon, 28 Dec 2020 07:02:23 GMT
+[FeignClient#doGet] keep-alive: timeout=60
+[FeignClient#doGet] transfer-encoding: chunked
+[FeignClient#doGet] 
+[FeignClient#doGet] "[GET] hello open feign"
+[FeignClient#doGet] <--- END HTTP (24-byte body)
+[FeignClient#doGet2] ---> GET http://127.0.0.1:10000/feign/test?msg=%5BGET2%5D%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet2] Accept: application/json
+[FeignClient#doGet2] ---> END HTTP (0-byte body)
+[FeignClient#doGet2] <--- HTTP/1.1 200  (3ms)
+[FeignClient#doGet2] connection: keep-alive
+[FeignClient#doGet2] content-type: application/json
+[FeignClient#doGet2] date: Mon, 28 Dec 2020 07:02:23 GMT
+[FeignClient#doGet2] keep-alive: timeout=60
+[FeignClient#doGet2] transfer-encoding: chunked
+[FeignClient#doGet2] 
+[FeignClient#doGet2] "[GET2] hello open feign"
+[FeignClient#doGet2] <--- END HTTP (25-byte body)
+[FeignClient#doGet3] ---> GET http://127.0.0.1:10000/feign/test?msg=[GET3]%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet3] Accept: application/json
+[FeignClient#doGet3] ---> END HTTP (0-byte body)
+[FeignClient#doGet3] <--- HTTP/1.1 400  (11ms)
+[FeignClient#doGet3] connection: close
+[FeignClient#doGet3] content-language: en
+[FeignClient#doGet3] content-length: 435
+[FeignClient#doGet3] content-type: text/html;charset=utf-8
+[FeignClient#doGet3] date: Mon, 28 Dec 2020 07:02:23 GMT
+[FeignClient#doGet3] 
+[FeignClient#doGet3] <!doctype html><html lang="en"><head><title>HTTP Status 400 – Bad Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1></body></html>
+[FeignClient#doGet3] <--- END HTTP (435-byte body)
+[FeignClient#doGet] ---> GET http://127.0.0.1:10000/feign/test?msg=%5BGET%5D%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet] Accept: application/json
+[FeignClient#doGet] ---> END HTTP (0-byte body)
+[FeignClient#doGet] <--- HTTP/1.1 200  (39ms)
+[FeignClient#doGet] connection: keep-alive
+[FeignClient#doGet] content-type: application/json
+[FeignClient#doGet] date: Mon, 28 Dec 2020 07:09:43 GMT
+[FeignClient#doGet] keep-alive: timeout=60
+[FeignClient#doGet] transfer-encoding: chunked
+[FeignClient#doGet] 
+[FeignClient#doGet] "[GET] hello open feign"
+[FeignClient#doGet] <--- END HTTP (24-byte body)
+[FeignClient#doGet2] ---> GET http://127.0.0.1:10000/feign/test?msg=%5BGET2%5D%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet2] Accept: application/json
+[FeignClient#doGet2] ---> END HTTP (0-byte body)
+[FeignClient#doGet2] <--- HTTP/1.1 200  (2ms)
+[FeignClient#doGet2] connection: keep-alive
+[FeignClient#doGet2] content-type: application/json
+[FeignClient#doGet2] date: Mon, 28 Dec 2020 07:09:43 GMT
+[FeignClient#doGet2] keep-alive: timeout=60
+[FeignClient#doGet2] transfer-encoding: chunked
+[FeignClient#doGet2] 
+[FeignClient#doGet2] "[GET2] hello open feign"
+[FeignClient#doGet2] <--- END HTTP (25-byte body)
+[FeignClient#doGet3] ---> GET http://127.0.0.1:10000/feign/test?msg=hello%20open%20feign HTTP/1.1
+[FeignClient#doGet3] Accept: application/json
+[FeignClient#doGet3] ---> END HTTP (0-byte body)
+[FeignClient#doGet3] <--- HTTP/1.1 200  (2ms)
+[FeignClient#doGet3] connection: keep-alive
+[FeignClient#doGet3] content-type: application/json
+[FeignClient#doGet3] date: Mon, 28 Dec 2020 07:09:43 GMT
+[FeignClient#doGet3] keep-alive: timeout=60
+[FeignClient#doGet3] transfer-encoding: chunked
+[FeignClient#doGet3] 
+[FeignClient#doGet3] "hello open feign"
+[FeignClient#doGet3] <--- END HTTP (18-byte body)
+[FeignClient#doPost] ---> POST http://127.0.0.1:10000/feign/test HTTP/1.1
+[FeignClient#doPost] Accept: application/json
+[FeignClient#doPost] Content-Length: 34
+[FeignClient#doPost] Content-Type: application/json
+[FeignClient#doPost] 
+[FeignClient#doPost] {"msg":"[POST] hello open feign" }
+[FeignClient#doPost] ---> END HTTP (34-byte body)
+[FeignClient#doPost] <--- HTTP/1.1 200  (4ms)
+[FeignClient#doPost] connection: keep-alive
+[FeignClient#doPost] content-type: application/json
+[FeignClient#doPost] date: Mon, 28 Dec 2020 07:09:43 GMT
+[FeignClient#doPost] keep-alive: timeout=60
+[FeignClient#doPost] transfer-encoding: chunked
+[FeignClient#doPost] 
+[FeignClient#doPost] "[POST] hello open feign"
+[FeignClient#doPost] <--- END HTTP (25-byte body)
+[FeignClient#doGet] ---> GET http://127.0.0.1:10000/feign/test?msg=%5BGET%5D%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet] Accept: application/json
+[FeignClient#doGet] ---> END HTTP (0-byte body)
+[FeignClient#doGet] <--- HTTP/1.1 200  (39ms)
+[FeignClient#doGet] connection: keep-alive
+[FeignClient#doGet] content-type: application/json
+[FeignClient#doGet] date: Mon, 28 Dec 2020 07:10:51 GMT
+[FeignClient#doGet] keep-alive: timeout=60
+[FeignClient#doGet] transfer-encoding: chunked
+[FeignClient#doGet] 
+[FeignClient#doGet] "[GET] hello open feign"
+[FeignClient#doGet] <--- END HTTP (24-byte body)
+[FeignClient#doGet2] ---> GET http://127.0.0.1:10000/feign/test?msg=%5BGET2%5D%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet2] Accept: application/json
+[FeignClient#doGet2] ---> END HTTP (0-byte body)
+[FeignClient#doGet2] <--- HTTP/1.1 200  (2ms)
+[FeignClient#doGet2] connection: keep-alive
+[FeignClient#doGet2] content-type: application/json
+[FeignClient#doGet2] date: Mon, 28 Dec 2020 07:10:51 GMT
+[FeignClient#doGet2] keep-alive: timeout=60
+[FeignClient#doGet2] transfer-encoding: chunked
+[FeignClient#doGet2] 
+[FeignClient#doGet2] "[GET2] hello open feign"
+[FeignClient#doGet2] <--- END HTTP (25-byte body)
+[FeignClient#doGet3] ---> GET http://127.0.0.1:10000/feign/test?msg=[GET3]%20hello%20open%20feign HTTP/1.1
+[FeignClient#doGet3] Accept: application/json
+[FeignClient#doGet3] ---> END HTTP (0-byte body)
+[FeignClient#doGet3] <--- HTTP/1.1 400  (1ms)
+[FeignClient#doGet3] connection: close
+[FeignClient#doGet3] content-language: en
+[FeignClient#doGet3] content-length: 435
+[FeignClient#doGet3] content-type: text/html;charset=utf-8
+[FeignClient#doGet3] date: Mon, 28 Dec 2020 07:10:51 GMT
+[FeignClient#doGet3] 
+[FeignClient#doGet3] <!doctype html><html lang="en"><head><title>HTTP Status 400 – Bad Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1></body></html>
+[FeignClient#doGet3] <--- END HTTP (435-byte body)

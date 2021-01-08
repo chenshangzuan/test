@@ -28,6 +28,12 @@
         <option value="$PROJECT_DIR$/grpc_test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_stater_test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/pom.xml" />
+        <option value="$PROJECT_DIR$/influxdb_test/pom.xml" />
+        <option value="$PROJECT_DIR$/elastic_searcher/pom.xml" />
+        <option value="$PROJECT_DIR$/mysql_extension_test/pom.xml" />
+        <option value="$PROJECT_DIR$/clickhouse_test/pom.xml" />
+        <option value="$PROJECT_DIR$/redis_test/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -2,150 +2,161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80b1a0ae-5a89-48bd-a87a-b4d8a6320028" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_deepoove_swagger_dubbo_2_0_1_kled.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_deepoove_swagger_dubbo_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_wukongframework_wukong_boot_integration_swagger_starter_1_0_5_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/config/DubboConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/listener/MyInvokerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.InvokerListener" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/listener/MyExporterListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/FirstWrapperSPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/LeonSPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SamSPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SecondWrapperSPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/kled.test.spi.MySPI" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.ExporterListener" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo_swagger_springboot_starter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/java/kled/test/config/DubboSwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/java/kled/test/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/css/print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/css/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/css/typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/fonts/DroidSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/fonts/DroidSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/collapse.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/expand.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/explorer_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/logo_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/pet_store_api.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/throbber.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/images/wordnik_api.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/geo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/ko-kr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/translator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/backbone-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/es5-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/handlebars-4.0.5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/highlight.9.1.0.pack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/highlight.9.1.0.pack_extended.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/jquery-1.8.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/jquery.ba-bbq.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/jquery.slideto.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/jquery.wiggle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/js-yaml.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/jsoneditor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/lodash.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/marked.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/object-assign-pollyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/sanitize-html.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/lib/swagger-oauth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/o2c.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/swagger-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/swagger-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clickhouse_test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clickhouse_test/src/main/java/kled/test/bean/TbUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clickhouse_test/src/test/java/kled/test/ClickhouseJdbcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_api/src/main/java/api/HelloServiceMock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/interceptor/MyClusterInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/listener/MyRegistryProtocolListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/service/HelloServiceStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.registry.integration.RegistryProtocolListener" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/constant/CommonConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/influxdb_test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/influxdb_test/src/main/java/kled/test/config/InfluxdbConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/influxdb_test/src/main/java/kled/test/pojo/InfluxPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/influxdb_test/src/test/java/kled/test/InfluxdbTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestJsonPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/FeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyErrorDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyJacksonQueryMapEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyRetryer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/OpenFeignTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/QueryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqDeathLetterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqRpcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqTransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqConfirmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqManualConfirmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqTxController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqManualAckListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRetryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis_test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/ConditionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/ImportBeanA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/ImportBeanB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/ImportBeanC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/condition/MyCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/condition/MyConditionalAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ImportConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/MyImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/MyImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/FeignController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kled.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/kled.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_30_0_jre.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/src/main/java/kled/test/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/src/main/java/kled/test/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_api/src/main/java/api/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_api/src/main/java/api/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_api/target/classes/api/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_api/target/classes/api/HelloService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_api/target/dubbo.api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_api/target/dubbo.api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/config/DubboConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/config/DubboConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/test/java/kled/test/SpringTestDubboConsumerSpringBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/test/java/kled/test/SpringTestDubboConsumerSpringBootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/test/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/classes/kled/test/ISpringBootApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/service/HelloWorldService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/classes/kled/test/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/classes/kled/test/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/dubbo.consumer-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/dubbo.consumer-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/surefire-reports/TEST-kled.test.SpringTestISpringBootApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/surefire-reports/kled.test.SpringTestISpringBootApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/test-classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/test-classes/kled/test/SpringTestDubboConsumerSpringBootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/test-classes/kled/test/SpringTestDubboConsumerSpringBootApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/test-classes/kled/test/SpringTestISpringBootApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/filter/ProviderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/filter/ProviderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/classes/kled/test/service/HelloWorldService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloRestServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloRestServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/LeonSPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/LeonSPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SamSPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SamSPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpringTestDubboProviderSpringBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpringTestDubboProviderSpringBootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/ISpringBootApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/filter/ProviderFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/filter/ProviderFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/service/HelloRestServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/service/HelloRestServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/service/HelloServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/classes/kled/test/service/HelloWorldService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/dubbo.provider-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/dubbo.provider-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/surefire-reports/TEST-kled.test.SpringTestISpringBootApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/surefire-reports/kled.test.SpringTestISpringBootApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/test-classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/test-classes/kled/test/SpringTestDubboProviderSpringBootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/test-classes/kled/test/SpringTestDubboProviderSpringBootApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/test-classes/kled/test/SpringTestISpringBootApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic_searcher/src/main/java/kled/test/service/HelloWorldService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/java.base.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/java.base.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestJsonFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestBigInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestBigInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestBitSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestBitSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestBloomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestBloomFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestByte.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestByte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/basic_data/TestString.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/generic_data/TestString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/TestClass$Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/target/classes/java_base/TestClass$Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/target/classes/java_base/TestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestBigInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestBinary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestBitSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestBloomFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestByte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/basic_data/TestString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/rabbitmq.listener.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/ISpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/MqSpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestTestMqRpcController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/TestListener2.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/TestListener3.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/TestListener4.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/test/java/test/kled/SpringTestISpringBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/test/java/test/kled/SpringTestMqSpringBootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/aspect/MyAspect3.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/aspect/MyAspect3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/base/AssembleMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/HelloSpringBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/MyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/MyBean1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/SpringBeanFactoryPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/SpringBeanPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/SpringInstantiationAwareBeanPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/MailConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/QuartzConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/QuartzConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/middleware/MyRequestBodyAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/middleware/MyRequestBodyAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/middleware/MyResponseBodyAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/middleware/MyResponseBodyAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/HelloWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/HelloWorldService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/MailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/TestngGroupAnotationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/helloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/helloWebServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/citiesAbroad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/citiesGeo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/city.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/citiesAbroad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/citiesGeo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/city.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/aspect/MyAspect3.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/aspect/MyAspect3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/base/AssembleMap$City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/base/AssembleMap$CityPosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/base/AssembleMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/HelloSpringBean$InnerClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/HelloSpringBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/MyBean$MySubBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/MyBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/MyBean1$MyBeanInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/MyBean1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/SpringBeanFactoryPostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/SpringBeanPostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/SpringInstantiationAwareBeanPostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/MailConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/QuartzConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/QuartzConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/ServiceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/ServiceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/middleware/MyRequestBodyAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/middleware/MyResponseBodyAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloWorldService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/MailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/TestngGroupAnotationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/helloServiceImpl.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/springbootadminserver/target/" />
@@ -193,6 +204,12 @@
     <ignored path="$PROJECT_DIR$/grpc_test/grpc_server/target/" />
     <ignored path="$PROJECT_DIR$/springboot_stater_test/target/" />
     <ignored path="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/target/" />
+    <ignored path="$PROJECT_DIR$/influxdb_test/target/" />
+    <ignored path="$PROJECT_DIR$/elastic_searcher/target/" />
+    <ignored path="$PROJECT_DIR$/mysql_extension_test/target/" />
+    <ignored path="$PROJECT_DIR$/clickhouse_test/target/" />
+    <ignored path="$PROJECT_DIR$/redis_test/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq_listener/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,19 +228,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/extension/ExtensionLoader.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="462" column="13" selection-start-line="462" selection-start-column="13" selection-end-line="462" selection-end-column="13" />
+            <state relative-caret-position="294">
+              <caret line="1024" column="102" selection-start-line="1024" selection-start-column="102" selection-end-line="1024" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/support/converter/MessageConverter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/support/converter/AbstractMessageConverter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySPI.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/reflect/Type.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+            <state relative-caret-position="230">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/MessageProperties.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRetryListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -232,86 +285,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/extension/Activate.class">
+        <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="537">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/kled.test.spi.MySPI">
+        <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="180">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SecondWrapperSPI.java">
+        <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="12">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/FirstWrapperSPI.java">
+        <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqConfirmController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpringTestDubboProviderSpringBootApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SamSPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/extension/Adaptive.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="445">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -322,22 +326,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>distv2</find>
-      <find>excl</find>
-      <find>SpringExtensionFactory</find>
-      <find>zk3</find>
-      <find>123</find>
-      <find>param</find>
-      <find>myEnvParam</find>
-      <find>server</find>
-      <find>server.port</find>
-      <find>-x</find>
       <find>forP</find>
       <find>success</find>
       <find>2.0.1</find>
@@ -358,6 +353,16 @@
       <find>My</find>
       <find>MyExporterListener</find>
       <find>MyInvokerListener</find>
+      <find>intercep</find>
+      <find>intercept</find>
+      <find>callback</find>
+      <find>1.0.2</find>
+      <find>HelloSpringBean</find>
+      <find>k</find>
+      <find>param</find>
+      <find>rabbitListenerContainerFactory</find>
+      <find>receiveAndExecute</find>
+      <find>mainLoop</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/springboottest</dir>
@@ -369,57 +374,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grpc_test/grpc_server/pom.xml" />
-        <option value="$PROJECT_DIR$/grpc_test/grpc_server/src/main/java/kled/test/service/HelloWorldService.java" />
-        <option value="$PROJECT_DIR$/grpc_test/grpc_client/pom.xml" />
-        <option value="$PROJECT_DIR$/grpc_test/grpc_client/src/main/java/kled/test/controller/DemoController.java" />
-        <option value="$PROJECT_DIR$/grpc_test/grpc_client/src/main/java/kled/test/config/GRpcConfig.java" />
-        <option value="$PROJECT_DIR$/grpc_test/grpc_server/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/grpc_test/grpc_client/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/grpc_test/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/DubboProviderSpringBootApplication.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo.swagger/src/main/java/kled/test/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/static/distv2/index.html" />
-        <option value="$PROJECT_DIR$/zookeeper_test/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot_stater_test/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/dubbo_test/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/java/kled/test/config/DubboSwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources/static/distv2/index.html" />
-        <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/java/kled/test/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloServiceImp.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/TestRpcService.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/TestRpcServiceImp.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/pom.xml" />
-        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/executor_service/TestCompletableFuture.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/test/java/kled/test/SpringTestDubboConsumerSpringBootApplicationTests.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloRestServiceImp.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/filter/ProviderFilter.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/config/DubboConfig.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/listener/MyExporterListener.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.ExporterListener" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.InvokerListener" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/listener/MyInvokerListener.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySpi.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpringTestDubboProviderSpringBootApplicationTests.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/AdminSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/LeonSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/WrapperMySPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/OuterWrapperSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/FirstWrapperSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SecondWrapperSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/kled.test.spi.MySPI" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SamSPI.java" />
-        <option value="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySPI.java" />
+        <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestJsonPath.java" />
+        <option value="$PROJECT_DIR$/influxdb_test/src/test/java/kled/test/SpringTestInfluxdbTestSpringBootApplicationTests.java" />
+        <option value="$PROJECT_DIR$/influxdb_test/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/influxdb_test/src/main/java/kled/test/InfluxdbTestSpringBootApplication.java" />
+        <option value="$PROJECT_DIR$/influxdb_test/pom.xml" />
+        <option value="$PROJECT_DIR$/influxdb_test/src/main/java/kled/test/config/InfluxdbConfig.java" />
+        <option value="$PROJECT_DIR$/influxdb_test/src/main/java/kled/test/pojo/InfluxPojo.java" />
+        <option value="$PROJECT_DIR$/influxdb_test/src/test/java/kled/test/InfluxdbTest.java" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/FeignController.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/FeginInterceptor.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/FeignInterceptor.java" />
+        <option value="$PROJECT_DIR$/java_base_test/pom.xml" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/FeginErrorDecoder.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/FeignErrorDecoder.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyRetryer.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/QueryRequest.kt" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/QueryRequest.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyJacksonQueryMapEncoder.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/FeignClient.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/MyErrorDecoder.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/openFeign/OpenFeignTest.java" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/ConditionBean.java" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/condition/MyConditionalAnnotation.java" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ServiceConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/condition/MyCondition.java" />
+        <option value="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" />
+        <option value="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MpTest.java" />
+        <option value="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestClass.java" />
+        <option value="$PROJECT_DIR$/clickhouse_test/src/test/java/kled/test/SpringTestISpringBootApplicationTests.java" />
+        <option value="$PROJECT_DIR$/clickhouse_test/src/main/java/kled/test/ClickhouseSpringBootApplication.java" />
+        <option value="$PROJECT_DIR$/clickhouse_test/src/test/java/kled/test/ClickhouseJdbcTest.java" />
+        <option value="$PROJECT_DIR$/clickhouse_test/src/test/java/kled/test/ClickhouseClientTest.java" />
+        <option value="$PROJECT_DIR$/clickhouse_test/pom.xml" />
+        <option value="$PROJECT_DIR$/redis_test/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqTransactionConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqTxController.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqConfirmController.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqRpcConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/TestListener.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRetryListener.java" />
+        <option value="$PROJECT_DIR$/clickhouse_test/src/main/java/kled/test/bean/TbUser.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqManualAckListener.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqDeathLetterConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestTestMqRpcController.java" />
+        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqManualConfirmController.java" />
       </list>
     </option>
   </component>
@@ -442,150 +447,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2560" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="825" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Internationalization</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Performance</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Security</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
-          </State>
-          <State>
-            <id>Android Lint for Kotlin</id>
-          </State>
-          <State>
-            <id>Bitwise operation issuesJava</id>
-          </State>
-          <State>
-            <id>Bitwise operation issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>CodeSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>Control FlowGroovy</id>
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Cucumber</id>
-          </State>
-          <State>
-            <id>Declaration redundancyJava</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-          <State>
-            <id>ImportsJava</id>
-          </State>
-          <State>
-            <id>JUnit issuesJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>Java 7Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Java 9Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Java language level issuesJava</id>
-          </State>
-          <State>
-            <id>Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>Javadoc issuesJava</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Naming conventionsJava</id>
-          </State>
-          <State>
-            <id>Numeric issuesJava</id>
-          </State>
-          <State>
-            <id>Other problemsKotlin</id>
-          </State>
-          <State>
-            <id>Performance issuesJava</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsGroovy</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Probable bugsKotlin</id>
-          </State>
-          <State>
-            <id>Resource management issuesJava</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring AOPSpring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-          <State>
-            <id>TestNGJava</id>
-          </State>
-          <State>
-            <id>UI Form Problems</id>
-          </State>
-          <State>
-            <id>XMLSpring CoreSpring</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
+    <option name="width" value="2560" />
+    <option name="height" value="1365" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -607,47 +473,25 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -655,66 +499,59 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="kled" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kled" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="kled" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="spi" type="462c0819:PsiDirectoryNode" />
+              <item name="kled" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="spi" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -722,65 +559,58 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq_listener" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo_provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.0.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.0.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.0.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.0.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.0.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.0.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.0.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.0.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.0.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.0.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.0.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="type" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -793,15 +623,20 @@
     <property name="ToolWindowZooKeeper.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1613199" />
     <property name="project.structure.side.proportion" value="0.29099306" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="spring.test.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot_starter_tes" />
+      <recent name="$PROJECT_DIR$/grpc_test/grpc_api/src/main" />
+      <recent name="$PROJECT_DIR$/dubbotest" />
+      <recent name="$PROJECT_DIR$/mybatistest" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="kled.test" />
@@ -809,25 +644,21 @@
       <recent name="spring.test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo" />
       <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources" />
       <recent name="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources" />
-      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="kled.test.spi.impl" />
-      <recent name="kled.test.listener" />
-      <recent name="kled.test.config" />
+      <recent name="test.kled.listener" />
+      <recent name="test.kled.config" />
+      <recent name="test.kled.controller" />
       <recent name="kled.test" />
-      <recent name="kled.test.service" />
+      <recent name="java_base.openFeign" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/springboot_starter_tes" />
-      <recent name="$PROJECT_DIR$/grpc_test/grpc_api/src/main" />
-      <recent name="$PROJECT_DIR$/dubbotest" />
-      <recent name="$PROJECT_DIR$/mybatistest" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="spring.test.service" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -852,37 +683,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpiTest.testAdaptiveExtension">
+  <component name="RunManager" selected="Application.MqSpringBootApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DubboConsumerSpringBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kled.test.DubboConsumerSpringBootApplication" />
-      <module name="dubbo.consumer" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kled.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DubboProviderSpringBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kled.test.DubboProviderSpringBootApplication" />
-      <module name="dubbo.provider" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kled.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -901,14 +704,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MqSpringBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.kled.MqSpringBootApplication" />
+      <module name="rabbitmq.listener" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.kled.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootTestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kled.test.SpringBootTestApplication" />
+      <module name="spring.boot.test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kled.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_base.TestClass" />
+      <module name="java.base.test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dubbo.provider" />
+    <configuration name="ClickhouseClientTest.testClickhouseClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clickhouse_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kled.test.*" />
@@ -916,32 +761,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="kled.test" />
-      <option name="MAIN_CLASS_NAME" value="kled.test.SpiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpiTest.testAdaptiveExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dubbo.provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kled.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kled.test" />
-      <option name="MAIN_CLASS_NAME" value="kled.test.SpiTest" />
-      <option name="METHOD_NAME" value="testAdaptiveExtension" />
+      <option name="MAIN_CLASS_NAME" value="kled.test.ClickhouseClientTest" />
+      <option name="METHOD_NAME" value="testClickhouseClient" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiTest.testExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dubbo.provider" />
+    <configuration name="ClickhouseJdbcTest.testJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clickhouse_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kled.test.*" />
@@ -949,8 +778,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="kled.test" />
-      <option name="MAIN_CLASS_NAME" value="kled.test.SpiTest" />
-      <option name="METHOD_NAME" value="testExtension" />
+      <option name="MAIN_CLASS_NAME" value="kled.test.ClickhouseJdbcTest" />
+      <option name="METHOD_NAME" value="testJdbc" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -1128,19 +957,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ISpringBootApplication" />
-      <item itemvalue="Application.DubboProviderSpringBootApplication" />
-      <item itemvalue="Application.DubboConsumerSpringBootApplication" />
-      <item itemvalue="JUnit.SpiTest.testExtension" />
-      <item itemvalue="JUnit.SpiTest" />
-      <item itemvalue="JUnit.SpiTest.testAdaptiveExtension" />
+      <item itemvalue="Application.SpringBootTestApplication" />
+      <item itemvalue="Application.TestClass" />
+      <item itemvalue="JUnit.ClickhouseJdbcTest.testJdbc" />
+      <item itemvalue="JUnit.ClickhouseClientTest.testClickhouseClient" />
+      <item itemvalue="Application.MqSpringBootApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpiTest.testAdaptiveExtension" />
-        <item itemvalue="JUnit.SpiTest" />
-        <item itemvalue="JUnit.SpiTest.testExtension" />
-        <item itemvalue="Application.DubboConsumerSpringBootApplication" />
-        <item itemvalue="Application.DubboProviderSpringBootApplication" />
+        <item itemvalue="Application.MqSpringBootApplication" />
+        <item itemvalue="JUnit.ClickhouseClientTest.testClickhouseClient" />
+        <item itemvalue="JUnit.ClickhouseJdbcTest.testJdbc" />
+        <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.SpringBootTestApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -1168,35 +997,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpiTest_testExtension - 2020.12.20 at 22h 38m 24s.xml">
-      <configuration name="SpiTest.testExtension" configurationId="JUnit" />
+    <history-entry file="InfluxdbTest_testInfluxPojo - 2020.12.27 at 21h 53m 46s.xml">
+      <configuration name="InfluxdbTest.testInfluxPojo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest - 2020.12.20 at 22h 41m 29s.xml">
-      <configuration name="SpiTest" configurationId="JUnit" />
+    <history-entry file="InfluxdbTest_testInfluxPojo - 2020.12.27 at 22h 03m 09s.xml">
+      <configuration name="InfluxdbTest.testInfluxPojo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest - 2020.12.20 at 22h 42m 46s.xml">
-      <configuration name="SpiTest" configurationId="JUnit" />
+    <history-entry file="InfluxdbTest_testInfluxPojo - 2020.12.27 at 22h 03m 41s.xml">
+      <configuration name="InfluxdbTest.testInfluxPojo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest - 2020.12.20 at 22h 45m 24s.xml">
-      <configuration name="SpiTest" configurationId="JUnit" />
+    <history-entry file="InfluxdbTest_testInfluxPojo - 2020.12.27 at 22h 09m 14s.xml">
+      <configuration name="InfluxdbTest.testInfluxPojo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest_testAdaptiveExtension - 2020.12.20 at 22h 51m 31s.xml">
-      <configuration name="SpiTest.testAdaptiveExtension" configurationId="JUnit" />
+    <history-entry file="ClickhouseJdbcTest_testJdbc - 2020.12.31 at 15h 19m 18s.xml">
+      <configuration name="ClickhouseJdbcTest.testJdbc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest_testAdaptiveExtension - 2020.12.20 at 22h 52m 48s.xml">
-      <configuration name="SpiTest.testAdaptiveExtension" configurationId="JUnit" />
+    <history-entry file="ClickhouseJdbcTest_testJdbc - 2020.12.31 at 15h 19m 30s.xml">
+      <configuration name="ClickhouseJdbcTest.testJdbc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest_testAdaptiveExtension - 2020.12.20 at 22h 53m 12s.xml">
-      <configuration name="SpiTest.testAdaptiveExtension" configurationId="JUnit" />
+    <history-entry file="ClickhouseJdbcTest_testJdbc - 2020.12.31 at 15h 20m 05s.xml">
+      <configuration name="ClickhouseJdbcTest.testJdbc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest_testAdaptiveExtension - 2020.12.20 at 22h 54m 07s.xml">
-      <configuration name="SpiTest.testAdaptiveExtension" configurationId="JUnit" />
+    <history-entry file="ClickhouseJdbcTest_testJdbc - 2020.12.31 at 15h 20m 43s.xml">
+      <configuration name="ClickhouseJdbcTest.testJdbc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest_testAdaptiveExtension - 2020.12.20 at 22h 56m 12s.xml">
-      <configuration name="SpiTest.testAdaptiveExtension" configurationId="JUnit" />
+    <history-entry file="ClickhouseJdbcTest_testJdbc - 2020.12.31 at 15h 21m 48s.xml">
+      <configuration name="ClickhouseJdbcTest.testJdbc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpiTest_testAdaptiveExtension - 2020.12.20 at 22h 57m 33s.xml">
-      <configuration name="SpiTest.testAdaptiveExtension" configurationId="JUnit" />
+    <history-entry file="ClickhouseJdbcTest_testJdbc - 2020.12.31 at 15h 25m 39s.xml">
+      <configuration name="ClickhouseJdbcTest.testJdbc" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1212,7 +1041,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
+    <frame x="-2560" y="23" width="2560" height="1365" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -1220,27 +1049,27 @@
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.2309434" side_tool="true" weight="0.22376789" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.7690566" visible="true" weight="0.20272206" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.7690566" visible="true" weight="0.18084261" />
       <window_info id="ZooKeeper" order="6" show_stripe_button="false" weight="0.13036565" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978701" weight="0.22100955" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47206303" visible="true" weight="0.27830833" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49361023" weight="0.30013642" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978701" weight="0.22037736" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47206303" weight="0.43283582" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49361023" visible="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960256" weight="0.20301887" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039744" side_tool="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985694" weight="0.3096862" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985694" weight="0.25745684" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4872915" weight="0.30695772" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4872915" weight="0.40207255" />
       <window_info anchor="bottom" id="Run with VisualVM" order="13" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
       <window_info anchor="bottom" id="Tail" order="15" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="16" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.4950495" visible="true" weight="0.10959885" />
+      <window_info anchor="right" id="Structure" order="1" sideWeight="0.4950495" visible="true" weight="0.014705882" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -1426,29 +1255,53 @@
           <properties />
           <option name="timeStamp" value="275" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/controller/HelloController.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloRestServiceImp.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="296" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/bootstrap/DubboBootstrap.class</url>
           <line>731</line>
           <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/bootstrap/DubboBootstrap.class</url>
-          <line>946</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java</url>
+          <line>54</line>
           <properties />
-          <option name="timeStamp" value="298" />
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/proxy/InvokerInvocationHandler.class</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/cluster/support/wrapper/AbstractCluster.class</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/registry/integration/RegistryProtocol.class</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainer.class</url>
+          <line>846</line>
+          <properties />
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/AbstractMessageListenerContainer.class</url>
+          <line>952</line>
+          <properties />
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="319" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1485,406 +1338,385 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/Filter.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClass.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo-rpc-api/2.7.8/dubbo-rpc-api-2.7.8.jar!/org/apache/dubbo/rpc/filter/ConsumerContextFilter.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.2.3.RELEASE/spring-messaging-5.2.3.RELEASE.jar!/org/springframework/messaging/support/GenericMessage.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/Result.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo-rpc-api/2.7.8/dubbo-rpc-api-2.7.8.jar!/org/apache/dubbo/rpc/filter/ContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2083">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/test/java/kled/test/SpringTestDubboConsumerSpringBootApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/ListenableFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/Invocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-626">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/protocol/ProtocolFilterWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/spring/beans/factory/annotation/ServiceClassPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/proxy/InvokerInvocationHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/cluster/support/AbstractClusterInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/cluster/support/FailoverClusterInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/context/ConfigManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="317" column="117" lean-forward="true" selection-start-line="317" selection-start-column="117" selection-end-line="317" selection-end-column="117" />
+        <state relative-caret-position="476">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
-            <element signature="e#11829#11830#0" expanded="true" />
-            <element signature="e#11874#11875#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/AbstractConfig.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/adapter/HandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        <state relative-caret-position="544">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/RpcContext.class">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="366">
+          <caret line="288" column="15" selection-start-line="288" selection-start-column="15" selection-end-line="288" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/DubboProviderSpringBootApplication.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/DubboConsumerSpringBootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/AbstractReferenceConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="83" column="11" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
           <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/spring/ReferenceBean.class">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/ReferenceConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="147" column="40" lean-forward="true" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/ReferenceConfigBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+        <state relative-caret-position="7">
+          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
           <folding>
-            <element signature="e#3746#3747#0" expanded="true" />
-            <element signature="e#3796#3797#0" expanded="true" />
+            <element signature="e#2364#2365#0" expanded="true" />
+            <element signature="e#2401#2402#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/cluster/support/wrapper/AbstractCluster.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/RegistryConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/config/DubboConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#665#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/bootstrap/DubboBootstrap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="959" column="10" selection-start-line="959" selection-start-column="10" selection-end-line="959" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo-rpc-api/2.7.8/dubbo-rpc-api-2.7.8.jar!/org/apache/dubbo/rpc/ExporterListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo-common/2.7.8/dubbo-common-2.7.8.jar!/org/apache/dubbo/common/extension/ExtensionLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="157" column="59" selection-start-line="157" selection-start-column="56" selection-end-line="157" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/constants/CommonConstants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/filter/ProviderFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloRestServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="31" column="81" lean-forward="true" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/listener/MyExporterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/ExporterListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.ExporterListener">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.InvokerListener">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/java/kled/test/listener/MyInvokerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/LeonSPI.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/support/ListenerExecutionFailedException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/AcknowledgeMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpringTestDubboProviderSpringBootApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SecondWrapperSPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/extension/Activate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/FirstWrapperSPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/extension/ExtensionLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="462" column="13" selection-start-line="462" selection-start-column="13" selection-end-line="462" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/common/extension/Adaptive.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo/kled.test.spi.MySPI">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/AmqpException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/ImmediateAcknowledgeAmqpException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/connection/RabbitUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/ImmediateRequeueAmqpException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/support/ContainerUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.2.3.RELEASE/spring-messaging-5.2.3.RELEASE.jar!/org/springframework/messaging/handler/invocation/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/api/RabbitListenerErrorHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clickhouse_test/src/test/java/kled/test/ClickhouseJdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clickhouse_test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="966" column="41" lean-forward="true" selection-start-line="966" selection-start-column="41" selection-end-line="966" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/BlockingQueueConsumer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="330" column="16" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/ConditionalRejectingErrorHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clickhouse_test/src/main/java/kled/test/bean/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/adapter/MessagingMessageListenerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2427">
+          <caret line="185" column="8" lean-forward="true" selection-start-line="185" selection-start-column="8" selection-end-line="186" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.7.3/amqp-client-5.7.3.jar!/com/rabbitmq/client/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="139" column="30" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqDeathLetterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/Correlation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestTestMqRpcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/MessageDeliveryMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.7.3/amqp-client-5.7.3.jar!/com/rabbitmq/client/AMQP.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/MessagePostProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/AbstractMessageListenerContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="952" selection-start-line="952" selection-end-line="952" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/connection/CorrelationData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/support/converter/SimpleMessageConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/support/converter/AbstractJackson2MessageConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="199" column="22" selection-start-line="199" selection-start-column="22" selection-end-line="199" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqManualConfirmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/connection/PendingConfirm.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqManualAckListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRetryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRpcListener3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqConfirmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/core/MessageProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="1024" column="102" selection-start-line="1024" selection-start-column="102" selection-end-line="1024" selection-end-column="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/SamSPI.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/support/converter/MessageConverter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySPI.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.3.RELEASE/spring-amqp-2.2.3.RELEASE.jar!/org/springframework/amqp/support/converter/AbstractMessageConverter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="290">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/reflect/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1953,12 +1785,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>dubbo-swagger-spring-boot-starter|dubbo</last-edited>
+          <last-edited>dubbo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.29099306" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

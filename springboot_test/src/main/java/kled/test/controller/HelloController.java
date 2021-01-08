@@ -5,26 +5,21 @@
 package kled.test.controller;
 
 import com.fabric4cloud.oxygen.common.model.ResultInfo;
+import com.google.common.collect.Lists;
 import kled.test.bean.HelloRequest;
-import kled.test.bean.MyQuartzJobToken;
-import kled.test.bean.TestJsonFormat;
+import kled.test.bean.ImportBeanA;
+import kled.test.bean.ImportBeanB;
+import kled.test.bean.ImportBeanC;
 import kled.test.exception.MyException;
-import kled.test.service.HelloQuartZ;
-import kled.test.service.LeaderElectService;
-import kled.test.service.MailService;
-import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.text.MessageFormat;
 import java.util.Arrays;
+import java.util.List;
 import java.util.TimeZone;
 
 @RestController
@@ -32,13 +27,13 @@ import java.util.TimeZone;
 public class HelloController {
 
     @Autowired
-    private MailService mailService;
+    private ImportBeanA importBeanA;
 
-    @Value("${lock.expire.msec}")
-    private Long msec;
+    @Autowired
+    private ImportBeanB importBeanB;
 
-    @Inject
-    private LeaderElectService leaderElectService;
+    @Autowired
+    private ImportBeanC importBeanC;
 
     @RequestMapping(value = "/httpSession", method = RequestMethod.GET)
     public String testSession(HttpServletRequest request) {
@@ -81,6 +76,13 @@ public class HelloController {
     public ResultInfo<String> version(HelloRequest request) {
         ResultInfo<String> resultInfo = new ResultInfo<>();
         return resultInfo.succeed().withData(request.getMsg());
+    }
+
+    @GetMapping(value = "/import", produces = "application/json")
+    public ResultInfo<String> version() {
+        ResultInfo<String> resultInfo = new ResultInfo<>();
+        List<String> importBeans = Lists.newArrayList(importBeanA.toString(), importBeanB.toString(), importBeanC.toString());
+        return resultInfo.succeed().withData(importBeans.toString());
     }
 
     @RequestMapping(value = "/aop", method = RequestMethod.GET)

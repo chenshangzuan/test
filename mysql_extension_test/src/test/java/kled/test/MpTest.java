@@ -1,5 +1,6 @@
 package kled.test;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
@@ -60,6 +61,7 @@ public class MpTest extends SpringTestISpringBootApplicationTests {
 
     @Test
     public void updateNullTest(){
+        //UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
         LambdaUpdateWrapper<User> lambdaUpdateWrapper = new LambdaUpdateWrapper<>();
         lambdaUpdateWrapper.set(User::getAge, null);
         lambdaUpdateWrapper.eq(User::getId, 1);
@@ -74,6 +76,7 @@ public class MpTest extends SpringTestISpringBootApplicationTests {
 
     @Test
     public void queryWrapperTest(){
+        //QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         System.out.println(userMapper.selectOne(Wrappers.<User>lambdaQuery().eq(User::getName, "tommy")));
     }
 

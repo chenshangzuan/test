@@ -8,22 +8,29 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot_monitor" />
         <module name="zookeeper_test" />
+        <module name="dubbo.consumer" />
         <module name="java.base.test" />
         <module name="dubbo.provider" />
+        <module name="elasticsearcher" />
         <module name="dubbo_swagger" />
         <module name="dubbo-swagger-spring-boot-starter" />
         <module name="grpc_client" />
         <module name="nacos_api" />
-        <module name="dubbo.consumer" />
-        <module name="nacos_provider" />
+        <module name="mysql.extension.test" />
+        <module name="clickhouse_test" />
+        <module name="influxdb_test" />
         <module name="grpc_server" />
         <module name="nacos_consumer" />
+        <module name="redis_test" />
+        <module name="nacos_provider" />
         <module name="grpc_api" />
         <module name="spring.boot.test" />
+        <module name="rabbitmq.listener" />
         <module name="dubbo.api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="clickhouse_test" target="1.8" />
       <module name="dubbo-swagger-spring-boot-starter" target="1.8" />
       <module name="dubbo.api" target="1.8" />
       <module name="dubbo.consumer" target="1.8" />
@@ -44,6 +51,7 @@
       <module name="grpc_client" target="1.8" />
       <module name="grpc_server" target="1.8" />
       <module name="grpc_test" target="1.8" />
+      <module name="influxdb_test" target="1.8" />
       <module name="java.base.test" target="8" />
       <module name="java_agent_test" target="1.5" />
       <module name="java_base_test" target="8" />
@@ -58,6 +66,7 @@
       <module name="nacos_test" target="1.5" />
       <module name="nacosc_consumer" target="1.5" />
       <module name="rabbitmq.listener" target="1.8" />
+      <module name="redis_test" target="1.8" />
       <module name="spring-boot-admin-client" target="1.8" />
       <module name="spring-boot-admin-server" target="1.8" />
       <module name="spring.boot.test" target="1.8" />
@@ -67,6 +76,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="clickhouse_test" options="-parameters" />
       <module name="dubbo-swagger-spring-boot-starter" options="-parameters" />
       <module name="dubbo.api" options="-parameters" />
       <module name="dubbo.consumer" options="-parameters" />
@@ -82,6 +92,7 @@
       <module name="grpc_api" options="-parameters" />
       <module name="grpc_client" options="-parameters" />
       <module name="grpc_server" options="-parameters" />
+      <module name="influxdb_test" options="-parameters" />
       <module name="kafka_client" options="-parameters" />
       <module name="mybatis_test" options="-parameters" />
       <module name="mysql.extension.test" options="-parameters" />
@@ -90,6 +101,7 @@
       <module name="nacos_consumer" options="-parameters" />
       <module name="nacos_provider" options="-parameters" />
       <module name="rabbitmq.listener" options="-parameters" />
+      <module name="redis_test" options="-parameters" />
       <module name="spring-boot-admin-client" options="-parameters" />
       <module name="spring-boot-admin-server" options="-parameters" />
       <module name="spring.boot.test" options="-parameters" />

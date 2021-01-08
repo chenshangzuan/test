@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/clickhouse_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo_test/dubbo.swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo_test/dubbo_api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo_test/dubbo_consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo_test/dubbo_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elastic_searcher" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc_test/grpc_api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc_test/grpc_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc_test/grpc_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/influxdb_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mysql_extension_test" charset="UTF-8" />
@@ -18,6 +21,7 @@
     <file url="file://$PROJECT_DIR$/nacos_test/nacos_consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos_test/nacos_provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq_listener" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeper_test" charset="UTF-8" />

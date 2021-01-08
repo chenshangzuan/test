@@ -33,7 +33,7 @@ public class MybatisGenerator {
     }
 
     public static void main(String[] args) {
-        // 代码生成器
+        // 代码生成器…
         AutoGenerator mpg = new AutoGenerator();
 
         // 全局配置
@@ -91,7 +91,7 @@ public class MybatisGenerator {
             }
         };
 
-        // 自定义输出配置
+        // 自定义输出配置文件
         // com/baomidou/mybatis-plus-generator/3.3.2/mybatis-plus-generator-3.3.2.jar/templates/...
         // 选择模板引擎是 freemarker
         String templatePath = "/templates/mapper.xml.ftl";
@@ -121,7 +121,7 @@ public class MybatisGenerator {
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 
-        // 配置自定义输出模板
+        // 默认的配置输出模板
         TemplateConfig templateConfig = new TemplateConfig();
         // 放置自己项目的 src/main/resources/template 目录下, 默认名称一下可以不配置，也可以自定义模板名称
         // 指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别

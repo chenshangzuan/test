@@ -21,6 +21,7 @@ public class DubboConfig {
     public ReferenceBean<HelloService> myReferenceBean(){
         ReferenceBean<HelloService> referenceBean = new ReferenceBean<HelloService>();
         referenceBean.setInterface(HelloService.class);
+        referenceBean.setVersion("1.0.2");
         RegistryConfig registryConfig = new RegistryConfig();
 
         registryConfig.setAddress(registryAddress);
