@@ -16,6 +16,7 @@
 
 package kled.test.service;
 
+import com.nepxion.aquarius.lock.annotation.Lock;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -25,6 +26,7 @@ public class HelloWorldService {
 	@Value("${name:World}")
 	private String name;
 
+	@Lock(name = "bbb", key = "aaa", block = false)
 	public String getHelloMessage() {
 		return "Hello " + this.name;
 	}

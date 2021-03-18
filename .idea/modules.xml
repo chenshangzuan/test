@@ -16,13 +16,14 @@
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_test.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/influxdb_test/influxdb_test.iml" filepath="$PROJECT_DIR$/influxdb_test/influxdb_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_base_test/java.base.test.iml" filepath="$PROJECT_DIR$/java_base_test/java.base.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mongodb_test/mongodb_test.iml" filepath="$PROJECT_DIR$/mongodb_test/mongodb_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" filepath="$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos.test.iml" filepath="$PROJECT_DIR$/nacos_test/nacos.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos.api/nacos_api.iml" filepath="$PROJECT_DIR$/nacos_test/nacos.api/nacos_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" filepath="$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" filepath="$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq_listener/rabbitmq.listener.iml" filepath="$PROJECT_DIR$/rabbitmq_listener/rabbitmq.listener.iml" group="dubbo" />
-      <module fileurl="file://$PROJECT_DIR$/redis_test/redis_test.iml" filepath="$PROJECT_DIR$/redis_test/redis_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis_test/redis.test.iml" filepath="$PROJECT_DIR$/redis_test/redis.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/springboot_test/spring.boot.test.iml" filepath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/springboot_monitor/springboot_monitor.iml" filepath="$PROJECT_DIR$/springboot_monitor/springboot_monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/test.iml" filepath="$PROJECT_DIR$/.idea/test.iml" />

@@ -16,13 +16,25 @@
 
 package kled.test;
 
+import com.nepxion.aquarius.lock.LockExecutor;
+import com.nepxion.aquarius.lock.LockTemplate;
+import com.nepxion.aquarius.lock.annotation.EnableLock;
+import org.apache.curator.framework.recipes.locks.InterProcessLock;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableLock
 public class ZkSpringBootApplication {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(ZkSpringBootApplication.class, args);
+	}
+
+	@Bean
+	public LockTemplate lockTemplate(LockExecutor lockExecutor){
+		return new LockTemplate(lockExecutor);
 	}
 }

@@ -35,7 +35,7 @@ public class SpiTest extends SpringTestDubboProviderSpringBootApplicationTests {
         System.out.println(mySPI.helloSpi(URL.valueOf("http://localhost:10010/test/hello?my.s.p.i=leon")));
         System.out.println();
 
-        System.out.println(mySPI.helloSpi(URL.valueOf("http://localhost:10010/test/hello?samSignature=sam")));
+        System.out.println(mySPI.helloSpi(URL.valueOf("http://localhost:10010/test/hello?signature=sam")));
     }
 
     @Test

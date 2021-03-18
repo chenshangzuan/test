@@ -1,0 +1,118 @@
+二月 22, 2021 12:01:56 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [/Users/kled/git/test/springboot_test/src/main/java]
+二月 22, 2021 12:01:56 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: found it a SPRING project, tell us if we are wrong.
+二月 22, 2021 12:01:56 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : /Users/kled/git/test/springboot_test/src/main/java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : HelloController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : QuartZController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : XSSFController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : WsController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : MinioController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : FeignController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : HelloWebFluxController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : ModelInitController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : ForwardAndReDirectController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : ViewController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : ErrorController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : HelloController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : HelloController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : QuartZController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : XSSFController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : XSSFController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : WsController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : WsController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : MinioController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : MinioController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : FeignController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : FeignController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : HelloWebFluxController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : HelloWebFluxController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : ModelInitController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : ModelInitController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : ForwardAndReDirectController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : ForwardAndReDirectController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : ViewController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : ViewController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : ErrorController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : ErrorController.java
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+二月 22, 2021 12:01:57 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/HelloController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/HelloController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/XSSFController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/XSSFController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/WsController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/WsController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/MinioController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/MinioController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/FeignController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/FeignController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/web_flux/HelloWebFluxController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/web_flux/HelloWebFluxController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ModelInitController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ModelInitController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ForwardAndReDirectController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ForwardAndReDirectController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ViewController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ViewController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ErrorController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/kled/git/test/springboot_test/src/main/java/kled/test/controller/mvc_test/ErrorController.java
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+二月 22, 2021 12:01:58 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!

@@ -6,6 +6,7 @@ package kled.test.controller;
 
 import com.fabric4cloud.oxygen.common.model.ResultInfo;
 import com.google.common.collect.Lists;
+import io.github.yedaxia.apidocs.ApiDoc;
 import kled.test.bean.HelloRequest;
 import kled.test.bean.ImportBeanA;
 import kled.test.bean.ImportBeanB;
@@ -22,6 +23,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.TimeZone;
 
+/**
+ * Hello接口
+ */
 @RestController
 @RequestMapping(value = "/test")
 public class HelloController {
@@ -45,6 +49,11 @@ public class HelloController {
         return "success";
     }
 
+    /**
+     * dasda
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/session", method = RequestMethod.GET)
     public String getSession(HttpServletRequest request) {
         Arrays.asList(request.getCookies()).forEach(x-> {

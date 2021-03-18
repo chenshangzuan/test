@@ -12,6 +12,6 @@ import org.apache.dubbo.common.extension.SPI;
 public interface MySPI {
 
     //@Adaptive = @Adaptive(value = {"my.s.p.i"}) 根据接口名转化
-    @Adaptive(value = {"samSignature"})
+    @Adaptive(value = {"signature"})
     String helloSpi(URL url);
 }

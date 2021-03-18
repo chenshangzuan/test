@@ -72,6 +72,7 @@ public class WebConfig extends WebMvcConfigurationSupport{
         //系统定义一个SimpleUrlHandlerMapping
         registry.addResourceHandler("books.xml").addResourceLocations("classpath:/");
         registry.addResourceHandler("/myResources/**").addResourceLocations("classpath:/");
+        registry.addResourceHandler("/**").addResourceLocations("classpath:/");
     }
 
     @Bean

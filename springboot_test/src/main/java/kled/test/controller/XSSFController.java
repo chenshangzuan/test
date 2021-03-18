@@ -88,11 +88,11 @@ public class XSSFController {
         }
         return Joiner.on(",").join(uploadAccounts);
     }
-
-    public static void main(String[] args) {
-        //匹配数字、字母、下划线及横线
-        Pattern SITE_SSL_CLIENT_ACCOUNT_PATTERN = Pattern.compile("[a-z,A-Z,\\-,_,\\d]{1,20}");
-        Matcher matcher = SITE_SSL_CLIENT_ACCOUNT_PATTERN.matcher("da88ddad_adddd_da");
-        System.out.println(matcher.matches());
-    }
+//
+//    public static void main(String[] args) {
+//        //匹配数字、字母、下划线及横线
+//        Pattern SITE_SSL_CLIENT_ACCOUNT_PATTERN = Pattern.compile("[a-z,A-Z,\\-,_,\\d]{1,20}");
+//        Matcher matcher = SITE_SSL_CLIENT_ACCOUNT_PATTERN.matcher("da88ddad_adddd_da");
+//        System.out.println(matcher.matches());
+//    }
 }

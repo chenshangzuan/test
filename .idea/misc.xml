@@ -24,7 +24,6 @@
         <option value="$PROJECT_DIR$/dubbo_test/dubbo_consumer/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_test/pom.xml" />
         <option value="$PROJECT_DIR$/zookeeper_test/pom.xml" />
-        <option value="$PROJECT_DIR$/java_base_test/pom.xml" />
         <option value="$PROJECT_DIR$/grpc_test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_stater_test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/pom.xml" />
@@ -32,8 +31,10 @@
         <option value="$PROJECT_DIR$/elastic_searcher/pom.xml" />
         <option value="$PROJECT_DIR$/mysql_extension_test/pom.xml" />
         <option value="$PROJECT_DIR$/clickhouse_test/pom.xml" />
-        <option value="$PROJECT_DIR$/redis_test/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq_listener/pom.xml" />
+        <option value="$PROJECT_DIR$/mongodb_test/pom.xml" />
+        <option value="$PROJECT_DIR$/redis_test/pom.xml" />
+        <option value="$PROJECT_DIR$/java_base_test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

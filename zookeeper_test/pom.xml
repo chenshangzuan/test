@@ -31,6 +31,12 @@
 			<artifactId>lock-zookeeper</artifactId>
 			<version>${zen-commons.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.zenlayer.zenconsole.common</groupId>
+			<artifactId>aquarius-lock-zookeeper-starter</artifactId>
+			<version>zen-1.0.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
