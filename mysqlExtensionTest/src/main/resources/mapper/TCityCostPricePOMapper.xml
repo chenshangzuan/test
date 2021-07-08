@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kled.test.mapper.TCityCostPriceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="kled.test.entity.TCityCostPricePO">
+        <id column="id" property="id" />
+        <result column="from_city_name" property="fromCityName" />
+        <result column="from_city_code" property="fromCityCode" />
+        <result column="from_continent_name" property="fromContinentName" />
+        <result column="from_continent_chinese_name" property="fromContinentChineseName" />
+        <result column="to_city_name" property="toCityName" />
+        <result column="to_city_code" property="toCityCode" />
+        <result column="to_continent_name" property="toContinentName" />
+        <result column="to_continent_chinese_name" property="toContinentChineseName" />
+        <result column="bandwidth_price" property="bandwidthPrice" />
+        <result column="dt" property="dt" />
+    </resultMap>
+
+</mapper>

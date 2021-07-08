@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kled.test.mapper.IptAppTChargeRegionMonthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="kled.test.entity.IptAppTChargeRegionMonthPO">
+        <id column="id" property="id" />
+        <result column="charge_region" property="chargeRegion" />
+        <result column="total_income" property="totalIncome" />
+        <result column="total_cost" property="totalCost" />
+        <result column="customer_avg_sell_unit_price" property="customerAvgSellUnitPrice" />
+        <result column="customer_avg_cost_unit_price" property="customerAvgCostUnitPrice" />
+        <result column="customer_p95_rate" property="customerP95Rate" />
+        <result column="vendor_avg_sell_unit_price" property="vendorAvgSellUnitPrice" />
+        <result column="vendor_avg_cost_unit_price" property="vendorAvgCostUnitPrice" />
+        <result column="vendor_p95_rate" property="vendorP95Rate" />
+        <result column="gross_profit_rate" property="grossProfitRate" />
+        <result column="customer_count" property="customerCount" />
+        <result column="dt" property="dt" />
+    </resultMap>
+
+</mapper>

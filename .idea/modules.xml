@@ -14,9 +14,11 @@
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_test.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdata_test/hadoop_test.iml" filepath="$PROJECT_DIR$/bigdata_test/hadoop_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/influxdb_test/influxdb_test.iml" filepath="$PROJECT_DIR$/influxdb_test/influxdb_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_base_test/java.base.test.iml" filepath="$PROJECT_DIR$/java_base_test/java.base.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mongodb_test/mongodb_test.iml" filepath="$PROJECT_DIR$/mongodb_test/mongodb_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_test/mybatis.test.iml" filepath="$PROJECT_DIR$/mybatis_test/mybatis.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" filepath="$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos.test.iml" filepath="$PROJECT_DIR$/nacos_test/nacos.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos_test/nacos.api/nacos_api.iml" filepath="$PROJECT_DIR$/nacos_test/nacos.api/nacos_api.iml" />

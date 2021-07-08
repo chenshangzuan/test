@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kled.test.mapper.TMcePriceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="kled.test.entity.TMcePricePO">
+        <id column="id" property="id" />
+        <result column="dc_code" property="dcCode" />
+        <result column="bw_price_level" property="bwPriceLevel" />
+        <result column="bw_price_threshold_down" property="bwPriceThresholdDown" />
+        <result column="bw_price_threshold_up" property="bwPriceThresholdUp" />
+        <result column="bw_price" property="bwPrice" />
+        <result column="price_label" property="priceLabel" />
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kled.test.mapper.ColoTRackAndCustomerIaeMonthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="kled.test.entity.ColoTRackAndCustomerIaeMonthPO">
+        <id column="id" property="id" />
+        <result column="rack_code" property="rackCode" />
+        <result column="rack_type" property="rackType" />
+        <result column="customer_id" property="customerId" />
+        <result column="customer_name" property="customerName" />
+        <result column="dc_name" property="dcName" />
+        <result column="dc_code" property="dcCode" />
+        <result column="region_name" property="regionName" />
+        <result column="power_info" property="powerInfo" />
+        <result column="usage" property="usage" />
+        <result column="total_income" property="totalIncome" />
+        <result column="total_expenditure" property="totalExpenditure" />
+        <result column="total_profit" property="totalProfit" />
+        <result column="profit_radio" property="profitRadio" />
+        <result column="idle_time" property="idleTime" />
+        <result column="idle_cost" property="idleCost" />
+        <result column="idle_cost_radio" property="idleCostRadio" />
+        <result column="is_standard" property="isStandard" />
+    </resultMap>
+
+</mapper>

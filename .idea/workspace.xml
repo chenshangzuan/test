@@ -1,179 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="80b1a0ae-5a89-48bd-a87a-b4d8a6320028" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/service/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/RestClient/OkhttpsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/reactor/FluxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/reactor/MonoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb_test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis_test/src/main/java/kled/test/bean/RedisSubHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis_test/src/main/java/kled/test/config/RedisTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis_test/src/main/java/kled/test/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis_test/src/test/java/kled/test/RedisTemplateTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/JApiDocGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/WebFluxHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/WebFluxConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/web_flux/HelloWebFluxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/BookQueryResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/bean/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/bean/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/query.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot_test/src/test/java/kled/test/WebFluxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper_test/src/test/java/kled/test/TestZenLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/HadoopUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/HiveClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/hdfs/HdfsClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/MapReduceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/SparkLaunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalDsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructedStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/SparkCharCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/SparkDsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/SparkSQLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/CharCountInput.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/people.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/rdd.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kled.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/kled.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__colt_colt_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_13_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_base_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_base_1_3_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_zookeeper_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_zookeeper_1_3_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_common_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_common_1_3_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_zookeeper_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_zookeeper_1_3_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_wukongframework_wukong_common_utils_1_0_3_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__concurrent_concurrent_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_algorithms_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jung_jung_graph_impl_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_collections_collections_generic_4_01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_wukongframework_wukong_boot_integration_swagger_starter_1_0_5_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_wukongframework_wukong_boot_integration_swagger_starter_1_0_5_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/MySPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/java/kled/test/spi/impl/KledSPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http.log" beforeDir="false" afterPath="$PROJECT_DIR$/http.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_base_test/java.base.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_base_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MysqShardingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MysqShardingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/SpringTestISpringBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/SpringTestISpringBootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redis_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/src/main/java/kled/test/ISpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis_test/src/main/java/kled/test/RedisSpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/src/main/java/kled/test/service/HelloWorldService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis_test/src/test/java/kled/test/RedissonTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/redis_test/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/src/test/java/kled/test/SpringTestISpringBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis_test/src/test/java/kled/test/SpringTestRedisSpringBootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/src/test/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/META-INF/mysqlExtensionTest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MpTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MysqShardingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MysqShardingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/SpringTestISpringBootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/SpringTestISpringBootApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/bean/ZookeeperFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/config/ZookeeperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/XSSFController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/XSSFController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/DistributedResourceLockServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/HelloCurator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/LeaderElectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/service/LeaderElectServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/bean/ZookeeperFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/ServiceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/ServiceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/config/ZookeeperConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/XSSFController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/controller/XSSFController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/DistributedResourceLockServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator$LeaderSelectorAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/HelloCurator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/LeaderElectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/LeaderElectServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/target/classes/kled/test/service/LeaderElectServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/src/main/java/kled/test/ZkSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/src/main/java/kled/test/ZkSpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/src/main/java/kled/test/service/HelloWorldService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/src/main/java/kled/test/service/HelloWorldService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/target/classes/kled/test/ZkSpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/target/classes/kled/test/ZkSpringBootApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/target/classes/kled/test/service/HelloWorldService.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/target/classes/kled/test/service/HelloWorldService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/target/test-classes/kled/test/TestZkCrud.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/target/test-classes/kled/test/TestZkCrud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/springbootadminserver/target/" />
-    <ignored path="$PROJECT_DIR$/spring-boot-admin-client/target/" />
-    <ignored path="$PROJECT_DIR$/springbootadminclient/target/" />
-    <ignored path="$PROJECT_DIR$/rabbitmqlistener/target/" />
-    <ignored path="$PROJECT_DIR$/elasticsearcher/target/" />
-    <ignored path="$PROJECT_DIR$/kafkaclient/target/" />
-    <ignored path="$PROJECT_DIR$/javaAgentTest/target/" />
-    <ignored path="$PROJECT_DIR$/javabasetest/target/" />
-    <ignored path="$PROJECT_DIR$/springboottest/target/" />
-    <ignored path="$PROJECT_DIR$/shardingSphereTest/target/" />
-    <ignored path="$PROJECT_DIR$/mysqlExtensionTest/target/" />
-    <ignored path="$PROJECT_DIR$/mybatistest/target/" />
-    <ignored path="$PROJECT_DIR$/dubboconsumer/target/" />
-    <ignored path="$PROJECT_DIR$/dubboprovider/target/" />
-    <ignored path="$PROJECT_DIR$/.idea/target/" />
-    <ignored path="$PROJECT_DIR$/dubbotest1/target/" />
-    <ignored path="$PROJECT_DIR$/dubbotest/target/" />
-    <ignored path="$PROJECT_DIR$/dubbotest/dubboconsumer/target/" />
-    <ignored path="$PROJECT_DIR$/dubbotest/dubboprovider/target/" />
-    <ignored path="$PROJECT_DIR$/dubbotest/dubbo.api/target/" />
-    <ignored path="$PROJECT_DIR$/dubbotest/dubbo_api/target/" />
-    <ignored path="$PROJECT_DIR$/springboot_monitor/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo_test/dubbo_consumer/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo_test/dubbo_provider/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo_test/dubbo_api/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo_test/target/" />
-    <ignored path="$PROJECT_DIR$/nacos_test/target/" />
-    <ignored path="$PROJECT_DIR$/nacos_test/nacos.consumer/target/" />
-    <ignored path="$PROJECT_DIR$/nacos_test/nacos_consumer/target/" />
-    <ignored path="$PROJECT_DIR$/nacos_test/nacos.provider/target/" />
-    <ignored path="$PROJECT_DIR$/nacos_test/nacos_provider/target/" />
-    <ignored path="$PROJECT_DIR$/nacos_test/nacos.api/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo_test/dubbo.swagger/target/" />
-    <ignored path="$PROJECT_DIR$/springboot_test/target/" />
-    <ignored path="$PROJECT_DIR$/zookeeper_test/target/" />
-    <ignored path="$PROJECT_DIR$/java_base_test/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/grpc.client/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/grpc.server/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/grpc.api/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/grpc_api/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/grpc_client/target/" />
-    <ignored path="$PROJECT_DIR$/grpc_test/grpc_server/target/" />
-    <ignored path="$PROJECT_DIR$/springboot_stater_test/target/" />
-    <ignored path="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/target/" />
-    <ignored path="$PROJECT_DIR$/influxdb_test/target/" />
-    <ignored path="$PROJECT_DIR$/elastic_searcher/target/" />
-    <ignored path="$PROJECT_DIR$/mysql_extension_test/target/" />
-    <ignored path="$PROJECT_DIR$/clickhouse_test/target/" />
-    <ignored path="$PROJECT_DIR$/redis_test/target/" />
-    <ignored path="$PROJECT_DIR$/rabbitmq_listener/target/" />
-    <ignored path="$PROJECT_DIR$/mongodb_test/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/test$TestXmlDocument.coverage" NAME="TestXmlDocument Coverage Results" MODIFIED="1531211929909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -183,98 +65,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="test" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/GraphQLServletProperties.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot_test/src/main/resources/graphql/query.graphqls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/bean/Author.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/BookQueryResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-385">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#842#848#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/OnSchemaOrSchemaProviderBean.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnWebApplication.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/OnWebApplicationCondition.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -325,10 +115,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java" />
         <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqDeathLetterConfig.java" />
         <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestTestMqRpcController.java" />
         <option value="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/controller/RestMqManualConfirmController.java" />
@@ -377,8 +174,9 @@
         <option value="$PROJECT_DIR$/springboot_test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_test/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/BookQueryResolver.java" />
-        <option value="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" />
         <option value="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/query.graphqls" />
+        <option value="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" />
+        <option value="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" />
       </list>
     </option>
   </component>
@@ -388,24 +186,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
       <select />
     </treeState>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="826" />
+    <option name="height" value="827" />
   </component>
+  <component name="ProjectId" id="1qTNy20XTrxSSl85YCehpSSergK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -418,102 +213,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kled" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper_test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -573,24 +280,44 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="hive" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowZooKeeper.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16525424" />
     <property name="project.structure.side.proportion" value="0.29099306" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="bigdataide_conn_settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="spring.test.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hadoop_test/src/main/resources" />
+      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo" />
+      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources" />
+      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springboot_test/src/main/resources/graphql" />
       <recent name="$PROJECT_DIR$/springboot_starter_tes" />
@@ -599,26 +326,19 @@
       <recent name="$PROJECT_DIR$/mybatistest" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="kled.test" />
       <recent name="" />
+      <recent name="kled.test" />
       <recent name="spring.test" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo" />
-      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources" />
-      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/src/main/resources" />
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="spark" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="spark" />
+      <recent name="mapreduce" />
       <recent name="kled.test" />
       <recent name="kled.test.config" />
       <recent name="test.kled.listener" />
-      <recent name="test.kled.config" />
-      <recent name="test.kled.controller" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="spring.test.service" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -631,21 +351,23 @@
       <select />
     </treeState>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.SpringBootTestApplication">
+  <component name="RunManager" selected="Application.HdfsClient">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HdfsClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.hdfs.HdfsClient" />
+      <module name="hadoop_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hadoop.hdfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -664,13 +386,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JApiDocGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kled.test.JApiDocGenerator" />
-      <module name="spring.boot.test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="SparkDsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="spark.remote.SparkDsTest" />
+      <module name="hadoop_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kled.test.*" />
+          <option name="PATTERN" value="spark.local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -678,13 +401,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_base.reactor.MonoTest" />
-      <module name="java.base.test" />
+    <configuration name="SparkLocalDsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalDsTest" />
+      <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java_base.reactor.*" />
+          <option name="PATTERN" value="spark.local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -692,13 +415,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootTestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kled.test.SpringBootTestApplication" />
-      <module name="spring.boot.test" />
+    <configuration name="SparkLocalRDDTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalRDDTest" />
+      <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kled.test.*" />
+          <option name="PATTERN" value="spark.local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -706,13 +429,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZkSpringBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kled.test.ZkSpringBootApplication" />
-      <module name="zookeeper_test" />
+    <configuration name="SparkLocalStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalStreamTest" />
+      <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kled.test.*" />
+          <option name="PATTERN" value="spark.local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -726,19 +449,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestZenLock.testTryLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zookeeper_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kled.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kled.test" />
-      <option name="MAIN_CLASS_NAME" value="kled.test.TestZenLock" />
-      <option name="METHOD_NAME" value="testTryLock" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -750,7 +467,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="java_agent_test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -763,7 +480,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="java_agent_test" />
       <option name="filePath" />
       <option name="vmParameters" />
@@ -809,6 +526,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -817,6 +535,124 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+    </configuration>
+    <configuration name="ClickhouseSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="clickhouse_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.ClickhouseSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboConsumerSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dubbo.consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.DubboConsumerSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboProviderSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dubbo.provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.DubboProviderSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboSwaggerSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dubbo_swagger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.DubboSwaggerSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticSearcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elasticsearcher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.ElasticSearcherApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ISpringBootApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mysql.extension.test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.ISpringBootApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="server.port" value="10000" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ISpringBootApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mybatis.test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.ISpringBootApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ISpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dubbo-swagger-spring-boot-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.ISpringBootApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfluxdbTestSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="influxdb_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.InfluxdbTestSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDbSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mongodb_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.MongoDbSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq.listener" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.kled.MqSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosConsumerSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nacos_consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.NacosConsumerSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosProviderSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nacos_provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.NacosProviderSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="redis.test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.RedisSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring.boot.test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.SpringBootTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZkSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zookeeper_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.ZkSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
@@ -836,6 +672,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
@@ -856,6 +693,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -874,7 +712,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
@@ -890,7 +728,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -905,8 +743,9 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -914,21 +753,41 @@
     </configuration>
     <list>
       <item itemvalue="Application.ISpringBootApplication" />
-      <item itemvalue="Application.JApiDocGenerator" />
-      <item itemvalue="Application.MonoTest" />
-      <item itemvalue="Application.SpringBootTestApplication" />
-      <item itemvalue="Application.ZkSpringBootApplication" />
-      <item itemvalue="JUnit.TestZenLock.testTryLock" />
+      <item itemvalue="Application.SparkDsTest" />
+      <item itemvalue="Application.SparkLocalDsTest" />
+      <item itemvalue="Application.SparkLocalRDDTest" />
+      <item itemvalue="Application.SparkLocalStreamTest" />
+      <item itemvalue="Spring Boot.ClickhouseSpringBootApplication" />
+      <item itemvalue="Spring Boot.DubboConsumerSpringBootApplication" />
+      <item itemvalue="Spring Boot.DubboProviderSpringBootApplication" />
+      <item itemvalue="Spring Boot.DubboSwaggerSpringBootApplication" />
+      <item itemvalue="Spring Boot.ElasticSearcherApplication" />
+      <item itemvalue="Spring Boot.ISpringBootApplication" />
+      <item itemvalue="Spring Boot.ISpringBootApplication (1)" />
+      <item itemvalue="Spring Boot.ISpringBootApplication (2)" />
+      <item itemvalue="Spring Boot.InfluxdbTestSpringBootApplication" />
+      <item itemvalue="Spring Boot.MongoDbSpringBootApplication" />
+      <item itemvalue="Spring Boot.MqSpringBootApplication" />
+      <item itemvalue="Spring Boot.NacosConsumerSpringBootApplication" />
+      <item itemvalue="Spring Boot.NacosProviderSpringBootApplication" />
+      <item itemvalue="Spring Boot.RedisSpringBootApplication" />
+      <item itemvalue="Spring Boot.SpringBootTestApplication" />
+      <item itemvalue="Spring Boot.ZkSpringBootApplication" />
+      <item itemvalue="Application.HdfsClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpringBootTestApplication" />
-        <item itemvalue="Application.ZkSpringBootApplication" />
-        <item itemvalue="JUnit.TestZenLock.testTryLock" />
-        <item itemvalue="Application.JApiDocGenerator" />
-        <item itemvalue="Application.MonoTest" />
+        <item itemvalue="Application.HdfsClient" />
+        <item itemvalue="Application.SparkLocalRDDTest" />
+        <item itemvalue="Application.SparkLocalStreamTest" />
+        <item itemvalue="Application.SparkLocalDsTest" />
+        <item itemvalue="Application.SparkDsTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -950,6 +809,25 @@
       <workItem from="1523533867111" duration="354000" />
       <workItem from="1523540848011" duration="1130000" />
       <workItem from="1531211642623" duration="2158000" />
+      <workItem from="1617099877398" duration="1435000" />
+      <workItem from="1617173222131" duration="3754000" />
+      <workItem from="1617868330475" duration="1175000" />
+      <workItem from="1618452118570" duration="3005000" />
+      <workItem from="1620463414323" duration="1554000" />
+      <workItem from="1621393150774" duration="1616000" />
+      <workItem from="1621414896388" duration="1431000" />
+      <workItem from="1621568265111" duration="76000" />
+      <workItem from="1622709288744" duration="23000" />
+      <workItem from="1622786552250" duration="1498000" />
+      <workItem from="1622791035159" duration="507000" />
+      <workItem from="1623377154269" duration="584000" />
+      <workItem from="1623984878860" duration="7559000" />
+      <workItem from="1624003188591" duration="4744000" />
+      <workItem from="1624239229169" duration="27527000" />
+      <workItem from="1625020650174" duration="26544000" />
+      <workItem from="1625455003746" duration="13670000" />
+      <workItem from="1625560358760" duration="25476000" />
+      <workItem from="1625707977926" duration="7170000" />
     </task>
     <servers />
   </component>
@@ -998,18 +876,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.2309434" side_tool="true" weight="0.22376789" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.7690566" visible="true" weight="0.23462088" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.7690566" visible="true" weight="0.15236051" />
       <window_info id="ZooKeeper" order="6" show_stripe_button="false" weight="0.13036565" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978701" weight="0.21934605" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47206303" weight="0.5449591" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47206303" weight="0.53061223" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49361023" weight="0.4305177" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1017,9 +895,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50214595" side_tool="true" weight="0.28610355" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49785408" visible="true" weight="0.31880108" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49785408" weight="0.17660378" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4872915" weight="0.39918256" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4872915" weight="0.39849058" />
       <window_info anchor="bottom" id="Run with VisualVM" order="13" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
       <window_info anchor="bottom" id="Tail" order="15" />
@@ -1092,7 +970,33 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,207 +1005,177 @@
           <condition expression="beanName.equals(&quot;helloController&quot;)" language="JAVA" />
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
           <line>795</line>
-          <properties />
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.4/mybatis-3.5.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class</url>
           <line>73</line>
-          <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9.jar!/com/zaxxer/hikari/HikariConfig.class</url>
           <line>308</line>
-          <properties />
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar!/com/mysql/jdbc/Driver.class</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/spring/context/annotation/DubboComponentScanRegistrar.class</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/spring/context/annotation/DubboComponentScanRegistrar.class</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.7.RELEASE/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java</url>
           <line>271</line>
-          <properties />
           <option name="timeStamp" value="194" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
           <line>262</line>
-          <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.class</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.class</url>
           <line>415</line>
-          <properties />
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar!/org/springframework/boot/env/PropertiesPropertySourceLoader.class</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.class</url>
           <line>560</line>
-          <properties />
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.class</url>
           <line>307</line>
-          <properties />
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/bootstrap/DubboBootstrap.class</url>
           <line>710</line>
-          <properties />
           <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/ServiceConfig.class</url>
           <line>431</line>
-          <properties />
           <option name="timeStamp" value="264" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/registry/dubbo/DubboRegistry.class</url>
           <line>100</line>
-          <properties />
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/registry/client/ServiceDiscoveryRegistry.class</url>
           <line>111</line>
-          <properties />
           <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/model/ApplicationModel.class</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="273" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/protocol/dubbo/DubboProtocol.class</url>
           <line>218</line>
-          <properties />
           <option name="timeStamp" value="275" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/config/bootstrap/DubboBootstrap.class</url>
           <line>731</line>
-          <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/dubbo_test/dubbo_provider/src/test/java/kled/test/SpiTest.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/proxy/InvokerInvocationHandler.class</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/rpc/cluster/support/wrapper/AbstractCluster.class</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="307" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.8/dubbo-2.7.8.jar!/org/apache/dubbo/registry/integration/RegistryProtocol.class</url>
           <line>130</line>
-          <properties />
           <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainer.class</url>
           <line>846</line>
-          <properties />
           <option name="timeStamp" value="314" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/AbstractMessageListenerContainer.class</url>
           <line>952</line>
-          <properties />
           <option name="timeStamp" value="317" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="319" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/redisson/redisson-spring-boot-starter/3.12.0/redisson-spring-boot-starter-3.12.0.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.class</url>
           <line>83</line>
-          <properties />
           <option name="timeStamp" value="320" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/common/extension/ExtensionLoader.class</url>
           <line>405</line>
-          <properties />
           <option name="timeStamp" value="321" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/reactor/MonoTest.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="327" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.3.RELEASE/spring-webflux-5.2.3.RELEASE.jar!/org/springframework/web/reactive/DispatcherHandler.class</url>
           <line>62</line>
-          <properties />
           <option name="timeStamp" value="329" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.3.RELEASE/spring-webflux-5.2.3.RELEASE.jar!/org/springframework/web/reactive/function/server/RouterFunctions.class</url>
           <line>212</line>
-          <properties />
           <option name="timeStamp" value="330" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.4.RELEASE/reactor-core-3.1.4.RELEASE.jar!/reactor/core/publisher/MonoSubscribeOn.class</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="331" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/github/yedaxia/japidocs/1.4/japidocs-1.4.jar!/io/github/yedaxia/apidocs/ParseUtils.class</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="333" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchMethodError" package="java.lang" />
+          <option name="timeStamp" value="336" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -1309,6 +1183,10 @@
         <watch expression="xssfSheet._rows.entrySet().toArray()[0]" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="ZooKeeperConfig">
     <option name="host" value="172.16.5.56" />
@@ -1337,97 +1215,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/resources/apidocs/V1.0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5242">
-          <caret line="208" column="37" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-common-utils/1.0.3-SNAPSHOT/wukong-common-utils-1.0.3-20200826.075235-18.jar!/com/zenlayer/wukong/common/utils/model/ResultInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fabric4cloud/oxygen/oxygen-common/1.0.2/oxygen-common-1.0.2.jar!/com/fabric4cloud/oxygen/common/model/ResultInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/yedaxia/japidocs/1.4/japidocs-1.4.jar!/io/github/yedaxia/apidocs/ParseUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/XSSFController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/nepxion/aquarius-lock-aop/zen-1.0.0/aquarius-lock-aop-zen-1.0.0.jar!/com/nepxion/aquarius/lock/LockExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/nepxion/aquarius-lock-autoconfigure/zen-1.0.0/aquarius-lock-autoconfigure-zen-1.0.0.jar!/com/nepxion/aquarius/lock/configuration/LockProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="131" column="48" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/nepxion/aquarius-common-zookeeper/zen-1.0.0/aquarius-common-zookeeper-zen-1.0.0.jar!/com/nepxion/aquarius/common/curator/handler/CuratorHandlerImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zookeeper_test/src/test/java/kled/test/TestZenLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/yedaxia/japidocs/1.4/japidocs-1.4.jar!/io/github/yedaxia/apidocs/DocsConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3607#3608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/JApiDocGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqManualAckListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="92" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -1573,13 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/SpringBootTestApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42">
@@ -1646,13 +1426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnWebApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/OnSchemaOrSchemaProviderBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1660,28 +1433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/GraphQLServletProperties.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/BookQueryResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#842#848#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1705,17 +1460,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnWebApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/graphql/BookQueryResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#842#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/java/kled/test/SpringBootTestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot_test/src/main/resources/graphql/query.graphqls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java-kickstart/graphql-spring-boot-autoconfigure/7.1.0/graphql-spring-boot-autoconfigure-7.1.0.jar!/graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_test/src/test/java/kled/test/SpringTestISpringBootApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_extension_test/src/test/java/kled/test/MpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqRetryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="4" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.2/mybatis-plus-core-3.3.2.jar!/com/baomidou/mybatisplus/core/conditions/interfaces/Compare.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.2/mybatis-plus-core-3.3.2.jar!/com/baomidou/mybatisplus/core/toolkit/Wrappers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysqlExtensionTest/src/main/java/kled/test/entity/TCustomerOverviewSlaMouth.java" />
+    <entry file="file://$PROJECT_DIR$/mysqlExtensionTest/src/main/java/kled/test/mapper/TCustomerOverviewSlaMouthMapper.java" />
+    <entry file="file://$PROJECT_DIR$/mysqlExtensionTest/src/main/java/kled/test/entity/TVllSlaMouthPO.java" />
+    <entry file="file://$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.3.2/mybatis-plus-generator-3.3.2.jar!/com/baomidou/mybatisplus/generator/config/TemplateType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.3.2/mybatis-plus-generator-3.3.2.jar!/com/baomidou/mybatisplus/generator/config/TemplateConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1784,7 +1637,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring.boot.test|dubbo</last-edited>
+          <last-edited>mybatis.test|dubbo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

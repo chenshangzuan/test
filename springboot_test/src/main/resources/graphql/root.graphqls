@@ -1,12 +1,17 @@
-type Author {
-    id: Int
-    name: String
+type Author implements Character {
+    id: ID!
+    name: String!
     age: Int
 }
 
-type Book {
-    id: Int
-    name: String
+type Book implements Character {
+    id: ID!
+    name: String!
     author: Author
     publisher: String
+}
+
+interface Character {
+  id: ID!
+  name: String!
 }

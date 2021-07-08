@@ -2,35 +2,39 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="redis.test" />
-        <module name="zookeeper_test" />
-        <module name="dubbo.consumer" />
-        <module name="java.base.test" />
-        <module name="dubbo.provider" />
-        <module name="elasticsearcher" />
         <module name="dubbo_swagger" />
-        <module name="dubbo-swagger-spring-boot-starter" />
+        <module name="nacos_api" />
+        <module name="java.base.test" />
+        <module name="grpc_api" />
+        <module name="rabbitmq.listener" />
+        <module name="spring.boot.test" />
+        <module name="elasticsearcher" />
+        <module name="nacos_provider" />
+        <module name="grpc_server" />
         <module name="springboot_monitor" />
         <module name="grpc_client" />
-        <module name="nacos_api" />
-        <module name="mysql.extension.test" />
         <module name="clickhouse_test" />
-        <module name="mongodb_test" />
+        <module name="zookeeper_test" />
+        <module name="hadoop_test" />
+        <module name="mysql.extension.test" />
+        <module name="mybatis.test" />
+        <module name="dubbo-swagger-spring-boot-starter" />
+        <module name="redis.test" />
+        <module name="dubbo.consumer" />
         <module name="influxdb_test" />
-        <module name="grpc_server" />
+        <module name="dubbo.provider" />
         <module name="nacos_consumer" />
-        <module name="nacos_provider" />
-        <module name="grpc_api" />
-        <module name="spring.boot.test" />
-        <module name="rabbitmq.listener" />
+        <module name="mongodb_test" />
         <module name="dubbo.api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bigdata_test" target="8" />
       <module name="clickhouse_test" target="1.8" />
       <module name="dubbo-swagger-spring-boot-starter" target="1.8" />
       <module name="dubbo.api" target="1.8" />
@@ -52,12 +56,14 @@
       <module name="grpc_client" target="1.8" />
       <module name="grpc_server" target="1.8" />
       <module name="grpc_test" target="1.8" />
+      <module name="hadoop_test" target="8" />
       <module name="influxdb_test" target="1.8" />
       <module name="java.base.test" target="8" />
       <module name="java_agent_test" target="1.5" />
       <module name="java_base_test" target="8" />
       <module name="kafka_client" target="1.8" />
       <module name="mongodb_test" target="1.8" />
+      <module name="mybatis.test" target="1.8" />
       <module name="mybatis_test" target="1.8" />
       <module name="mysql.extension.test" target="1.8" />
       <module name="mysqlExtensionTest" target="1.8" />
@@ -98,6 +104,7 @@
       <module name="influxdb_test" options="-parameters" />
       <module name="kafka_client" options="-parameters" />
       <module name="mongodb_test" options="-parameters" />
+      <module name="mybatis.test" options="-parameters" />
       <module name="mybatis_test" options="-parameters" />
       <module name="mysql.extension.test" options="-parameters" />
       <module name="mysqlExtensionTest" options="-parameters" />

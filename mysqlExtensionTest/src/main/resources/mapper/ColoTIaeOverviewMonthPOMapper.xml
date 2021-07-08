@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kled.test.mapper.ColoTIaeOverviewMonthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="kled.test.entity.ColoTIaeOverviewMonthPO">
+        <id column="id" property="id" />
+        <result column="total_customer_count" property="totalCustomerCount" />
+        <result column="total_customer_ring_value" property="totalCustomerRingValue" />
+        <result column="total_customer_ring_radio" property="totalCustomerRingRadio" />
+        <result column="profit_radio_gt_tage0_customer_count" property="profitRadioGtTage0CustomerCount" />
+        <result column="profit_radio_gt_tage0_customer_radio" property="profitRadioGtTage0CustomerRadio" />
+        <result column="profit_radio_le_tage0_customer_count" property="profitRadioLeTage0CustomerCount" />
+        <result column="profit_radio_le_tage0_customer_radio" property="profitRadioLeTage0CustomerRadio" />
+        <result column="total_dc_count" property="totalDcCount" />
+        <result column="total_dc_ring_value" property="totalDcRingValue" />
+        <result column="total_dc_ring_radio" property="totalDcRingRadio" />
+        <result column="profit_radio_gt_tage0_dc_count" property="profitRadioGtTage0DcCount" />
+        <result column="profit_radio_gt_tage0_dc_radio" property="profitRadioGtTage0DcRadio" />
+        <result column="profit_radio_le_tage0_dc_count" property="profitRadioLeTage0DcCount" />
+        <result column="profit_radio_le_tage0_dc_radio" property="profitRadioLeTage0DcRadio" />
+        <result column="total_rack_count" property="totalRackCount" />
+        <result column="total_rack_ring_value" property="totalRackRingValue" />
+        <result column="total_rack_ring_radio" property="totalRackRingRadio" />
+        <result column="profit_radio_gt_tage0_rack_count" property="profitRadioGtTage0RackCount" />
+        <result column="profit_radio_gt_tage0_rack_radio" property="profitRadioGtTage0RackRadio" />
+        <result column="profit_radio_le_tage0_rack_count" property="profitRadioLeTage0RackCount" />
+        <result column="profit_radio_le_tage0_rack_radio" property="profitRadioLeTage0RackRadio" />
+        <result column="total_income" property="totalIncome" />
+        <result column="total_income_ring_value" property="totalIncomeRingValue" />
+        <result column="total_income_ring_radio" property="totalIncomeRingRadio" />
+        <result column="total_expenditure" property="totalExpenditure" />
+        <result column="total_expenditure_ring_value" property="totalExpenditureRingValue" />
+        <result column="total_expenditure_ring_radio" property="totalExpenditureRingRadio" />
+        <result column="total_profit" property="totalProfit" />
+        <result column="total_profit_ring_value" property="totalProfitRingValue" />
+        <result column="total_profit_ring_radio" property="totalProfitRingRadio" />
+        <result column="profit_radio" property="profitRadio" />
+        <result column="profit_radio_ring_value" property="profitRadioRingValue" />
+        <result column="profit_radio_ring_radio" property="profitRadioRingRadio" />
+        <result column="dt" property="dt" />
+    </resultMap>
+
+</mapper>

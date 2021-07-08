@@ -44,7 +44,7 @@ public class MybatisGenerator {
         gc.setOpen(false);
         // service 命名方式
         gc.setServiceName("%sService");
-        //gc.setEntityName("%sDO");
+        gc.setEntityName("%sPO");
         // service impl 命名方式
         gc.setServiceImplName("%sServiceImpl");
         // 自定义文件命名，注意 %s 会自动填充表实体属性！
@@ -63,7 +63,7 @@ public class MybatisGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://172.16.5.56:3306/db1?useUnicode=true&useSSL=false&characterEncoding=utf-8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/zdatabi?useUnicode=true&useSSL=false&characterEncoding=utf-8");
         // dsc.setSchemaName("public");
         //dsc.setTypeConvert() 自定义数据库表字段类型转换
         dsc.setDriverName("com.mysql.jdbc.Driver");
@@ -131,6 +131,8 @@ public class MybatisGenerator {
 
         //在项目中不生成XML(默认mapper文件夹下xml),调整生成至根目录Resource
         templateConfig.disable(TemplateType.XML);
+        templateConfig.disable(TemplateType.SERVICE);
+        templateConfig.disable(TemplateType.CONTROLLER);
         mpg.setTemplate(templateConfig);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
 
