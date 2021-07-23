@@ -16,10 +16,14 @@ public class MyKafkaListener {
 
     @KafkaListener(groupId = "simpleGroup", topics = "test")
     public void consumer1(ConsumerRecord<String, Object> record, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic, Consumer consumer) {
-        System.out.println("消费者收到消息:" + record.value() + "; topic:" + topic);
-        /*
-         * 如果需要手工提交异步 consumer.commitSync();
+        System.out.println("消费者1收到消息:" + record.value() + "; topic:" + topic);
+        /* 如果需要手工提交异步 consumer.commitSync();
          * 手工同步提交 consumer.commitAsync()
          */
+    }
+
+    @KafkaListener(groupId = "stream1", topics = "WordsWithCountsTopic")
+    public void consumer2(ConsumerRecord<String, Object> record, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic, Consumer consumer) {
+        System.out.println("消费者2收到消息:" + record.value() + "; topic:" + topic);
     }
 }

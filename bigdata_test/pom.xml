@@ -90,6 +90,12 @@
             <version>${spark.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_${scala.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+
         <!-- 支持spark3.1.2-->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -103,7 +109,7 @@
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
-            <artifactId>jackson-module-scala_2.12</artifactId>
+            <artifactId>jackson-module-scala_${scala.version}</artifactId>
             <version>${jackson.version}</version>
         </dependency>
         <!-- 支持spark3.1.2-->

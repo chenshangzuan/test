@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/bigdata_test/hadoop_test.iml" filepath="$PROJECT_DIR$/bigdata_test/hadoop_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/influxdb_test/influxdb_test.iml" filepath="$PROJECT_DIR$/influxdb_test/influxdb_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_base_test/java.base.test.iml" filepath="$PROJECT_DIR$/java_base_test/java.base.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka_client/kafka.client.iml" filepath="$PROJECT_DIR$/kafka_client/kafka.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/mongodb_test/mongodb_test.iml" filepath="$PROJECT_DIR$/mongodb_test/mongodb_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_test/mybatis.test.iml" filepath="$PROJECT_DIR$/mybatis_test/mybatis.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" filepath="$PROJECT_DIR$/mysql_extension_test/mysql.extension.test.iml" group="dubbo" />

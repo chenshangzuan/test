@@ -13,8 +13,11 @@ import java.io.IOException;
 public class SparkLaunch {
     //zip -d hadoop_test-1.0-SNAPSHOT.jar 'META-INF/*.RSA' 'META-INF/*.DSA' 'META-INF/*.SF'
     public static void main(String[] args) throws IOException {
-        sparkLauncher(args);
-        //inProcessLauncher(args);
+        if("inProcess".equals(args[0])){
+            inProcessLauncher(args);
+        }else {
+            sparkLauncher(args);
+        }
     }
 
     //java -jar hadoop_test-1.0-SNAPSHOT.jar process|handler ${SPARK_HOME}
@@ -58,10 +61,12 @@ public class SparkLaunch {
         }
     }
 
-    //java -jar hadoop_test-1.0-SNAPSHOT.jar
+    //java -jar hadoop_test-1.0-SNAPSHOT.jar inProcess ${SPARK_HOME}/conf/spark-defaults.conf
     //失败: org.apache.spark.SparkException: Could not load YARN classes. This copy of Spark may not have been compiled with YARN support.
     public static void inProcessLauncher(String[] args) throws IOException {
+        System.out.println("inProcessLauncher start");
         SparkAppHandle handler = new InProcessLauncher()
+                .setPropertiesFile(args[1])
                 .setAppName("inProcessLauncher")
                 .setMaster("yarn")
                 .setConf(SparkLauncher.DRIVER_MEMORY, "2g")
@@ -71,11 +76,12 @@ public class SparkLaunch {
                 .setAppResource("/tmp/hadoop_test-1.0-SNAPSHOT.jar")
                 .setMainClass("spark.remote.SparkDsTest")
 //                .addAppArgs("I come from Launcher")
-                .setDeployMode("cluster")
+                .setDeployMode("client")
                 .setVerbose(true)
                 .startApplication(new MySparkListener());
 
         handleStatusCheck(handler);
+        System.out.println("inProcessLauncher end");
     }
 
     private static void handleStatusCheck(SparkAppHandle handler){

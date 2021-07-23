@@ -1,0 +1,141 @@
+﻿{
+ "paragraphs": [
+  {
+   "text": "%spark\nvar rdd1 = sc.parallelize(Seq(1, 2, 3));\nrdd1.map(_+1).collect()\n\n\n",
+   "user": "anonymous",
+   "dateUpdated": "2021-07-08T17:00:05+0800",
+   "progress": 0.0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12.0,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9.0,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "ERROR",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "org.apache.zeppelin.interpreter.InterpreterException: org.apache.zeppelin.interpreter.InterpreterException: Fail to open SparkInterpreter\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:76)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:836)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.zeppelin.interpreter.InterpreterException: Fail to open SparkInterpreter\n\tat org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:122)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:70)\n\t... 8 more\nCaused by: java.lang.Exception: This is not officially supported spark version: 3.1.2\nYou can set zeppelin.spark.enableSupportedVersionCheck to false if you really want to try this version of spark.\n\tat org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:112)\n\t... 9 more\n"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1625734805413_2026864796",
+   "id": "paragraph_1625734805413_2026864796",
+   "dateCreated": "2021-07-08T17:00:05+0800",
+   "dateStarted": "2021-07-08T17:00:05+0800",
+   "dateFinished": "2021-07-08T17:01:23+0800",
+   "status": "ERROR"
+  },
+  {
+   "text": "%python\nprint '123'\n\n",
+   "user": "anonymous",
+   "dateUpdated": "2021-07-08T17:08:24+0800",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "111\n"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1625735304930_337002980",
+   "id": "paragraph_1625735304930_337002980",
+   "dateCreated": "2021-07-08T17:08:24+0800",
+   "dateStarted": "2021-07-08T17:08:25+0800",
+   "dateFinished": "2021-07-08T17:08:25+0800",
+   "status": "FINISHED"
+  },
+  {
+   "text": "%sh\necho '123'\n",
+   "user": "anonymous",
+   "dateUpdated": "2021-07-08T17:08:11+0800",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "123\n"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1625735289184_1065916923",
+   "id": "paragraph_1625735289184_1065916923",
+   "dateCreated": "2021-07-08T17:08:09+0800",
+   "dateStarted": "2021-07-08T17:08:11+0800",
+   "dateFinished": "2021-07-08T17:08:12+0800",
+   "status": "FINISHED"
+  },
+  {
+   "text": "",
+   "user": "anonymous",
+   "dateUpdated": "2021-07-08T17:18:30+0800",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "ERROR",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "Interpreter text not found"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1625735910152_550987215",
+   "id": "paragraph_1625735910152_550987215",
+   "dateCreated": "2021-07-08T17:18:30+0800",
+   "status": "ERROR"
+  }
+ ],
+ "name": "Zeppelin Notebook",
+ "id": "",
+ "noteParams": {},
+ "noteForms": {},
+ "angularObjects": {},
+ "config": {
+  "isZeppelinNotebookCronEnable": false,
+  "looknfeel": "default",
+  "personalizedMode": "false"
+ },
+ "info": {}
+}

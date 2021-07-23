@@ -5,49 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80b1a0ae-5a89-48bd-a87a-b4d8a6320028" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bigdata_test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/HadoopUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/HiveClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/hdfs/HdfsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/MapReduceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/SparkLaunch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalDsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructedStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/SparkCharCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/SparkDsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/remote/SparkSQLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/CharCountInput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/people.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/rdd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/test.zpln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaGenericConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/producer/MyKafkaGenericProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/streams/WordCountStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_base_test/closure_func_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_base_test/internal_val_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_wukongframework_wukong_boot_integration_swagger_starter_1_0_5_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_wukongframework_wukong_boot_integration_swagger_starter_1_0_5_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_consumer/dubbo.consumer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_test/dubbo_provider/dubbo.provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/src/main/java/kled/test/MybatisGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/classes/kled/test/MybatisGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/META-INF/mysqlExtensionTest.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MpTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MysqShardingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/MysqShardingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/SpringTestISpringBootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_extension_test/target/test-classes/kled/test/SpringTestISpringBootApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos_test/nacos_consumer/nacos_consumer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos_test/nacos_provider/nacos_provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/config/RabbitmqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_starter_test/dubbo_swagger_springboot_starter/dubbo-swagger-spring-boot-starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/src/main/resources/graphql/root.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/hdfs/HdfsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/SparkLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/SparkLaunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructedStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructuredStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_client/src/test/java/kled/test/SpringTestKafkaClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/test/java/kled/test/SpringTestKafkaClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +50,8 @@
       <list>
         <option value="Interface" />
         <option value="Kotlin Class" />
+        <option value="Zeppelin Notebook" />
+        <option value="Python Script" />
         <option value="Class" />
       </list>
     </option>
@@ -298,6 +279,7 @@
     <property name="ToolWindowZooKeeper.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -305,7 +287,7 @@
     <property name="project.structure.side.proportion" value="0.29099306" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="bigdataide_conn_settings" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -351,7 +333,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.HdfsClient">
+  <component name="RunManager" selected="Application.SparkLocalStreamTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -379,35 +361,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kled.test.ISpringBootApplication" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SparkDsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="spark.remote.SparkDsTest" />
-      <module name="hadoop_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spark.local.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SparkLocalDsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalDsTest" />
-      <module name="hadoop_test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spark.local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -443,19 +396,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCountStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kled.test.service.streams.WordCountStream" />
+      <module name="kafka.client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kled.test.service.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTestKafkaClientApplicationTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka.client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kled.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kled.test" />
+      <option name="MAIN_CLASS_NAME" value="kled.test.SpringTestKafkaClientApplicationTests" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -601,6 +587,13 @@
     <configuration name="InfluxdbTestSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="influxdb_test" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.InfluxdbTestSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="kafka.client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kled.test.KafkaClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -753,10 +746,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.ISpringBootApplication" />
-      <item itemvalue="Application.SparkDsTest" />
-      <item itemvalue="Application.SparkLocalDsTest" />
-      <item itemvalue="Application.SparkLocalRDDTest" />
-      <item itemvalue="Application.SparkLocalStreamTest" />
+      <item itemvalue="JUnit.SpringTestKafkaClientApplicationTests.test2" />
       <item itemvalue="Spring Boot.ClickhouseSpringBootApplication" />
       <item itemvalue="Spring Boot.DubboConsumerSpringBootApplication" />
       <item itemvalue="Spring Boot.DubboProviderSpringBootApplication" />
@@ -773,15 +763,19 @@
       <item itemvalue="Spring Boot.RedisSpringBootApplication" />
       <item itemvalue="Spring Boot.SpringBootTestApplication" />
       <item itemvalue="Spring Boot.ZkSpringBootApplication" />
+      <item itemvalue="Spring Boot.KafkaClientApplication" />
+      <item itemvalue="Application.SparkLocalRDDTest" />
       <item itemvalue="Application.HdfsClient" />
+      <item itemvalue="Application.SparkLocalStreamTest" />
+      <item itemvalue="Application.WordCountStream" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SparkLocalStreamTest" />
+        <item itemvalue="Application.WordCountStream" />
         <item itemvalue="Application.HdfsClient" />
         <item itemvalue="Application.SparkLocalRDDTest" />
-        <item itemvalue="Application.SparkLocalStreamTest" />
-        <item itemvalue="Application.SparkLocalDsTest" />
-        <item itemvalue="Application.SparkDsTest" />
+        <item itemvalue="JUnit.SpringTestKafkaClientApplicationTests.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -827,7 +821,11 @@
       <workItem from="1625020650174" duration="26544000" />
       <workItem from="1625455003746" duration="13670000" />
       <workItem from="1625560358760" duration="25476000" />
-      <workItem from="1625707977926" duration="7170000" />
+      <workItem from="1625707977926" duration="19880000" />
+      <workItem from="1626065451648" duration="13264000" />
+      <workItem from="1626158501327" duration="39000" />
+      <workItem from="1626158637456" duration="19985000" />
+      <workItem from="1626658244978" duration="45742000" />
     </task>
     <servers />
   </component>
@@ -1193,6 +1191,10 @@
     <option name="port" value="2181" />
     <option name="charset" value="UTF-8" />
     <option name="whitePaths" value="/mycat" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test$test.coverage" NAME="closure_func_test Coverage Results" MODIFIED="1625812405801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_base_test" />
+    <SUITE FILE_PATH="coverage/test$internal_val_test.coverage" NAME="internal_val_test Coverage Results" MODIFIED="1625812366497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_base_test" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">

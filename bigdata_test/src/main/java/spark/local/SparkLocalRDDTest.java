@@ -2,6 +2,7 @@ package spark.local;
 
 import com.google.common.collect.Lists;
 import org.apache.commons.io.FileUtils;
+import org.apache.spark.Partition;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -60,5 +61,33 @@ public class SparkLocalRDDTest {
         //过滤黑名单成员
         stringStringJavaPairRDD3 = stringStringJavaPairRDD3.filter(tuple -> !tuple._1().equals(blackName.getValue()));
         System.out.println(stringStringJavaPairRDD3.collect());
+
+        List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
+        JavaRDD<Integer> stringJavaRDD4 = sparkContext.parallelize(integers, 2);
+        //stringJavaRDD4.repartition(3); 重新分区
+        //按分区进行map，可遍历(查看)各分区的数据，
+        stringJavaRDD4.mapPartitionsWithIndex((index, iterator) -> {
+            List<Integer> partitionIntegers = Lists.newArrayList(iterator);
+            System.out.println("Partition Index=" + index + ", data=" + partitionIntegers);
+            return iterator;
+        }, false).collect();
+        //汇聚(前后值依次运算)
+        Integer reduceRet = stringJavaRDD4.reduce(Integer::sum);
+        //汇聚 + 初始值
+        Integer foldRet = stringJavaRDD4.fold(0, Integer::sum);
+        //汇聚 + 初始值 + 支持不同类型(seqOp func)
+        Integer aggregateRet = stringJavaRDD4.aggregate(1, (x, y) -> x * y , Integer::sum);
+        System.out.println("foldRet=" + foldRet + ", reduceRet=" + reduceRet + ", aggregateRet=" + aggregateRet);
+
+        //分组
+        JavaPairRDD<String, Iterable<Integer>> iterableJavaPairRDD = stringJavaRDD4.groupBy(i -> i < 4 ? "LT-4" : "GE-4");
+        //支持按Key进行汇聚
+        //iterableJavaPairRDD.aggregateByKey()
+        //iterableJavaPairRDD.reduceByKey()
+        //iterableJavaPairRDD.foldByKey()
+        List<Tuple2<String, Iterable<Integer>>> tuple2List = iterableJavaPairRDD.collect();
+        for (Tuple2<String, Iterable<Integer>> stringIterableTuple2 : tuple2List) {
+            System.out.println("GroupBy key=" + stringIterableTuple2._1 + ", value=" + Lists.newArrayList(stringIterableTuple2._2));
+        }
     }
 }

@@ -4,7 +4,7 @@ server:
 spring:
   kafka:
     # \u4EE5\u9017\u53F7\u5206\u9694\u7684\u5730\u5740\u5217\u8868\uFF0C\u7528\u4E8E\u5EFA\u7ACB\u4E0EKafka\u96C6\u7FA4\u7684\u521D\u59CB\u8FDE\u63A5(kafka \u9ED8\u8BA4\u7684\u7AEF\u53E3\u53F7\u4E3A9092)
-    bootstrap-servers: 172.16.20.50:9092
+    bootstrap-servers: 172.16.5.56:9092
     producer:
       # \u53D1\u751F\u9519\u8BEF\u540E\uFF0C\u6D88\u606F\u91CD\u53D1\u7684\u6B21\u6570\u3002
       retries: 0

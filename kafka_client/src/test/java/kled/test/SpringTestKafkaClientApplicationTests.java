@@ -16,6 +16,8 @@
 
 package kled.test;
 
+import kled.test.service.consumer.MyKafkaGenericConsumer;
+import kled.test.service.producer.MyKafkaGenericProducer;
 import kled.test.service.producer.MyKafkaSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +25,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.Random;
 
 /**
  * Tests for {@link KafkaClientApplication}.
@@ -36,11 +40,27 @@ public class SpringTestKafkaClientApplicationTests extends AbstractJUnit4SpringC
 	@Autowired
 	private MyKafkaSender myKafkaSender;
 
-	@Test
-	public void test() throws Exception {
-		myKafkaSender.sendMessage("test", "hello kafka");
+	@Autowired
+	private MyKafkaGenericProducer myKafkaGenericProducer;
 
+	@Autowired
+	private MyKafkaGenericConsumer myKafkaGenericConsumer;
+
+	@Test
+	public void test1() throws Exception {
+		myKafkaSender.sendMessage("test", "hello kafka" + new Random().nextInt(100));
 		Thread.sleep(100000);
 	}
 
+	@Test
+	public void test2() throws Exception {
+		myKafkaGenericProducer.sendMessage();
+		Thread.sleep(5000);
+	}
+
+	@Test
+	public void test3() throws Exception {
+		myKafkaGenericConsumer.receive();
+		Thread.sleep(5000);
+	}
 }

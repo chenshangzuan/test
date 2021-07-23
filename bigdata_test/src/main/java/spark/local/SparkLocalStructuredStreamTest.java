@@ -19,9 +19,11 @@ import java.util.Iterator;
  * @author Kled
  * @date 2021/7/1 11:47 上午
  */
-public class SparkLocalStructedStreamTest {
+public class SparkLocalStructuredStreamTest {
     public static void main(String[] args) throws AnalysisException, InterruptedException {
 //        SparkConf conf = new SparkConf().setAppName("SparkLocalStreamTest").setMaster("local[2]");
-//        JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(1));
+//        JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(1));'
+
+
     }
 }
