@@ -29,10 +29,11 @@ import java.util.*;
  */
 public class SparkLocalStreamTest {
     public static void main(String[] args) throws AnalysisException, InterruptedException {
+        //socketStream();
         kafkaStream();
     }
 
-    public static void fileStream() throws InterruptedException {
+    public static void socketStream() throws InterruptedException {
         SparkConf conf = new SparkConf().setAppName("SparkLocalFileStreamTest").setMaster("local[2]");
         JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(1));
 

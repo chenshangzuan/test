@@ -12,6 +12,7 @@ import scala.Tuple2;
 import spark.remote.Person;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -29,10 +30,26 @@ public class SparkLocalDsTest {
                 .master("local")
                 .getOrCreate();
 
-        System.out.println("========================SparkLocalTest range ds out=============================");
-        Dataset<Long> integerDataset = sparkSession.range(1,10,2);
-        integerDataset.show();
+        IntegerRangeDs(sparkSession);
 
+        personDs(sparkSession);
+
+    }
+
+    private static void personDsJoin(SparkSession sparkSession){
+        List<Person> personList1 = Lists.newArrayList(new Person("Kled", 1), new Person("Lee", 2));
+
+        List<Person> personList2 = Lists.newArrayList(new Person("Sum", 1), new Person("Coco", 2));
+
+        Encoder<Person> encoder = Encoders.bean(Person.class);
+
+        Dataset<Person> personDataset1 = sparkSession.createDataset(personList1, encoder);
+        Dataset<Person> personDataset2 = sparkSession.createDataset(personList2, encoder);
+
+        Dataset<Row> personJoinDf = personDataset1.join(personDataset2, "age");
+    }
+
+    private static void personDs(SparkSession sparkSession) throws AnalysisException, IOException {
         System.out.println("========================SparkLocalTest person ds out=============================");
         StructType structType = DataTypes.createStructType(Lists.newArrayList(DataTypes.createStructField("name", DataTypes.StringType, true),
                 DataTypes.createStructField("age", DataTypes.IntegerType, true)));
@@ -83,5 +100,11 @@ public class SparkLocalDsTest {
         FileUtils.deleteDirectory(peopleJsonOutputFile);
         personDs.write().csv(peopleCsvOutputPath);
         personDs.write().json(peopleJsonOutputPath);
+    }
+
+    private static void IntegerRangeDs(SparkSession sparkSession) {
+        System.out.println("========================SparkLocalTest range ds out=============================");
+        Dataset<Long> integerDataset = sparkSession.range(1,10,2);
+        integerDataset.show();
     }
 }

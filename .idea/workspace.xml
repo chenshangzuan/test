@@ -5,28 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80b1a0ae-5a89-48bd-a87a-b4d8a6320028" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/test.zpln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaGenericConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/producer/MyKafkaGenericProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/streams/WordCountStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_base_test/closure_func_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_base_test/internal_val_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountCombiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountSortBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowCount/FlowCountBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowCount/FlowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowCount/FlowReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowCount/JobMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition/FlowInfoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition/FlowPartitionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition/FlowPartitionReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition/FlowPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition/JobMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort/FlowSortBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort/FlowSortMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort/FlowSortReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort/JobMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/flow.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/flowsort" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigdata_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/hdfs/HdfsClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/SparkLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/SparkLaunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCountReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/CharCount/CharCountReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/MapReduceClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalDsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalDsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructedStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructuredStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/src/test/java/kled/test/SpringTestKafkaClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/test/java/kled/test/SpringTestKafkaClientApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructuredStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructuredStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/CharCountOutput/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/CharCountOutput/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/CharCountOutput/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/CharCountOutput/part-r-00000" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +277,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="hive" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -280,7 +291,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.9" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16525424" />
@@ -294,11 +305,11 @@
       <recent name="spring.test.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowPartition" />
+      <recent name="$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort" />
+      <recent name="$PROJECT_DIR$/bigdata_test/src/main/resources" />
       <recent name="$PROJECT_DIR$/hadoop_test/src/main/resources" />
       <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources/META-INF/dubbo" />
-      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_consumer/src/main/resources" />
-      <recent name="$PROJECT_DIR$/dubbo_test/dubbo_provider/src/main/resources/META-INF/dubbo" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springboot_test/src/main/resources/graphql" />
@@ -316,11 +327,11 @@
       <recent name="spark" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hadoop.mapreduce.Flow" />
       <recent name="spark" />
       <recent name="mapreduce" />
       <recent name="kled.test" />
       <recent name="kled.test.config" />
-      <recent name="test.kled.listener" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -333,20 +344,20 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.SparkLocalStreamTest">
+  <component name="RunManager" selected="Application.JobMain (2)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HdfsClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hadoop.hdfs.HdfsClient" />
+    <configuration name="CharCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.mapreduce.CharCount.CharCountDriver" />
       <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hadoop.hdfs.*" />
+          <option name="PATTERN" value="hadoop.mapreduce.CharCount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -368,13 +379,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkLocalRDDTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalRDDTest" />
+    <configuration name="JobMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.mapreduce.Flow.flowSort.JobMain" />
       <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spark.local.*" />
+          <option name="PATTERN" value="hadoop.mapreduce.Flow.flowSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -382,13 +393,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkLocalStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalStreamTest" />
+    <configuration name="JobMain (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.mapreduce.Flow.flowPartition.JobMain" />
       <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spark.local.*" />
+          <option name="PATTERN" value="hadoop.mapreduce.Flow.flowPartition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -396,13 +407,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCountStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kled.test.service.streams.WordCountStream" />
-      <module name="kafka.client" />
+    <configuration name="JobMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.mapreduce.Flow.flowCount.JobMain" />
+      <module name="hadoop_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kled.test.service.streams.*" />
+          <option name="PATTERN" value="hadoop.mapreduce.Flow.flowCount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkLocalStructuredStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalStructuredStreamTest" />
+      <module name="hadoop_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark.local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -416,32 +441,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringTestKafkaClientApplicationTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka.client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kled.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kled.test" />
-      <option name="MAIN_CLASS_NAME" value="kled.test.SpringTestKafkaClientApplicationTests" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -746,7 +752,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.ISpringBootApplication" />
-      <item itemvalue="JUnit.SpringTestKafkaClientApplicationTests.test2" />
       <item itemvalue="Spring Boot.ClickhouseSpringBootApplication" />
       <item itemvalue="Spring Boot.DubboConsumerSpringBootApplication" />
       <item itemvalue="Spring Boot.DubboProviderSpringBootApplication" />
@@ -764,18 +769,19 @@
       <item itemvalue="Spring Boot.SpringBootTestApplication" />
       <item itemvalue="Spring Boot.ZkSpringBootApplication" />
       <item itemvalue="Spring Boot.KafkaClientApplication" />
-      <item itemvalue="Application.SparkLocalRDDTest" />
-      <item itemvalue="Application.HdfsClient" />
-      <item itemvalue="Application.SparkLocalStreamTest" />
-      <item itemvalue="Application.WordCountStream" />
+      <item itemvalue="Application.SparkLocalStructuredStreamTest" />
+      <item itemvalue="Application.CharCountDriver" />
+      <item itemvalue="Application.JobMain" />
+      <item itemvalue="Application.JobMain (1)" />
+      <item itemvalue="Application.JobMain (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SparkLocalStreamTest" />
-        <item itemvalue="Application.WordCountStream" />
-        <item itemvalue="Application.HdfsClient" />
-        <item itemvalue="Application.SparkLocalRDDTest" />
-        <item itemvalue="JUnit.SpringTestKafkaClientApplicationTests.test2" />
+        <item itemvalue="Application.JobMain (2)" />
+        <item itemvalue="Application.JobMain (1)" />
+        <item itemvalue="Application.JobMain" />
+        <item itemvalue="Application.CharCountDriver" />
+        <item itemvalue="Application.SparkLocalStructuredStreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -825,7 +831,8 @@
       <workItem from="1626065451648" duration="13264000" />
       <workItem from="1626158501327" duration="39000" />
       <workItem from="1626158637456" duration="19985000" />
-      <workItem from="1626658244978" duration="45742000" />
+      <workItem from="1626658244978" duration="46823000" />
+      <workItem from="1627043038436" duration="48197000" />
     </task>
     <servers />
   </component>
@@ -1169,6 +1176,11 @@
           <url>jar://$MAVEN_REPOSITORY$/io/github/yedaxia/japidocs/1.4/japidocs-1.4.jar!/io/github/yedaxia/apidocs/ParseUtils.class</url>
           <line>49</line>
           <option name="timeStamp" value="333" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort/FlowSortMapper.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="341" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NoSuchMethodError" package="java.lang" />
