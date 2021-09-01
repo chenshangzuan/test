@@ -38,6 +38,9 @@ public class JobMain extends Configured implements Tool {
         //Map阶段 -> MapTask
         job.setMapperClass(FlowMapper.class);
 
+        //Shuffle分组(Reducer侧)：
+        //job.setGroupingComparatorClass();
+
         //Reduce阶段 -> ReduceTask
         job.setReducerClass(FlowReducer.class);
 

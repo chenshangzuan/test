@@ -40,7 +40,7 @@ public class SparkLocalStreamTest {
         //nc -lk 9999
         JavaReceiverInputDStream<String> lines = jssc.socketTextStream("127.0.0.1", 9999);
         //监控文件目录
-        //JavaDStream<String> lines = jssc.textFileStream("hdfs://172.16.5.56:9000/stream"); //文件流
+        //JavaDStream<String> lines = jssc.textFileStream("hadoop.hdfs://172.16.5.56:9000/stream"); //文件流
 
         JavaDStream<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             @Override

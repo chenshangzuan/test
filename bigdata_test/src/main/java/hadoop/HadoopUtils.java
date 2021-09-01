@@ -12,7 +12,7 @@ public class HadoopUtils {
         Configuration conf = new Configuration();
 
         // 指定NameNode
-        conf.set("fs.defaultFS", "hdfs://172.16.5.56:8020");
+        conf.set("fs.defaultFS", "hadoop.hdfs://172.16.5.56:8020");
 //        指定Yarn
 //        conf.set("hadoop.mapreduce.framework.name", "yarn");
 //        指定resourcemanager

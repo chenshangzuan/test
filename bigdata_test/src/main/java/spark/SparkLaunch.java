@@ -72,7 +72,7 @@ public class SparkLaunch {
                 .setConf(SparkLauncher.DRIVER_MEMORY, "2g")
                 .setConf(SparkLauncher.EXECUTOR_MEMORY, "1g")
                 .setConf(SparkLauncher.EXECUTOR_CORES, "3")
-                .setConf("spark.yarn.archive", "hdfs://172.16.5.56:8020/spark-archive/spark3.1.2.zip")
+                .setConf("spark.yarn.archive", "hadoop.hdfs://172.16.5.56:8020/spark-archive/spark3.1.2.zip")
                 .setAppResource("/tmp/hadoop_test-1.0-SNAPSHOT.jar")
                 .setMainClass("spark.remote.SparkDsTest")
 //                .addAppArgs("I come from Launcher")

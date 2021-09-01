@@ -41,8 +41,14 @@ public class CharCountDriver extends Configured implements Tool {
         //Reduce阶段 -> ReduceTask
         job.setReducerClass(CharCountReducer.class);
 
+//        job.setMapOutputKeyClass();
+//        job.setMapOutputValueClass();
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
+
+        //缓存文件，会分发到task所在的节点内存中
+//        job.setCacheArchives();
+//        job.setCacheFile();
 
         //设置reduceTask的个数
         //分区文件与reduceTask的个数一致

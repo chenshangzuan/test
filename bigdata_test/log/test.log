@@ -1,0 +1,1768 @@
+2021-08-02 14:23:27 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-02 14:23:28 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-02 14:23:28 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-02 14:23:28 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:11:18 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:11:19 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:11:19 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:11:19 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:11:20 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:11:20 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:11:20 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:11:20 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:11:20 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1458873898_0001
+2021-08-03 10:11:20 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:11:21 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:11:21 [main] INFO  Job:1619 - Running job: job_local1458873898_0001
+2021-08-03 10:11:21 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:11:21 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:11:21 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:11:21 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:11:21 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1458873898_0001_m_000000_0
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:11:21 [LocalJobRunner Map Task Executor #0] WARN  MapTask:417 - Unable to initialize MapOutputCollector org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_281]
+2021-08-03 10:11:21 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:11:21 [Thread-20] WARN  LocalJobRunner:590 - job_local1458873898_0001
+java.lang.Exception: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:492) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:552) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+Caused by: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:423) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+Caused by: java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+2021-08-03 10:11:22 [main] INFO  Job:1640 - Job job_local1458873898_0001 running in uber mode : false
+2021-08-03 10:11:22 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:11:22 [main] INFO  Job:1660 - Job job_local1458873898_0001 failed with state FAILED due to: NA
+2021-08-03 10:11:22 [main] INFO  Job:1665 - Counters: 0
+2021-08-03 10:12:58 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:12:58 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:12:58 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:12:58 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:13:14 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:13:14 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:13:14 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:13:14 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:13:15 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:13:15 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:13:15 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:13:15 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:13:15 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1248314854_0001
+2021-08-03 10:13:15 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:13:15 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:13:15 [main] INFO  Job:1619 - Running job: job_local1248314854_0001
+2021-08-03 10:13:15 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:13:15 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:13:15 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:13:15 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:13:15 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1248314854_0001_m_000000_0
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:13:15 [LocalJobRunner Map Task Executor #0] WARN  MapTask:417 - Unable to initialize MapOutputCollector org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_281]
+2021-08-03 10:13:15 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:13:15 [Thread-20] WARN  LocalJobRunner:590 - job_local1248314854_0001
+java.lang.Exception: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:492) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:552) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+Caused by: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:423) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+Caused by: java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+2021-08-03 10:13:16 [main] INFO  Job:1640 - Job job_local1248314854_0001 running in uber mode : false
+2021-08-03 10:13:16 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:13:16 [main] INFO  Job:1660 - Job job_local1248314854_0001 failed with state FAILED due to: NA
+2021-08-03 10:13:16 [main] INFO  Job:1665 - Counters: 0
+2021-08-03 10:16:32 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:16:32 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:16:33 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:16:33 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:16:33 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:16:33 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:16:33 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:16:33 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:16:33 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local616108450_0001
+2021-08-03 10:16:33 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:16:33 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:16:33 [main] INFO  Job:1619 - Running job: job_local616108450_0001
+2021-08-03 10:16:33 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:16:33 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:16:33 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:16:33 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:16:33 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local616108450_0001_m_000000_0
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:16:33 [LocalJobRunner Map Task Executor #0] WARN  MapTask:417 - Unable to initialize MapOutputCollector org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_281]
+2021-08-03 10:16:33 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:16:33 [Thread-20] WARN  LocalJobRunner:590 - job_local616108450_0001
+java.lang.Exception: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:492) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:552) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+Caused by: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:423) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+Caused by: java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+2021-08-03 10:16:34 [main] INFO  Job:1640 - Job job_local616108450_0001 running in uber mode : false
+2021-08-03 10:16:34 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:16:34 [main] INFO  Job:1660 - Job job_local616108450_0001 failed with state FAILED due to: NA
+2021-08-03 10:16:34 [main] INFO  Job:1665 - Counters: 0
+2021-08-03 10:19:16 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:19:16 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:19:16 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:19:16 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:19:16 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:19:16 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:19:16 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:19:16 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:19:16 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1807267530_0001
+2021-08-03 10:19:16 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:19:17 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:19:17 [main] INFO  Job:1619 - Running job: job_local1807267530_0001
+2021-08-03 10:19:17 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:19:17 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:19:17 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:19:17 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:19:17 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1807267530_0001_m_000000_0
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:409 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  LineRecordReader:165 - Found UTF-8 BOM and skipped it
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - 
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1476 - Starting flush of map output
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1498 - Spilling map output
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1499 - bufstart = 0; bufend = 33929280; bufvoid = 104857600
+2021-08-03 10:19:17 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1501 - kvstart = 26214396(104857584); kvend = 24994720(99978880); length = 1219677/6553600
+2021-08-03 10:19:18 [main] INFO  Job:1640 - Job job_local1807267530_0001 running in uber mode : false
+2021-08-03 10:19:18 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:19:18 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1696 - Finished spill 0
+2021-08-03 10:19:18 [LocalJobRunner Map Task Executor #0] INFO  Task:1232 - Task:attempt_local1807267530_0001_m_000000_0 is done. And is in the process of committing
+2021-08-03 10:19:18 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - map
+2021-08-03 10:19:18 [LocalJobRunner Map Task Executor #0] INFO  Task:1368 - Task 'attempt_local1807267530_0001_m_000000_0' done.
+2021-08-03 10:19:18 [LocalJobRunner Map Task Executor #0] INFO  Task:1264 - Final Counters for attempt_local1807267530_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=30880270
+		FILE: Number of bytes written=35094937
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Spilled Records=304920
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=12
+		Total committed heap usage (bytes)=524812288
+	File Input Format Counters 
+		Bytes Read=30880081
+2021-08-03 10:19:18 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:277 - Finishing task: attempt_local1807267530_0001_m_000000_0
+2021-08-03 10:19:18 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:19:18 [Thread-20] INFO  LocalJobRunner:478 - Waiting for reduce tasks
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1807267530_0001_r_000000_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@24a0bf07
+2021-08-03 10:19:18 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1807267530_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:19:18 [localfetcher#1] INFO  LocalFetcher:145 - localfetcher#1 about to shuffle output of map attempt_local1807267530_0001_m_000000_0 decomp: 5987522 len: 5987526 to MEMORY
+2021-08-03 10:19:18 [localfetcher#1] INFO  InMemoryMapOutput:94 - Read 5987522 bytes from map-output for attempt_local1807267530_0001_m_000000_0
+2021-08-03 10:19:18 [localfetcher#1] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5987522, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5987522
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5987522 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5987526 bytes from disk
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  deprecation:1395 - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1807267530_0001_r_000000_0 is done. And is in the process of committing
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1807267530_0001_r_000000_0 is allowed to commit now
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1807267530_0001_r_000000_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1807267530_0001_r_000000_0' done.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1807267530_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=42859518
+		FILE: Number of bytes written=41082561
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5987526
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=524812288
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=98
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1807267530_0001_r_000000_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1807267530_0001_r_000001_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@7a69fdca
+2021-08-03 10:19:18 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1807267530_0001_r_000001_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:19:18 [localfetcher#2] INFO  LocalFetcher:145 - localfetcher#2 about to shuffle output of map attempt_local1807267530_0001_m_000000_0 decomp: 3589742 len: 3589746 to MEMORY
+2021-08-03 10:19:18 [localfetcher#2] INFO  InMemoryMapOutput:94 - Read 3589742 bytes from map-output for attempt_local1807267530_0001_m_000000_0
+2021-08-03 10:19:18 [localfetcher#2] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 3589742, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->3589742
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 3589742 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 3589746 bytes from disk
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1807267530_0001_r_000001_0 is done. And is in the process of committing
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1807267530_0001_r_000001_0 is allowed to commit now
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1807267530_0001_r_000001_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1807267530_0001_r_000001_0' done.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1807267530_0001_r_000001_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=50043206
+		FILE: Number of bytes written=44672439
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=3589746
+		Reduce input records=27720
+		Reduce output records=1
+		Spilled Records=27720
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=524812288
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=132
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1807267530_0001_r_000001_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1807267530_0001_r_000002_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@6bbf26c3
+2021-08-03 10:19:18 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1807267530_0001_r_000002_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:19:18 [localfetcher#3] INFO  LocalFetcher:145 - localfetcher#3 about to shuffle output of map attempt_local1807267530_0001_m_000000_0 decomp: 5945942 len: 5945946 to MEMORY
+2021-08-03 10:19:18 [localfetcher#3] INFO  InMemoryMapOutput:94 - Read 5945942 bytes from map-output for attempt_local1807267530_0001_m_000000_0
+2021-08-03 10:19:18 [localfetcher#3] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5945942, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5945942
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5945942 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5945946 bytes from disk
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1807267530_0001_r_000002_0 is done. And is in the process of committing
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1807267530_0001_r_000002_0 is allowed to commit now
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1807267530_0001_r_000002_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1807267530_0001_r_000002_0' done.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1807267530_0001_r_000002_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=61939294
+		FILE: Number of bytes written=50618501
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5945946
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=599785472
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=116
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1807267530_0001_r_000002_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1807267530_0001_r_000003_0
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@7884d345
+2021-08-03 10:19:18 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1807267530_0001_r_000003_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:19:18 [localfetcher#4] INFO  LocalFetcher:145 - localfetcher#4 about to shuffle output of map attempt_local1807267530_0001_m_000000_0 decomp: 19071362 len: 19071366 to MEMORY
+2021-08-03 10:19:18 [localfetcher#4] INFO  InMemoryMapOutput:94 - Read 19071362 bytes from map-output for attempt_local1807267530_0001_m_000000_0
+2021-08-03 10:19:18 [localfetcher#4] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 19071362, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->19071362
+2021-08-03 10:19:18 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:18 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:19:19 [main] INFO  Job:1647 -  map 100% reduce 75%
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 19071362 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 19071366 bytes from disk
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1807267530_0001_r_000003_0 is done. And is in the process of committing
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1807267530_0001_r_000003_0 is allowed to commit now
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1807267530_0001_r_000003_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1807267530_0001_r_000003_0' done.
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1807267530_0001_r_000003_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=100082130
+		FILE: Number of bytes written=69689993
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=19071366
+		Reduce input records=166320
+		Reduce output records=1
+		Spilled Records=166320
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=602931200
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=126
+2021-08-03 10:19:19 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1807267530_0001_r_000003_0
+2021-08-03 10:19:19 [Thread-20] INFO  LocalJobRunner:486 - reduce task executor complete.
+2021-08-03 10:19:20 [main] INFO  Job:1647 -  map 100% reduce 100%
+2021-08-03 10:19:20 [main] INFO  Job:1658 - Job job_local1807267530_0001 completed successfully
+2021-08-03 10:19:20 [main] INFO  Job:1665 - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=285804418
+		FILE: Number of bytes written=241158431
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=34594584
+		Reduce input records=304920
+		Reduce output records=4
+		Spilled Records=609840
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=18
+		Total committed heap usage (bytes)=2777153536
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=30880081
+	File Output Format Counters 
+		Bytes Written=472
+2021-08-03 10:20:49 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:20:49 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:20:49 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:20:49 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:21:02 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:21:02 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:21:02 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:21:02 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:21:02 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:21:02 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:21:02 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:21:02 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:21:02 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1079821966_0001
+2021-08-03 10:21:02 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:21:03 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:21:03 [main] INFO  Job:1619 - Running job: job_local1079821966_0001
+2021-08-03 10:21:03 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:21:03 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:21:03 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:21:03 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:21:03 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1079821966_0001_m_000000_0
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:21:03 [LocalJobRunner Map Task Executor #0] WARN  MapTask:417 - Unable to initialize MapOutputCollector org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) [hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_281]
+2021-08-03 10:21:03 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:21:03 [Thread-20] WARN  LocalJobRunner:590 - job_local1079821966_0001
+java.lang.Exception: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:492) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:552) [hadoop-mapreduce-client-common-3.1.3.jar:?]
+Caused by: java.io.IOException: Initialization of all the collectors failed. Error in last collector was:java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:423) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+Caused by: java.lang.ClassCastException: class hadoop.mapreduce.Flow.test.PartFlowBean
+	at java.lang.Class.asSubclass(Class.java:3404) ~[?:1.8.0_281]
+	at org.apache.hadoop.mapred.JobConf.getOutputKeyComparator(JobConf.java:885) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.init(MapTask.java:1018) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.createSortingCollector(MapTask.java:408) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.access$100(MapTask.java:82) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:710) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:782) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347) ~[hadoop-mapreduce-client-core-3.1.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:271) ~[hadoop-mapreduce-client-common-3.1.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_281]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_281]
+2021-08-03 10:21:04 [main] INFO  Job:1640 - Job job_local1079821966_0001 running in uber mode : false
+2021-08-03 10:21:04 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:21:04 [main] INFO  Job:1660 - Job job_local1079821966_0001 failed with state FAILED due to: NA
+2021-08-03 10:21:04 [main] INFO  Job:1665 - Counters: 0
+2021-08-03 10:31:23 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:31:24 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:31:24 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:31:24 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:31:24 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:31:24 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:31:24 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:31:24 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:31:24 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1420321288_0001
+2021-08-03 10:31:24 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:31:24 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:31:24 [main] INFO  Job:1619 - Running job: job_local1420321288_0001
+2021-08-03 10:31:24 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:31:24 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:31:24 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:31:24 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:31:24 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1420321288_0001_m_000000_0
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  MapTask:409 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2021-08-03 10:31:24 [LocalJobRunner Map Task Executor #0] INFO  LineRecordReader:165 - Found UTF-8 BOM and skipped it
+2021-08-03 10:31:25 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - 
+2021-08-03 10:31:25 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1476 - Starting flush of map output
+2021-08-03 10:31:25 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1498 - Spilling map output
+2021-08-03 10:31:25 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1499 - bufstart = 0; bufend = 33929280; bufvoid = 104857600
+2021-08-03 10:31:25 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1501 - kvstart = 26214396(104857584); kvend = 24994720(99978880); length = 1219677/6553600
+2021-08-03 10:31:25 [main] INFO  Job:1640 - Job job_local1420321288_0001 running in uber mode : false
+2021-08-03 10:31:25 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:31:26 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1696 - Finished spill 0
+2021-08-03 10:31:26 [LocalJobRunner Map Task Executor #0] INFO  Task:1232 - Task:attempt_local1420321288_0001_m_000000_0 is done. And is in the process of committing
+2021-08-03 10:31:26 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - map
+2021-08-03 10:31:26 [LocalJobRunner Map Task Executor #0] INFO  Task:1368 - Task 'attempt_local1420321288_0001_m_000000_0' done.
+2021-08-03 10:31:26 [LocalJobRunner Map Task Executor #0] INFO  Task:1264 - Final Counters for attempt_local1420321288_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=30880270
+		FILE: Number of bytes written=35094937
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Spilled Records=304920
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=16
+		Total committed heap usage (bytes)=426246144
+	File Input Format Counters 
+		Bytes Read=30880081
+2021-08-03 10:31:26 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:277 - Finishing task: attempt_local1420321288_0001_m_000000_0
+2021-08-03 10:31:26 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:31:26 [Thread-20] INFO  LocalJobRunner:478 - Waiting for reduce tasks
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1420321288_0001_r_000000_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@42eeeb60
+2021-08-03 10:31:26 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1420321288_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:31:26 [localfetcher#1] INFO  LocalFetcher:145 - localfetcher#1 about to shuffle output of map attempt_local1420321288_0001_m_000000_0 decomp: 5987522 len: 5987526 to MEMORY
+2021-08-03 10:31:26 [localfetcher#1] INFO  InMemoryMapOutput:94 - Read 5987522 bytes from map-output for attempt_local1420321288_0001_m_000000_0
+2021-08-03 10:31:26 [localfetcher#1] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5987522, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5987522
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5987522 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5987526 bytes from disk
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  deprecation:1395 - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1420321288_0001_r_000000_0 is done. And is in the process of committing
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1420321288_0001_r_000000_0 is allowed to commit now
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1420321288_0001_r_000000_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1420321288_0001_r_000000_0' done.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1420321288_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=42859518
+		FILE: Number of bytes written=41082561
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5987526
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=488112128
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=98
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1420321288_0001_r_000000_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1420321288_0001_r_000001_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@173cfb54
+2021-08-03 10:31:26 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1420321288_0001_r_000001_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:31:26 [localfetcher#2] INFO  LocalFetcher:145 - localfetcher#2 about to shuffle output of map attempt_local1420321288_0001_m_000000_0 decomp: 3589742 len: 3589746 to MEMORY
+2021-08-03 10:31:26 [localfetcher#2] INFO  InMemoryMapOutput:94 - Read 3589742 bytes from map-output for attempt_local1420321288_0001_m_000000_0
+2021-08-03 10:31:26 [localfetcher#2] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 3589742, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->3589742
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 3589742 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 3589746 bytes from disk
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1420321288_0001_r_000001_0 is done. And is in the process of committing
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1420321288_0001_r_000001_0 is allowed to commit now
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1420321288_0001_r_000001_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1420321288_0001_r_000001_0' done.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1420321288_0001_r_000001_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=50043206
+		FILE: Number of bytes written=44672439
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=3589746
+		Reduce input records=27720
+		Reduce output records=1
+		Spilled Records=27720
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=488112128
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=132
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1420321288_0001_r_000001_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1420321288_0001_r_000002_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4872fecd
+2021-08-03 10:31:26 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1420321288_0001_r_000002_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:31:26 [localfetcher#3] INFO  LocalFetcher:145 - localfetcher#3 about to shuffle output of map attempt_local1420321288_0001_m_000000_0 decomp: 5945942 len: 5945946 to MEMORY
+2021-08-03 10:31:26 [localfetcher#3] INFO  InMemoryMapOutput:94 - Read 5945942 bytes from map-output for attempt_local1420321288_0001_m_000000_0
+2021-08-03 10:31:26 [localfetcher#3] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5945942, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5945942
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5945942 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5945946 bytes from disk
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1420321288_0001_r_000002_0 is done. And is in the process of committing
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1420321288_0001_r_000002_0 is allowed to commit now
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1420321288_0001_r_000002_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1420321288_0001_r_000002_0' done.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1420321288_0001_r_000002_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=61939294
+		FILE: Number of bytes written=50618501
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5945946
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=2
+		Total committed heap usage (bytes)=489160704
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=116
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1420321288_0001_r_000002_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1420321288_0001_r_000003_0
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@63c6a38b
+2021-08-03 10:31:26 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1420321288_0001_r_000003_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:31:26 [localfetcher#4] INFO  LocalFetcher:145 - localfetcher#4 about to shuffle output of map attempt_local1420321288_0001_m_000000_0 decomp: 19071362 len: 19071366 to MEMORY
+2021-08-03 10:31:26 [localfetcher#4] INFO  InMemoryMapOutput:94 - Read 19071362 bytes from map-output for attempt_local1420321288_0001_m_000000_0
+2021-08-03 10:31:26 [localfetcher#4] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 19071362, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->19071362
+2021-08-03 10:31:26 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:31:26 [main] INFO  Job:1647 -  map 100% reduce 75%
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 19071362 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 19071366 bytes from disk
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:31:26 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1420321288_0001_r_000003_0 is done. And is in the process of committing
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1420321288_0001_r_000003_0 is allowed to commit now
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1420321288_0001_r_000003_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1420321288_0001_r_000003_0' done.
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1420321288_0001_r_000003_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=100082130
+		FILE: Number of bytes written=69689993
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=19071366
+		Reduce input records=166320
+		Reduce output records=1
+		Spilled Records=166320
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=2
+		Total committed heap usage (bytes)=552075264
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=126
+2021-08-03 10:31:27 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1420321288_0001_r_000003_0
+2021-08-03 10:31:27 [Thread-20] INFO  LocalJobRunner:486 - reduce task executor complete.
+2021-08-03 10:31:27 [main] INFO  Job:1647 -  map 100% reduce 100%
+2021-08-03 10:31:27 [main] INFO  Job:1658 - Job job_local1420321288_0001 completed successfully
+2021-08-03 10:31:27 [main] INFO  Job:1665 - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=285804418
+		FILE: Number of bytes written=241158431
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=34594584
+		Reduce input records=304920
+		Reduce output records=4
+		Spilled Records=609840
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=25
+		Total committed heap usage (bytes)=2443706368
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=30880081
+	File Output Format Counters 
+		Bytes Written=472
+2021-08-03 10:34:32 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:34:32 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:34:32 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:34:32 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:34:49 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:34:50 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:34:50 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:34:50 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:34:50 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:34:50 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:34:50 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:34:50 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:34:50 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1501992525_0001
+2021-08-03 10:34:50 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:34:50 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:34:50 [main] INFO  Job:1619 - Running job: job_local1501992525_0001
+2021-08-03 10:34:50 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:34:50 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:34:50 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:34:50 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:34:50 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1501992525_0001_m_000000_0
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  MapTask:409 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2021-08-03 10:34:50 [LocalJobRunner Map Task Executor #0] INFO  LineRecordReader:165 - Found UTF-8 BOM and skipped it
+2021-08-03 10:34:53 [main] INFO  Job:1640 - Job job_local1501992525_0001 running in uber mode : false
+2021-08-03 10:35:21 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:35:21 [communication thread] INFO  LocalJobRunner:628 - map > map
+2021-08-03 10:35:21 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - map > map
+2021-08-03 10:35:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1476 - Starting flush of map output
+2021-08-03 10:35:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1498 - Spilling map output
+2021-08-03 10:35:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1499 - bufstart = 0; bufend = 33929280; bufvoid = 104857600
+2021-08-03 10:35:21 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1501 - kvstart = 26214396(104857584); kvend = 24994720(99978880); length = 1219677/6553600
+2021-08-03 10:35:22 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1696 - Finished spill 0
+2021-08-03 10:35:22 [LocalJobRunner Map Task Executor #0] INFO  Task:1232 - Task:attempt_local1501992525_0001_m_000000_0 is done. And is in the process of committing
+2021-08-03 10:35:22 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - map
+2021-08-03 10:35:22 [LocalJobRunner Map Task Executor #0] INFO  Task:1368 - Task 'attempt_local1501992525_0001_m_000000_0' done.
+2021-08-03 10:35:22 [LocalJobRunner Map Task Executor #0] INFO  Task:1264 - Final Counters for attempt_local1501992525_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=30880270
+		FILE: Number of bytes written=35094937
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Spilled Records=304920
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=13
+		Total committed heap usage (bytes)=513277952
+	File Input Format Counters 
+		Bytes Read=30880081
+2021-08-03 10:35:22 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:277 - Finishing task: attempt_local1501992525_0001_m_000000_0
+2021-08-03 10:35:22 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:35:22 [Thread-20] INFO  LocalJobRunner:478 - Waiting for reduce tasks
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1501992525_0001_r_000000_0
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1373994c
+2021-08-03 10:35:22 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:35:22 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1501992525_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:35:22 [localfetcher#1] INFO  LocalFetcher:145 - localfetcher#1 about to shuffle output of map attempt_local1501992525_0001_m_000000_0 decomp: 5987522 len: 5987526 to MEMORY
+2021-08-03 10:35:22 [localfetcher#1] INFO  InMemoryMapOutput:94 - Read 5987522 bytes from map-output for attempt_local1501992525_0001_m_000000_0
+2021-08-03 10:35:22 [localfetcher#1] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5987522, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5987522
+2021-08-03 10:35:22 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5987522 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5987526 bytes from disk
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:22 [pool-5-thread-1] INFO  deprecation:1395 - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2021-08-03 10:35:33 [main] INFO  Job:1647 -  map 100% reduce 0%
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1501992525_0001_r_000000_0 is done. And is in the process of committing
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1501992525_0001_r_000000_0 is allowed to commit now
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1501992525_0001_r_000000_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1501992525_0001_r_000000_0' done.
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1501992525_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=42859518
+		FILE: Number of bytes written=41082561
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5987526
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=513277952
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=98
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1501992525_0001_r_000000_0
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1501992525_0001_r_000001_0
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3079d130
+2021-08-03 10:35:37 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:35:37 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1501992525_0001_r_000001_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:35:37 [localfetcher#2] INFO  LocalFetcher:145 - localfetcher#2 about to shuffle output of map attempt_local1501992525_0001_m_000000_0 decomp: 3589742 len: 3589746 to MEMORY
+2021-08-03 10:35:37 [localfetcher#2] INFO  InMemoryMapOutput:94 - Read 3589742 bytes from map-output for attempt_local1501992525_0001_m_000000_0
+2021-08-03 10:35:37 [localfetcher#2] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 3589742, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->3589742
+2021-08-03 10:35:37 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 3589742 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 3589746 bytes from disk
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:35:37 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:39 [main] INFO  Job:1647 -  map 100% reduce 25%
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1501992525_0001_r_000001_0 is done. And is in the process of committing
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1501992525_0001_r_000001_0 is allowed to commit now
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1501992525_0001_r_000001_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1501992525_0001_r_000001_0' done.
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1501992525_0001_r_000001_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=50043206
+		FILE: Number of bytes written=44672439
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=3589746
+		Reduce input records=27720
+		Reduce output records=1
+		Spilled Records=27720
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=575668224
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=132
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1501992525_0001_r_000001_0
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1501992525_0001_r_000002_0
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@763f1170
+2021-08-03 10:35:39 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:35:39 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1501992525_0001_r_000002_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:35:39 [localfetcher#3] INFO  LocalFetcher:145 - localfetcher#3 about to shuffle output of map attempt_local1501992525_0001_m_000000_0 decomp: 5945942 len: 5945946 to MEMORY
+2021-08-03 10:35:39 [localfetcher#3] INFO  InMemoryMapOutput:94 - Read 5945942 bytes from map-output for attempt_local1501992525_0001_m_000000_0
+2021-08-03 10:35:39 [localfetcher#3] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5945942, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5945942
+2021-08-03 10:35:39 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5945942 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5945946 bytes from disk
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:35:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1501992525_0001_r_000002_0 is done. And is in the process of committing
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1501992525_0001_r_000002_0 is allowed to commit now
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1501992525_0001_r_000002_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1501992525_0001_r_000002_0' done.
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1501992525_0001_r_000002_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=61939294
+		FILE: Number of bytes written=50618501
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5945946
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=575668224
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=116
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1501992525_0001_r_000002_0
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1501992525_0001_r_000003_0
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3a807028
+2021-08-03 10:35:40 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:35:40 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1501992525_0001_r_000003_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:35:40 [localfetcher#4] INFO  LocalFetcher:145 - localfetcher#4 about to shuffle output of map attempt_local1501992525_0001_m_000000_0 decomp: 19071362 len: 19071366 to MEMORY
+2021-08-03 10:35:40 [localfetcher#4] INFO  InMemoryMapOutput:94 - Read 19071362 bytes from map-output for attempt_local1501992525_0001_m_000000_0
+2021-08-03 10:35:40 [localfetcher#4] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 19071362, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->19071362
+2021-08-03 10:35:40 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 19071362 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 19071366 bytes from disk
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:35:40 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:40 [main] INFO  Job:1647 -  map 100% reduce 75%
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1501992525_0001_r_000003_0 is done. And is in the process of committing
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1501992525_0001_r_000003_0 is allowed to commit now
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1501992525_0001_r_000003_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1501992525_0001_r_000003_0' done.
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1501992525_0001_r_000003_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=100082130
+		FILE: Number of bytes written=69689993
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=19071366
+		Reduce input records=166320
+		Reduce output records=1
+		Spilled Records=166320
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=588251136
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=126
+2021-08-03 10:35:41 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1501992525_0001_r_000003_0
+2021-08-03 10:35:41 [Thread-20] INFO  LocalJobRunner:486 - reduce task executor complete.
+2021-08-03 10:35:41 [main] INFO  Job:1647 -  map 100% reduce 100%
+2021-08-03 10:35:41 [main] INFO  Job:1658 - Job job_local1501992525_0001 completed successfully
+2021-08-03 10:35:41 [main] INFO  Job:1665 - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=285804418
+		FILE: Number of bytes written=241158431
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=34594584
+		Reduce input records=304920
+		Reduce output records=4
+		Spilled Records=609840
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=19
+		Total committed heap usage (bytes)=2766143488
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=30880081
+	File Output Format Counters 
+		Bytes Written=472
+2021-08-03 10:36:34 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:36:34 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:36:34 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:36:34 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:36:41 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:36:41 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:36:41 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:36:41 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:36:41 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:36:41 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:36:41 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:36:42 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:36:42 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local31580786_0001
+2021-08-03 10:36:42 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:36:42 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:36:42 [main] INFO  Job:1619 - Running job: job_local31580786_0001
+2021-08-03 10:36:42 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:36:42 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:36:42 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:36:42 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:36:42 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local31580786_0001_m_000000_0
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  MapTask:409 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2021-08-03 10:36:42 [LocalJobRunner Map Task Executor #0] INFO  LineRecordReader:165 - Found UTF-8 BOM and skipped it
+2021-08-03 10:40:48 [main] INFO  Job:1640 - Job job_local31580786_0001 running in uber mode : false
+2021-08-03 10:40:53 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:46:22 [communication thread] INFO  LocalJobRunner:628 - map > map
+2021-08-03 10:46:35 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-03 10:46:35 [main] WARN  MetricsConfig:131 - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-08-03 10:46:35 [main] INFO  MetricsSystemImpl:374 - Scheduled Metric snapshot period at 10 second(s).
+2021-08-03 10:46:35 [main] INFO  MetricsSystemImpl:191 - JobTracker metrics system started
+2021-08-03 10:46:35 [main] WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2021-08-03 10:46:35 [main] WARN  JobResourceUploader:482 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2021-08-03 10:46:35 [main] INFO  FileInputFormat:292 - Total input files to process : 1
+2021-08-03 10:46:35 [main] INFO  JobSubmitter:202 - number of splits:1
+2021-08-03 10:46:35 [main] INFO  JobSubmitter:298 - Submitting tokens for job: job_local1952385569_0001
+2021-08-03 10:46:35 [main] INFO  JobSubmitter:299 - Executing with tokens: []
+2021-08-03 10:46:36 [main] INFO  Job:1574 - The url to track the job: http://localhost:8080/
+2021-08-03 10:46:36 [main] INFO  Job:1619 - Running job: job_local1952385569_0001
+2021-08-03 10:46:36 [Thread-20] INFO  LocalJobRunner:501 - OutputCommitter set in config null
+2021-08-03 10:46:36 [Thread-20] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:46:36 [Thread-20] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:46:36 [Thread-20] INFO  LocalJobRunner:519 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-08-03 10:46:36 [Thread-20] INFO  LocalJobRunner:478 - Waiting for map tasks
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:252 - Starting task: attempt_local1952385569_0001_m_000000_0
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:768 - Processing split: file:/Users/kled/git/test/bigdata_test/src/main/resources/flow.log:0+30880081
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1219 - (EQUATOR) 0 kvi 26214396(104857584)
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1012 - mapreduce.task.io.sort.mb: 100
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1013 - soft limit at 83886080
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1014 - bufstart = 0; bufvoid = 104857600
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1015 - kvstart = 26214396; length = 6553600
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:409 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  LineRecordReader:165 - Found UTF-8 BOM and skipped it
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - 
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1476 - Starting flush of map output
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1498 - Spilling map output
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1499 - bufstart = 0; bufend = 33929280; bufvoid = 104857600
+2021-08-03 10:46:36 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1501 - kvstart = 26214396(104857584); kvend = 24994720(99978880); length = 1219677/6553600
+2021-08-03 10:46:37 [main] INFO  Job:1640 - Job job_local1952385569_0001 running in uber mode : false
+2021-08-03 10:46:37 [main] INFO  Job:1647 -  map 0% reduce 0%
+2021-08-03 10:46:37 [LocalJobRunner Map Task Executor #0] INFO  MapTask:1696 - Finished spill 0
+2021-08-03 10:46:37 [LocalJobRunner Map Task Executor #0] INFO  Task:1232 - Task:attempt_local1952385569_0001_m_000000_0 is done. And is in the process of committing
+2021-08-03 10:46:37 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:628 - map
+2021-08-03 10:46:37 [LocalJobRunner Map Task Executor #0] INFO  Task:1368 - Task 'attempt_local1952385569_0001_m_000000_0' done.
+2021-08-03 10:46:37 [LocalJobRunner Map Task Executor #0] INFO  Task:1264 - Final Counters for attempt_local1952385569_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=30880270
+		FILE: Number of bytes written=35094937
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Spilled Records=304920
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=18
+		Total committed heap usage (bytes)=518520832
+	File Input Format Counters 
+		Bytes Read=30880081
+2021-08-03 10:46:37 [LocalJobRunner Map Task Executor #0] INFO  LocalJobRunner:277 - Finishing task: attempt_local1952385569_0001_m_000000_0
+2021-08-03 10:46:37 [Thread-20] INFO  LocalJobRunner:486 - map task executor complete.
+2021-08-03 10:46:37 [Thread-20] INFO  LocalJobRunner:478 - Waiting for reduce tasks
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1952385569_0001_r_000000_0
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1637b767
+2021-08-03 10:46:37 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:46:37 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1952385569_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:46:37 [localfetcher#1] INFO  LocalFetcher:145 - localfetcher#1 about to shuffle output of map attempt_local1952385569_0001_m_000000_0 decomp: 5987522 len: 5987526 to MEMORY
+2021-08-03 10:46:37 [localfetcher#1] INFO  InMemoryMapOutput:94 - Read 5987522 bytes from map-output for attempt_local1952385569_0001_m_000000_0
+2021-08-03 10:46:37 [localfetcher#1] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5987522, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5987522
+2021-08-03 10:46:37 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5987522 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5987526 bytes from disk
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5987423 bytes
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:37 [pool-5-thread-1] INFO  deprecation:1395 - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2021-08-03 10:46:38 [main] INFO  Job:1647 -  map 100% reduce 0%
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1952385569_0001_r_000000_0 is done. And is in the process of committing
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1952385569_0001_r_000000_0 is allowed to commit now
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1952385569_0001_r_000000_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1952385569_0001_r_000000_0' done.
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1952385569_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=42859518
+		FILE: Number of bytes written=41082561
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5987526
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=518520832
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=98
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1952385569_0001_r_000000_0
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1952385569_0001_r_000001_0
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1f33382a
+2021-08-03 10:46:38 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:46:38 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1952385569_0001_r_000001_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:46:38 [localfetcher#2] INFO  LocalFetcher:145 - localfetcher#2 about to shuffle output of map attempt_local1952385569_0001_m_000000_0 decomp: 3589742 len: 3589746 to MEMORY
+2021-08-03 10:46:38 [localfetcher#2] INFO  InMemoryMapOutput:94 - Read 3589742 bytes from map-output for attempt_local1952385569_0001_m_000000_0
+2021-08-03 10:46:38 [localfetcher#2] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 3589742, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->3589742
+2021-08-03 10:46:38 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 3589742 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 3589746 bytes from disk
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 3589608 bytes
+2021-08-03 10:46:38 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1952385569_0001_r_000001_0 is done. And is in the process of committing
+2021-08-03 10:46:39 [main] INFO  Job:1647 -  map 100% reduce 25%
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1952385569_0001_r_000001_0 is allowed to commit now
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1952385569_0001_r_000001_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1952385569_0001_r_000001_0' done.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1952385569_0001_r_000001_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=50043206
+		FILE: Number of bytes written=44672439
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=3589746
+		Reduce input records=27720
+		Reduce output records=1
+		Spilled Records=27720
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=518520832
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=132
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1952385569_0001_r_000001_0
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1952385569_0001_r_000002_0
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3cc9267
+2021-08-03 10:46:39 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:46:39 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1952385569_0001_r_000002_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:46:39 [localfetcher#3] INFO  LocalFetcher:145 - localfetcher#3 about to shuffle output of map attempt_local1952385569_0001_m_000000_0 decomp: 5945942 len: 5945946 to MEMORY
+2021-08-03 10:46:39 [localfetcher#3] INFO  InMemoryMapOutput:94 - Read 5945942 bytes from map-output for attempt_local1952385569_0001_m_000000_0
+2021-08-03 10:46:39 [localfetcher#3] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 5945942, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->5945942
+2021-08-03 10:46:39 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 5945942 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 5945946 bytes from disk
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 5945825 bytes
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1952385569_0001_r_000002_0 is done. And is in the process of committing
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1952385569_0001_r_000002_0 is allowed to commit now
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1952385569_0001_r_000002_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1952385569_0001_r_000002_0' done.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1952385569_0001_r_000002_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=61939294
+		FILE: Number of bytes written=50618501
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=5945946
+		Reduce input records=55440
+		Reduce output records=1
+		Spilled Records=55440
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=590348288
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=116
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1952385569_0001_r_000002_0
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:330 - Starting task: attempt_local1952385569_0001_r_000003_0
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  FileOutputCommitter:141 - File Output Committer Algorithm version is 2
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  FileOutputCommitter:156 - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  ProcfsBasedProcessTree:178 - ProcfsBasedProcessTree currently is supported only on Linux.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Task:625 -  Using ResourceCalculatorProcessTree : null
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  ReduceTask:363 - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5ac3d562
+2021-08-03 10:46:39 [pool-5-thread-1] WARN  MetricsSystemImpl:151 - JobTracker metrics system already initialized!
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:208 - MergerManager: memoryLimit=2672505600, maxSingleShuffleLimit=668126400, mergeThreshold=1763853824, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2021-08-03 10:46:39 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:61 - attempt_local1952385569_0001_r_000003_0 Thread started: EventFetcher for fetching Map Completion Events
+2021-08-03 10:46:39 [localfetcher#4] INFO  LocalFetcher:145 - localfetcher#4 about to shuffle output of map attempt_local1952385569_0001_m_000000_0 decomp: 19071362 len: 19071366 to MEMORY
+2021-08-03 10:46:39 [localfetcher#4] INFO  InMemoryMapOutput:94 - Read 19071362 bytes from map-output for attempt_local1952385569_0001_m_000000_0
+2021-08-03 10:46:39 [localfetcher#4] INFO  MergeManagerImpl:323 - closeInMemoryFile -> map-output of size: 19071362, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->19071362
+2021-08-03 10:46:39 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher:76 - EventFetcher is interrupted.. Returning
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:695 - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:762 - Merged 1 segments, 19071362 bytes to disk to satisfy reduce memory limit
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:792 - Merging 1 files, 19071366 bytes from disk
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  MergeManagerImpl:807 - Merging 0 segments, 0 bytes from memory into reduce
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:606 - Merging 1 sorted segments
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  Merger:705 - Down to the last merge-pass, with 1 segments left of total size: 19071235 bytes
+2021-08-03 10:46:39 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:40 [main] INFO  Job:1647 -  map 100% reduce 75%
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  Task:1232 - Task:attempt_local1952385569_0001_r_000003_0 is done. And is in the process of committing
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  LocalJobRunner:628 - 1 / 1 copied.
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  Task:1409 - Task attempt_local1952385569_0001_r_000003_0 is allowed to commit now
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  FileOutputCommitter:606 - Saved output of task 'attempt_local1952385569_0001_r_000003_0' to file:/Users/kled/git/test/bigdata_test/src/main/resources/FlowOutputTest
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  LocalJobRunner:628 - reduce > reduce
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  Task:1368 - Task 'attempt_local1952385569_0001_r_000003_0' done.
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  Task:1264 - Final Counters for attempt_local1952385569_0001_r_000003_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=100082130
+		FILE: Number of bytes written=69689993
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=19071366
+		Reduce input records=166320
+		Reduce output records=1
+		Spilled Records=166320
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=601358336
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=126
+2021-08-03 10:46:40 [pool-5-thread-1] INFO  LocalJobRunner:353 - Finishing task: attempt_local1952385569_0001_r_000003_0
+2021-08-03 10:46:40 [Thread-20] INFO  LocalJobRunner:486 - reduce task executor complete.
+2021-08-03 10:46:41 [main] INFO  Job:1647 -  map 100% reduce 100%
+2021-08-03 10:46:41 [main] INFO  Job:1658 - Job job_local1952385569_0001 completed successfully
+2021-08-03 10:46:41 [main] INFO  Job:1665 - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=285804418
+		FILE: Number of bytes written=241158431
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=304920
+		Map output records=304920
+		Map output bytes=33929280
+		Map output materialized bytes=34594584
+		Input split bytes=131
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=34594584
+		Reduce input records=304920
+		Reduce output records=4
+		Spilled Records=609840
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=24
+		Total committed heap usage (bytes)=2747269120
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=30880081
+	File Output Format Counters 
+		Bytes Written=472
+2021-08-20 17:56:30 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-21 10:21:21 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-21 10:26:15 [main] WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-30 18:30:03 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-30 18:30:19 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 09:49:10 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 09:52:36 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 09:59:31 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:09:25 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:09:37 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:20:02 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:32:53 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:35:47 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:37:28 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:40:48 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:52:48 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 10:53:30 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 11:08:16 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 11:12:42 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 11:17:57 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 11:30:36 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-08-31 11:37:48 [main] WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable

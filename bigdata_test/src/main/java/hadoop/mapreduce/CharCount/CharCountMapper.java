@@ -15,6 +15,18 @@ import java.io.IOException;
 public class CharCountMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     @Override
+    protected void setup(Context context) throws IOException, InterruptedException {
+        //预处理
+        super.setup(context);
+    }
+
+    @Override
+    protected void cleanup(Context context) throws IOException, InterruptedException {
+        //后处理
+        super.cleanup(context);
+    }
+
+    @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
         String line = value.toString();

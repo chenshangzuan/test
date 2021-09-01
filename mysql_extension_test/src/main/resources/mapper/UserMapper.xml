@@ -3,7 +3,7 @@
 <mapper namespace="kled.test.mapper.UserMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="kled.test.entity.User">
+    <resultMap id="BaseResultMap" type="kled.test.entity.serializer.avro.model.User">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="age" property="age" />

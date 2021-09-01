@@ -4,9 +4,6 @@ import org.apache.commons.io.IOUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -22,8 +19,8 @@ public class HdfsClient {
 //        //方式二：
 ////        FileSystem.newInstance(hadoop.HadoopUtils.initConf())
 //        //方式三:
-//        FileSystem fileSystem = FileSystem.get(new URI("hdfs://172.16.5.56:8020"), new Configuration(), "root");
-////        System.out.println(fileSystem.getFileStatus(new Path("/0617/test")).getPath().toString()); //hdfs://172.16.5.56:8020/0617/test
+//        FileSystem fileSystem = FileSystem.get(new URI("hadoop.hdfs://172.16.5.56:8020"), new Configuration(), "root");
+////        System.out.println(fileSystem.getFileStatus(new Path("/0617/test")).getPath().toString()); //hadoop.hdfs://172.16.5.56:8020/0617/test
 ////        fileSystem.mkdirs(new Path("/0617/test"));
 //        fileSystem.close();
 //    }
