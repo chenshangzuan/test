@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo.test.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo.test.iml" group="dubbo" />
       <module fileurl="file://$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" filepath="$PROJECT_DIR$/dubbo_test/dubbo.swagger/dubbo_swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/elastic_searcher/elasticsearcher.iml" filepath="$PROJECT_DIR$/elastic_searcher/elasticsearcher.iml" group="dubbo" />
+      <module fileurl="file://$PROJECT_DIR$/flink_demo/flink_test.iml" filepath="$PROJECT_DIR$/flink_demo/flink_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_api/grpc_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_client/grpc_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" filepath="$PROJECT_DIR$/grpc_test/grpc_server/grpc_server.iml" />

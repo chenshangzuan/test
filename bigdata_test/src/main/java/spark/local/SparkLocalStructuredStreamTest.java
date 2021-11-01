@@ -1,5 +1,6 @@
 package spark.local;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
@@ -41,6 +42,7 @@ public class SparkLocalStructuredStreamTest {
         Map<String, String> options = Maps.newHashMap();
         options.put("host", "localhost");
         options.put("port", "9999");
+        //复用了Spark SQL引擎
         Dataset<Row> lines = sparkSession.readStream().format("socket").options(options).load();
         Dataset<String> wordDs = lines.as(Encoders.STRING()).flatMap(new FlatMapFunction<String, String>() {
             @Override
@@ -49,7 +51,19 @@ public class SparkLocalStructuredStreamTest {
             }
         }, Encoders.STRING());
 
-        Dataset<Row> wordCountDf = wordDs.groupBy("value").count();
+        //按时间窗口聚合，每1min，统计过去5min聚合数据，设定水印(丢弃30minutes之外的late data)
+        //the watermark set as (max event time<last trigger> - '10 mins'<threshold>) at the beginning of every trigger
+        //Dataset<Row> wordCountDf = wordDs.withWatermark("eventTime", "30 minutes").groupBy(functions.window(wordDs.col("eventTime"), "5 minutes", "1 minutes"), wordDs.col("value")).count();
+
+        Dataset<Row> wordCountDf = wordDs.groupBy(/*functions.window(wordDs.col("eventTime"), "5 minutes", "1 minutes"),*/wordDs.col("value")).count();
+        //OutputMode:
+        //1.Complete mode: Result Table 全量输出
+        //2.Append mode (default): 只有 Result Table 中新增的行才会被输出
+        //3.Update mode: 只要更新的 Row 都会被输
+
+        //Trigger:
+        //1.ContinuousTrigger: Continuous mode
+        //2.ProcessingTimeTrigger: Mirco-Batch mode =》Trigger.ProcessingTime(0L) 默认
         StreamingQuery streamingQuery = wordCountDf.writeStream().outputMode(OutputMode.Complete()).format("console").start();
 
         streamingQuery.awaitTermination();
@@ -69,6 +83,7 @@ public class SparkLocalStructuredStreamTest {
         Dataset<Person> personDataset = valueDs.map(new MapFunction<String, Person>() {
             @Override
             public Person call(String s) throws Exception {
+//                ObjectMapper objectMapper = new ObjectMapper();
                 Gson gson = new Gson();
                 return gson.fromJson(s, Person.class);
             }

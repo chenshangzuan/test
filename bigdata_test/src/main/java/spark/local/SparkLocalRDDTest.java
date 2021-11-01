@@ -49,6 +49,8 @@ public class SparkLocalRDDTest {
             longAccumulator.add(1);
             return str;
         });
+        //采样
+        System.out.println(stringJavaRDD1.sample(false, 0.1).countByValue());
         System.out.println(stringJavaRDD1.collect());
         System.out.println(longAccumulator.count());
 
@@ -63,8 +65,11 @@ public class SparkLocalRDDTest {
         System.out.println(stringStringJavaPairRDD3.collect());
 
         List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
+        //设定2个分区
         JavaRDD<Integer> stringJavaRDD4 = sparkContext.parallelize(integers, 2);
         //stringJavaRDD4.repartition(3); 重新分区
+        //如果你减少分区数，考虑使用coalesce，这样可以避免执行shuffle。但是假如内存不够用，可能会引起内存溢出。
+        //stringJavaRDD4.coalesce(2, true); //第一个参数为重分区的数目，第二个为是否进行shuffle(分区增加必须shuffle)，默认为false;
         //按分区进行map，可遍历(查看)各分区的数据，
         stringJavaRDD4.mapPartitionsWithIndex((index, iterator) -> {
             List<Integer> partitionIntegers = Lists.newArrayList(iterator);
@@ -73,9 +78,9 @@ public class SparkLocalRDDTest {
         }, false).collect();
         //汇聚(前后值依次运算)
         Integer reduceRet = stringJavaRDD4.reduce(Integer::sum);
-        //汇聚 + 初始值
+        //汇聚(分区汇聚和最终的汇聚函数相同) + 初始值
         Integer foldRet = stringJavaRDD4.fold(0, Integer::sum);
-        //汇聚 + 初始值 + 支持不同类型(seqOp func)
+        //汇聚(seqOp:分区聚合+func:最终的聚合) + 初始值
         Integer aggregateRet = stringJavaRDD4.aggregate(1, (x, y) -> x * y , Integer::sum);
         System.out.println("foldRet=" + foldRet + ", reduceRet=" + reduceRet + ", aggregateRet=" + aggregateRet);
 

@@ -39,6 +39,8 @@
         <option value="$PROJECT_DIR$/hadoop_test/pom.xml" />
         <option value="$PROJECT_DIR$/bigdata_test/pom.xml" />
         <option value="$PROJECT_DIR$/kafka_client/pom.xml" />
+        <option value="$PROJECT_DIR$/flink_test/pom.xml" />
+        <option value="$PROJECT_DIR$/flink_demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

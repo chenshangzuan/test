@@ -31,7 +31,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 
 /**
  * Tests for {@link RedisSpringBootApplication}.
- * 
+ *
  * @author Dave Syer
  */
 public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
@@ -40,32 +40,33 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
     private RedissonClient redissonClient;
 
     @Test
-    public void testValue(){
+    public void testValue() {
         RBucket<String> bucket = redissonClient.getBucket("name");
         bucket.set("zhaoyun");
+        bucket.expire(10, TimeUnit.SECONDS);
     }
 
     @Test
-    public void testList(){
+    public void testList() {
         RList<String> rList = redissonClient.getList("list");
         rList.add("999");
     }
 
     @Test
-    public void testSet(){
+    public void testSet() {
         RSet<String> rset = redissonClient.getSet("set");
         rset.add("2021");
     }
 
     @Test
-    public void testSortedSet(){
+    public void testSortedSet() {
         RSortedSet<String> zset = redissonClient.getSortedSet("zset");
         zset.add("2222");
     }
 
     //********************* 分布式锁 **********************//
     @Test
-    public void testLock(){
+    public void testLock() {
         RLock rLock = redissonClient.getLock("redLock");
         rLock.lock();
         System.out.println("get redLock");
@@ -146,7 +147,7 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
 
     //********************* 原子基本数据类型操作 **********************//
     @Test
-    public void testAtomicData(){
+    public void testAtomicData() {
         RAtomicLong rAtomicLong = redissonClient.getAtomicLong("MyId");
         System.out.println(rAtomicLong.incrementAndGet());
 
@@ -161,7 +162,7 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
 
     //********************* 主键自增 **********************//
     @Test
-    public void testIdGenerator(){
+    public void testIdGenerator() {
         RIdGenerator idGenerator = redissonClient.getIdGenerator("MyIdGenerator");
         for (int i = 0; i < 5; i++) {
             System.out.println(idGenerator.nextId());
@@ -173,16 +174,16 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
     public void testRateLimit() throws InterruptedException {
         RRateLimiter rRateLimiter = redissonClient.getRateLimiter("myRateLimiter");
         //两分钟之内最多只有5个线程在执行
-        rRateLimiter.trySetRate(RateType.PER_CLIENT,5,2, RateIntervalUnit.MINUTES);
+        rRateLimiter.trySetRate(RateType.PER_CLIENT, 5, 2, RateIntervalUnit.MINUTES);
 
-        ExecutorService executorService= Executors.newFixedThreadPool(10);
-        for (int i=0;i<10;i++){
-            executorService.submit(()->{
-                try{
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        for (int i = 0; i < 10; i++) {
+            executorService.submit(() -> {
+                try {
                     //获取令牌
                     rRateLimiter.acquire();
-                    System.out.println("线程"+Thread.currentThread().getId()+"进入数据区："+System.currentTimeMillis());
-                }catch (Exception e){
+                    System.out.println("线程" + Thread.currentThread().getId() + "进入数据区：" + System.currentTimeMillis());
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             });
@@ -192,11 +193,12 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
 
     //********************* 缓存 **********************//
     @Test
-    public void TestMapCache(){
+    public void TestMapCache() {
         RMapCache<String, String> rMapCache = redissonClient.getMapCache("MyMapCache");
         rMapCache.put("cacheKey", "cacheValue", 1, TimeUnit.SECONDS);
         rMapCache.fastPut("cacheKey", "cacheValue");
         System.out.println(rMapCache.getOrDefault("cacheKey", "defaultValue"));
+
     }
     //********************* 发布订阅 Topic**********************//
 
@@ -209,6 +211,7 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
         topic.publish("hello redis pub/sub by redisson");
         Thread.sleep(5000);
     }
+
     //********************* 队列 Queue/Deque **********************//
     @Test
     public void testQueue() throws InterruptedException {
@@ -225,7 +228,7 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
     //BloomFilter是一种空间效率的概率型数据结构，由Burton Howard Bloom 1970年提出的。
     //通常用来判断一个元素是否在集合中。具有极高的空间效率，但是会带来假阳性(False positive)的错误。
     @Test
-    public void testBloomFilter(){
+    public void testBloomFilter() {
         RBloomFilter<String> bloomFilter = redissonClient.getBloomFilter("sample");
         //初始化布隆过滤器，预计统计元素数量为55000000，期望误差率为0.03
         bloomFilter.tryInit(55000000L, 0.03);
@@ -233,5 +236,22 @@ public class RedissonTests extends SpringTestRedisSpringBootApplicationTests {
         bloomFilter.add("field1Value");
         bloomFilter.add("field5Value");
         bloomFilter.contains("field1Value");
+    }
+
+    @Test
+    public void testTransaction() {
+        RTransaction transaction = redissonClient.createTransaction(TransactionOptions.defaults());
+        RSet<String> set = transaction.getSet("transaction_set");
+        try {
+            for (int i = 0; i < 10; i++) {
+                set.add("瓜田李下 " + i);
+            }
+
+            transaction.commit();
+        } catch (Exception e) {
+            transaction.rollback();
+            e.printStackTrace();
+        }
+        System.out.println("set的大小为：" + set.size());
     }
 }

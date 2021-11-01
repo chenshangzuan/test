@@ -33,7 +33,7 @@ public class SparkLocalDsTest {
                 .master("local")
                 .getOrCreate();
 
-//        personDs(sparkSession);
+        personDs(sparkSession);
 
 //        personDsUdfExpr(sparkSession);
 
@@ -100,6 +100,8 @@ public class SparkLocalDsTest {
 
         Dataset<Person> personDataset1 = sparkSession.createDataset(personList1, encoder);
         Dataset<Person> personDataset2 = sparkSession.createDataset(personList2, encoder);
+
+//        sparkSession.createDataFrame(personList1, Person.class);
 
         //内连接
         Dataset<Row> innerJoinDf = personDataset1.join(personDataset2, personDataset1.col("age").equalTo(personDataset2.col("age")), "inner");
@@ -172,15 +174,6 @@ public class SparkLocalDsTest {
 
         System.out.println("========================SparkLocalTest person drop age out=============================");
         personDs.drop("age").show();
-
-        System.out.println("========================SparkLocalTest person view & sql out=============================");
-        //局部视图
-        personDs.createOrReplaceTempView("tmp_view_1");
-        sparkSession.sql("select * from tmp_view_1").show();
-
-        //全局视图
-        personDs.createGlobalTempView("tmp_view_2");
-        sparkSession.sql("select * from global_temp.tmp_view_2").show();
 
         System.out.println("========================SparkLocalTest person write csv & json=============================");
         String peopleCsvOutputPath = "/Users/kled/git/test/bigdata_test/src/main/resources/PeopleCsvOutput";
