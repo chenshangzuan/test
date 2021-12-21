@@ -20,7 +20,8 @@ public class MergeSort {
 
     private static void mergeSort(int array[], int start, int end) {
         if (start < end) {
-            int mid = (start + end) / 2;
+            int mid = start + (end - start) / 2; //防止Integer溢出
+            // int mid = (start + end) / 2;
             mergeSort(array, start, mid);
             mergeSort(array, mid + 1, end);
             //折半成两个小集合，分别进行递归

@@ -2,6 +2,7 @@ package spark.local;
 
 import com.google.common.collect.Lists;
 import org.apache.spark.sql.*;
+import org.apache.spark.sql.execution.QueryExecution;
 import org.apache.spark.sql.types.DataTypes;
 import org.apache.spark.sql.types.StructType;
 import spark.remote.Person;
@@ -30,7 +31,11 @@ public class SparkLocalSqlTest {
         //局部视图
         //先将ds转化为table或view
         personDs.createOrReplaceTempView("tmp_view_1");
+        sparkSession.sql("select * from tmp_view_1").collect(); //读源码，QueryExecution的执行优化流程，并包含转化成rdd的过程
         sparkSession.sql("select * from tmp_view_1").show();
+        QueryExecution queryExecution = sparkSession.sql("select * from tmp_view_1").queryExecution(); //逻辑执行计划
+        queryExecution.simpleString();
+        sparkSession.sql("select * from tmp_view_1").explain(); //物理执行计划
 
         //注册表才能缓存数据
         personDs.registerTempTable("table_1");

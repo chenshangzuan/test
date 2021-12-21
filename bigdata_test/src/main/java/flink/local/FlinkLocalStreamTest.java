@@ -1,6 +1,8 @@
 package flink.local;
 
 import flink.partitioner.MyFlinkPartitioner;
+import org.apache.commons.lang3.time.FastDateFormat;
+import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.restartstrategy.RestartStrategies;
@@ -8,6 +10,7 @@ import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.time.Time;
 import org.apache.flink.api.java.functions.KeySelector;
+import org.apache.flink.api.java.tuple.Tuple;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.contrib.streaming.state.EmbeddedRocksDBStateBackend;
@@ -20,16 +23,33 @@ import org.apache.flink.runtime.state.memory.MemoryStateBackendFactory;
 import org.apache.flink.runtime.state.storage.FileSystemCheckpointStorage;
 import org.apache.flink.runtime.state.storage.JobManagerCheckpointStorage;
 import org.apache.flink.streaming.api.CheckpointingMode;
+import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.*;
 import org.apache.flink.streaming.api.environment.CheckpointConfig;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks;
+import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.streaming.api.functions.co.CoMapFunction;
 import org.apache.flink.streaming.api.functions.source.SourceFunction;
+import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
+import org.apache.flink.streaming.api.watermark.Watermark;
+import org.apache.flink.streaming.api.windowing.assigners.EventTimeSessionWindows;
+import org.apache.flink.streaming.api.windowing.assigners.GlobalWindows;
+import org.apache.flink.streaming.api.windowing.assigners.SlidingEventTimeWindows;
+import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
+import org.apache.flink.streaming.api.windowing.evictors.CountEvictor;
+import org.apache.flink.streaming.api.windowing.triggers.EventTimeTrigger;
+import org.apache.flink.streaming.api.windowing.windows.GlobalWindow;
+import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
+import org.apache.flink.streaming.runtime.operators.util.AssignerWithPeriodicWatermarksAdapter;
 import org.apache.flink.util.Collector;
+import org.apache.flink.util.OutputTag;
 import org.apache.hbase.thirdparty.com.google.common.collect.Lists;
 import flink.flatMap.keyedState.MyValueStateFlatMapFunction;
 
+import javax.annotation.Nullable;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -54,21 +74,50 @@ public class FlinkLocalStreamTest {
 
           //transformStream();
           //stateStream();
-          windowStream();
+          windowWithWatermarkStream();
     }
 
-    private static void windowStream() throws Exception {
+    private static void windowWithWatermarkStream() throws Exception {
         StreamExecutionEnvironment streamExecutionEnvironment = StreamExecutionEnvironment.createLocalEnvironment();
+
+        //使用Event Time的优势是结果的可预测性，缺点是缓存较大，增加了延迟，且调试和定位问题更复杂
+        streamExecutionEnvironment.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
+
         DataStreamSource<String> stringDataStreamSource = streamExecutionEnvironment.socketTextStream("127.0.0.1", 9999);
-        stringDataStreamSource.flatMap(new FlatMapFunction<String, String>() {
+
+        SingleOutputStreamOperator<Tuple2<Long, String>> tuple2SingleOutputStreamOperator = stringDataStreamSource.flatMap(new FlatMapFunction<String, Tuple2<Long, String>>() {
+            Random random = new Random();
+
             @Override
-            public void flatMap(String line, Collector<String> collector) throws Exception {
+            public void flatMap(String line, Collector<Tuple2<Long, String>> collector) throws Exception {
                 String[] words = line.split(" ");
                 for (String word : words) {
-                    collector.collect(word);
+                    collector.collect(Tuple2.of(random.nextLong(), word));
                 }
             }
-        }).keyBy(0);
+        });
+
+        //ps：窗口定义流数据的范围，触发器触发计算
+        tuple2SingleOutputStreamOperator
+                .assignTimestampsAndWatermarks(WatermarkStrategy
+                        .<Tuple2<Long, String>>forBoundedOutOfOrderness(Duration.ofSeconds(10)) //watermark ->
+                        .withTimestampAssigner((event, timestamp) -> event.f0)) //指定时间字段
+                .keyBy(0)
+                //.countWindow(100,50) //数据个数驱动
+                //时间区间驱动
+                //.windowAll() //windowAll的任务并行度是1，不可修改
+                .window(TumblingEventTimeWindows.of(org.apache.flink.streaming.api.windowing.time.Time.seconds(10))) //滚动窗口
+//                .window(SlidingEventTimeWindows.of(Time.seconds(10), Time.seconds(10))) //滑动窗口
+//                .window(EventTimeSessionWindows.withGap(Time.seconds(10))) //session窗口, 时间间隙触发
+//                .window(GlobalWindows.create()) //全局窗口, 必须配置触发器
+                .trigger(EventTimeTrigger.create()) //窗口计算的触发器，可自定义
+                .evictor(CountEvictor.of(100)) //窗口数据剔除
+                .allowedLateness(org.apache.flink.streaming.api.windowing.time.Time.seconds(2)) //max(event time) - threshold -  allowedLateness >= window end time触发窗口关闭(计算)。一般不使用
+                .sideOutputLateData(new OutputTag<>("late data")) //late data的数据标记
+                //.reduce()     //支持ReduceFunction + ProcessWindowFunction
+                //.aggregate() //支持AggregateFunction + ProcessWindowFunction
+                //.apply() //WindowFunction
+                .process(new MySumProcessWindowFunction()).print();
 
     }
 
@@ -273,6 +322,44 @@ public class FlinkLocalStreamTest {
         @Override
         public void cancel() {
             running = false;
+        }
+    }
+
+    static class MySumProcessWindowFunction extends ProcessWindowFunction<Tuple2<Long, String>, Tuple2<String, Integer>, Tuple, TimeWindow>{
+        FastDateFormat dateFormat = FastDateFormat.getInstance("HH:mm:ss");
+        @Override
+        public void process(Tuple key, Context context, Iterable<Tuple2<Long, String>> elements, Collector<Tuple2<String, Integer>> collector) throws Exception {
+                System.out.println("当前系统时间: " + dateFormat.format(System.currentTimeMillis()));
+                System.out.println("窗口处理时间: " + dateFormat.format(context.currentProcessingTime()));
+                System.out.println("窗口开始时间: " + dateFormat.format(context.window().getStart()));
+
+                int sum = 0;
+                for (Tuple2<Long, String> element : elements) {
+                    sum += 1;
+                }
+                collector.collect(Tuple2.of(key.getField(0), sum));
+
+                System.out.println("窗口结束时间: " + dateFormat.format(context.window().getEnd()));
+        }
+    }
+
+    static class MyKeyedProcessWindowFunction extends KeyedProcessFunction{
+
+        @Override
+        public void open(Configuration parameters) throws Exception {
+            super.open(parameters);
+        }
+
+        @Override
+        public void processElement(Object o, Context context, Collector collector) throws Exception {
+            //注册定时器
+            context.timerService().registerEventTimeTimer(100);
+        }
+
+        @Override
+        //定时器逻辑
+        public void onTimer(long timestamp, OnTimerContext ctx, Collector out) throws Exception {
+            super.onTimer(timestamp, ctx, out);
         }
     }
 }

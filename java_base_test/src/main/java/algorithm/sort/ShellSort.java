@@ -9,8 +9,8 @@ public class ShellSort {
 
     public static void main(String[] args) {
         int[] arr = {34, 21, 45, 93, 42, 64};
-        int d = arr.length; //希尔排序增量 while (d>1)
-        {
+        int d = arr.length; //希尔排序增量
+        while (d > 1) {
             d = d / 2; //希尔增量，每次折半
             for (int x = 0; x < d; x++) {
                 for (int i = x + d; i < arr.length; i = i + d) {

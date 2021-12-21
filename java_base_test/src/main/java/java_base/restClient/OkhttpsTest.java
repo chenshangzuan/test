@@ -1,4 +1,4 @@
-package java_base.RestClient;
+package java_base.restClient;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

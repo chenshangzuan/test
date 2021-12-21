@@ -29,6 +29,7 @@ public class SparkLocalDsTest {
     public static void main(String[] args) throws AnalysisException {
         SparkSession sparkSession = SparkSession
                 .builder()
+//                .config() //spark config
                 .appName("SparkLocalTest")
                 .master("local")
                 .getOrCreate();

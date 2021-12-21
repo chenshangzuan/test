@@ -17,6 +17,7 @@ import org.apache.spark.storage.StorageLevel;
 import org.apache.spark.util.CollectionAccumulator;
 import org.apache.spark.util.DoubleAccumulator;
 import org.apache.spark.util.LongAccumulator;
+import scala.Array;
 import scala.Tuple2;
 import scala.collection.JavaConverters;
 import scala.collection.Seq;
@@ -33,6 +34,10 @@ import java.util.stream.Collectors;
 public class SparkLocalRDDTest {
     public static void main(String[] args) throws AnalysisException {
         SparkConf conf = new SparkConf().setAppName("spark test1").setMaster("local[2]");
+        conf.set("spark.serializer", "org.apache.spark.KryoSerializer");
+        conf.registerKryoClasses(new Class[]{SparkLocalRDDTest.class});
+        conf.set("spark.io.compression.codec", "snappy");
+
         JavaSparkContext sparkContext = new JavaSparkContext(conf);
         //累加器
         LongAccumulator longAccumulator = sparkContext.sc().longAccumulator();
@@ -87,8 +92,8 @@ public class SparkLocalRDDTest {
         //分组
         JavaPairRDD<String, Iterable<Integer>> iterableJavaPairRDD = stringJavaRDD4.groupBy(i -> i < 4 ? "LT-4" : "GE-4");
         //支持按Key进行汇聚
+//        iterableJavaPairRDD.reduceByKey()
         //iterableJavaPairRDD.aggregateByKey()
-        //iterableJavaPairRDD.reduceByKey()
         //iterableJavaPairRDD.foldByKey()
         List<Tuple2<String, Iterable<Integer>>> tuple2List = iterableJavaPairRDD.collect();
         for (Tuple2<String, Iterable<Integer>> stringIterableTuple2 : tuple2List) {

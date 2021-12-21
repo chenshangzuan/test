@@ -22,6 +22,7 @@ public class TestCondition {
         Thread consumer = new Thread(() -> {
             while (true){
                 lock.lock();
+                System.out.println("consumer lock hold count:"+lock.getHoldCount());
                 while (!products.isEmpty()){
                     Integer product = products.poll();
                     System.out.println("consumer product=" + product);
@@ -39,6 +40,8 @@ public class TestCondition {
                     notEmpty.await();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                }finally {
+                    lock.unlock();
                 }
             }
         });
@@ -46,6 +49,7 @@ public class TestCondition {
         Thread producer = new Thread(() -> {
             while (true){
                 lock.lock();
+                System.out.println("producer lock hold count:"+lock.getHoldCount());
                 while (products.size() <= 5){
                     Integer product = new Random().nextInt(10);
                     products.add(product);

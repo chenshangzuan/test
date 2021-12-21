@@ -62,6 +62,7 @@ public class FlinkLocalDataSetTest {
                         return value.startsWith("k");
                     }
                 })
+                //.withBroadcastSet() 指定广播变量
                 .writeAsText("/Users/kled/git/test/bigdata_test/src/main/resources/flink/output/users");
         JobExecutionResult res = env.execute();
     }

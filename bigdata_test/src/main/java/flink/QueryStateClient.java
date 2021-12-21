@@ -16,19 +16,19 @@ import java.util.concurrent.CompletableFuture;
  */
 public class QueryStateClient {
     public static void main(String[] args) throws UnknownHostException {
-        QueryableStateClient queryableStateClient = new QueryableStateClient("172.16.5.56", 9067);
-        CompletableFuture<ValueState<String>> kvState = queryableStateClient.getKvState(JobID.generate(),
-                "queryableStateName",
-                "key",
-                Types.STRING,
-                new ValueStateDescriptor<String>("123", Types.STRING));
-        kvState.thenAccept(response -> {
-            try {
-                System.out.println(response.value());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+//        QueryableStateClient queryableStateClient = new QueryableStateClient("172.16.5.56", 9067);
+//        CompletableFuture<ValueState<String>> kvState = queryableStateClient.getKvState(JobID.generate(),
+//                "queryableStateName",
+//                "key",
+//                Types.STRING,
+//                new ValueStateDescriptor<String>("123", Types.STRING));
+//        kvState.thenAccept(response -> {
+//            try {
+//                System.out.println(response.value());
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        });
 
     }
 }

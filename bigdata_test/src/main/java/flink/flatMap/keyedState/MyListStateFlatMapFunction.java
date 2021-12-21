@@ -48,5 +48,6 @@ public class MyListStateFlatMapFunction extends RichFlatMapFunction<Tuple2<Long,
             //情况当前key的listState
             listState.clear();
         }
+
     }
 }

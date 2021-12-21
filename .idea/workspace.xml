@@ -5,48 +5,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80b1a0ae-5a89-48bd-a87a-b4d8a6320028" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/QueryStateClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyAggregatingStateFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyListStateFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyMapStateFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyReducingStateFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyValueStateFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/operatorState/MyCheckPointFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/operatorState/MyListCheckPointFlatMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalDataSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/partitioner/MyFlinkPartitioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hive/udf/BaseFieldUDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hive/udtf/ExplodeMapUDTF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalSqlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/udf/MyUDAF1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/resources/flink/input/users" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestJanino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/TestObjectLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/partitioner/MyPartitioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/FlinkRPCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkCEPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalTableSQLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalGraphTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/BucketSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/CountSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/BigNumMul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/BigNumSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/BinaryTreeTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/Jump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/Jump2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/LengthOfLastWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/LengthOfLongestSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/NextPermutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/NumBinaryCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/NumFactorialZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/ThreeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/WaterMaxArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/YangHuiTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/array/DuplicateNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/array/MoveZeroes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/array/SearchRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/BinaryLevelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/BinaryTreeRightSideView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/FindBinaryTreeBottomLeftValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/MatrixLandPerimeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/MatrixSurroundedArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/MinBinaryDepth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/NumSquares.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/SameBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/SumBinaryLeftLeaves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bit/SingleNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/BalancedBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/BinaryTreeMaxDepth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/CourseFinish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/DiameterOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/FlattenBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/InvertBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/MergeBinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/NumIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/SymmetricBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/ValidBracket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/ArrayPermute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/CombinationSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/GenerateParenthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/LetterCombinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/MatrixWordSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/Permutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/BinaryTreeNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/CountBits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/FrogDrop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/LengthOfLIS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/LongestPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MaxProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MaxSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MaximalSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MinPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/NumDecodings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/PalindromeStrSplit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/Rob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/RobotUniquePath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/RobotUniquePath2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/SpiralOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/StockMaxProfit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/StringIsInterleave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/TriangleMinimunTotal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/WordBreak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/BiDirectListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/CycleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/CycleList2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/IntersectionList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/LRUCache1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/LRUCache2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/LRUCache3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/MergeTwoLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/PalindromeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/RemoveNthFromEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/ReverseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/recursion/LinkReverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/sort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/stack/DecodeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/stack/MinStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/stack/MinStack2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kled.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/kled.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_base_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_base_1_3_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_zookeeper_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_common_zookeeper_1_3_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_common_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_common_1_3_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_zookeeper_1_3_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zenlayer_commons_lock_zookeeper_1_3_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_2_0_osgi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_2_0_osgi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/dependency-reduced-pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigdata_test/log/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/log/test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigdata_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/Sqoop/Sqoop2Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/sqoop/Sqoop2Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hbase/HbaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/hbase/HbaseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/hive/udf/ToLowerCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/QueryStateClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/QueryStateClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyListStateFlatMapFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/flatMap/keyedState/MyListStateFlatMapFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalDataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalDataSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalStreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalDsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalDsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalRDDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructuredStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalStructuredStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/PeopleCsvOutput/.part-00000-547dcad6-d741-49ae-b12d-b35693fa10e8-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/PeopleCsvOutput/part-00000-547dcad6-d741-49ae-b12d-b35693fa10e8-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/PeopleJsonOutput/.part-00000-25650f6d-64a4-4eb8-84fb-55e0e9eaa26d-c000.json.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/resources/PeopleJsonOutput/part-00000-25650f6d-64a4-4eb8-84fb-55e0e9eaa26d-c000.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_base_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaGenericConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/consumer/MyKafkaGenericConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/producer/MyKafkaGenericProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_client/src/main/java/kled/test/service/producer/MyKafkaGenericProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis_test/src/test/java/kled/test/RedissonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis_test/src/test/java/kled/test/RedissonTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalSqlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigdata_test/src/main/java/spark/local/SparkLocalSqlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/ShellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/RestClient/OkhttpsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/restClient/OkhttpsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/thread/TestCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/src/main/java/java_base/thread/TestCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/META-INF/java.base.test.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/TestJsonFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_base_test/target/classes/java_base/thread/TestCondition.class" beforeDir="false" afterPath="$PROJECT_DIR$/java_base_test/target/classes/java_base/thread/TestCondition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot_test/spring.boot.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper_test/zookeeper_test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +261,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
@@ -194,7 +271,7 @@
     </treeState>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -299,6 +376,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowZooKeeper.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ZeppelinPythonSdkName_Zeppelin connection@ZeppelinConnections@6341071749662126777" value="Python 3.9" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.9" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -306,9 +384,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16525424" />
     <property name="project.structure.side.proportion" value="0.29099306" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -341,11 +419,11 @@
       <recent name="spark" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="java_base.leetcode" />
+      <recent name="java_base.leetcode.stack" />
+      <recent name="java_base.leetcode.list" />
       <recent name="flink.flatMap" />
       <recent name="algorithm.sort" />
-      <recent name="hadoop.mapreduce.Flow" />
-      <recent name="spark" />
-      <recent name="mapreduce" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -358,20 +436,20 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.FlinkLocalStreamTest">
+  <component name="RunManager" selected="Application.BigNumMul">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlinkLocalDataSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flink.local.FlinkLocalDataSetTest" />
-      <module name="hadoop_test" />
+    <configuration name="BigNumMul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_base.leetcode.BigNumMul" />
+      <module name="java.base.test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="flink.local.*" />
+          <option name="PATTERN" value="java_base.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -379,13 +457,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlinkLocalStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flink.local.FlinkLocalStreamTest" />
-      <module name="hadoop_test" />
+    <configuration name="BigNumSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_base.leetcode.BigNumSum" />
+      <module name="java.base.test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="flink.local.*" />
+          <option name="PATTERN" value="java_base.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DuplicateNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_base.leetcode.array.DuplicateNum" />
+      <module name="java.base.test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_base.leetcode.dfs.backtrack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -407,13 +499,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkLocalDsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalDsTest" />
-      <module name="hadoop_test" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_base.leetcode.sort.MergeSort" />
+      <module name="java.base.test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spark.local.*" />
+          <option name="PATTERN" value="java_base.leetcode.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -421,27 +513,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkLocalRDDTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalRDDTest" />
-      <module name="hadoop_test" />
+    <configuration name="NumFactorialZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_base.leetcode.NumFactorialZero" />
+      <module name="java.base.test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spark.local.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SparkLocalStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spark.local.SparkLocalStreamTest" />
-      <module name="hadoop_test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spark.local.*" />
+          <option name="PATTERN" value="java_base.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -455,17 +533,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -475,13 +542,6 @@
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="java_agent_test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -489,33 +549,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="java_agent_test" />
       <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -766,11 +799,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.ISpringBootApplication" />
-      <item itemvalue="Application.SparkLocalRDDTest" />
-      <item itemvalue="Application.SparkLocalDsTest" />
-      <item itemvalue="Application.SparkLocalStreamTest" />
-      <item itemvalue="Application.FlinkLocalDataSetTest" />
-      <item itemvalue="Application.FlinkLocalStreamTest" />
       <item itemvalue="Spring Boot.ClickhouseSpringBootApplication" />
       <item itemvalue="Spring Boot.DubboConsumerSpringBootApplication" />
       <item itemvalue="Spring Boot.DubboProviderSpringBootApplication" />
@@ -788,14 +816,19 @@
       <item itemvalue="Spring Boot.SpringBootTestApplication" />
       <item itemvalue="Spring Boot.ZkSpringBootApplication" />
       <item itemvalue="Spring Boot.KafkaClientApplication" />
+      <item itemvalue="Application.DuplicateNum" />
+      <item itemvalue="Application.MergeSort" />
+      <item itemvalue="Application.NumFactorialZero" />
+      <item itemvalue="Application.BigNumSum" />
+      <item itemvalue="Application.BigNumMul" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FlinkLocalStreamTest" />
-        <item itemvalue="Application.FlinkLocalDataSetTest" />
-        <item itemvalue="Application.SparkLocalStreamTest" />
-        <item itemvalue="Application.SparkLocalRDDTest" />
-        <item itemvalue="Application.SparkLocalDsTest" />
+        <item itemvalue="Application.BigNumMul" />
+        <item itemvalue="Application.BigNumSum" />
+        <item itemvalue="Application.NumFactorialZero" />
+        <item itemvalue="Application.DuplicateNum" />
+        <item itemvalue="Application.MergeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -871,7 +904,15 @@
       <workItem from="1634700883998" duration="44024000" />
       <workItem from="1635322159145" duration="15139000" />
       <workItem from="1635473775693" duration="9173000" />
-      <workItem from="1635490745480" duration="9880000" />
+      <workItem from="1635490745480" duration="48186000" />
+      <workItem from="1636078844754" duration="3248000" />
+      <workItem from="1636295297296" duration="114574000" />
+      <workItem from="1637204421283" duration="56410000" />
+      <workItem from="1637721338958" duration="7758000" />
+      <workItem from="1637820606522" duration="124680000" />
+      <workItem from="1639449863301" duration="3267000" />
+      <workItem from="1639466009040" duration="1930000" />
+      <workItem from="1639549040152" duration="74691000" />
     </task>
     <servers />
   </component>
@@ -1016,6 +1057,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:io.grpc:grpc-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -1040,7 +1086,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1171,91 +1216,262 @@
           <line>846</line>
           <option name="timeStamp" value="314" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.3.RELEASE/spring-rabbit-2.2.3.RELEASE.jar!/org/springframework/amqp/rabbit/listener/AbstractMessageListenerContainer.class</url>
           <line>952</line>
           <option name="timeStamp" value="317" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/rabbitmq_listener/src/main/java/test/kled/listener/MqDeathLetterListener.java</url>
           <line>19</line>
           <option name="timeStamp" value="319" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/redisson/redisson-spring-boot-starter/3.12.0/redisson-spring-boot-starter-3.12.0.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.class</url>
           <line>83</line>
           <option name="timeStamp" value="320" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/common/extension/ExtensionLoader.class</url>
           <line>405</line>
           <option name="timeStamp" value="321" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/reactor/MonoTest.java</url>
           <line>48</line>
           <option name="timeStamp" value="327" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.3.RELEASE/spring-webflux-5.2.3.RELEASE.jar!/org/springframework/web/reactive/DispatcherHandler.class</url>
           <line>62</line>
           <option name="timeStamp" value="329" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.3.RELEASE/spring-webflux-5.2.3.RELEASE.jar!/org/springframework/web/reactive/function/server/RouterFunctions.class</url>
           <line>212</line>
           <option name="timeStamp" value="330" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.4.RELEASE/reactor-core-3.1.4.RELEASE.jar!/reactor/core/publisher/MonoSubscribeOn.class</url>
           <line>32</line>
           <option name="timeStamp" value="331" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/github/yedaxia/japidocs/1.4/japidocs-1.4.jar!/io/github/yedaxia/apidocs/ParseUtils.class</url>
           <line>49</line>
           <option name="timeStamp" value="333" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/flowSort/FlowSortMapper.java</url>
           <line>16</line>
           <option name="timeStamp" value="341" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigdata_test/src/main/java/hadoop/mapreduce/Flow/test/JobMain.java</url>
           <line>85</line>
           <option name="timeStamp" value="343" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/java_base_test/src/main/java/algorithm/sort/QuickSort.java</url>
           <line>55</line>
           <option name="timeStamp" value="345" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigdata_test/src/main/java/sqoop/Sqoop2Client.java</url>
           <line>48</line>
           <option name="timeStamp" value="349" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java</url>
-          <line>1465</line>
-          <option name="timeStamp" value="351" />
+          <url>file://$PROJECT_DIR$/bigdata_test/src/main/java/flink/local/FlinkLocalDataSetTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="360" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NoSuchMethodError" package="java.lang" />
-          <option name="timeStamp" value="336" />
-        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/LongestPalindrome.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="362" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/CountBits.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="366" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/GenerateParenthesis.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/GenerateParenthesis.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/Permutation.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MinPathSum.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/SpiralOrder.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/NumDecodings.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MaxProduct.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="387" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MaximalSquare.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="390" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="i==3" language="JAVA" />
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/MaximalSquare.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="396" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/ThreeSum.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="398" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/ThreeSum.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/BinaryTreeMaxDepth.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="401" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/InvertBinaryTree.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="405" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/NextPermutation.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/FlattenBinaryTree.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/NumIslands.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/NumIslands.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/NumSquares.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/bfs/MatrixSurroundedArea.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="415" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/CoinChange.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="416" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dp/BinaryTreeNum.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/recursion/LinkReverse.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/ReverseList.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/LRUCache1.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/list/LRUCache2.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="428" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/stack/MinStack.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="430" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/stack/DecodeString.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="431" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/array/SearchRange.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/dfs/backtrack/MatrixWordSearch.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="434" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_base_test/src/main/java/java_base/leetcode/sort/MergeSort.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="436" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
           <option name="timeStamp" value="350" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="435" />
+        </breakpoint>
+        <line-breakpoint type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.12/3.0.1/spark-sql_2.12-3.0.1-sources.jar!/org/apache/spark/sql/SparkSession.scala</url>
+          <line>588</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.12/3.0.1/spark-sql_2.12-3.0.1-sources.jar!/org/apache/spark/sql/SparkSession.scala</url>
+          <line>606</line>
+          <option name="timeStamp" value="357" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="xssfSheet._rows.entrySet().toArray()[0]" />
-      </configuration>
-    </watches-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java_base.leetcode.list.BiDirectListNode" memberName="val" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
