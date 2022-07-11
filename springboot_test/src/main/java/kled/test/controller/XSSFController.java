@@ -1,7 +1,5 @@
 package kled.test.controller;
 
-import com.fabric4cloud.oxygen.common.model.ResultInfo;
-import com.fabric4cloud.oxygen.common.util.StringUtils;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 import org.apache.poi.ss.usermodel.*;
@@ -82,7 +80,7 @@ public class XSSFController {
                 continue;
             }
             XSSFCell xssfCell = (XSSFCell) row.getCell(0);
-            if (xssfCell != null && !StringUtils.isEmpty(xssfCell.getStringCellValue())) {
+            if (xssfCell != null && xssfCell.getStringCellValue().isEmpty()) {
                 uploadAccounts.add(xssfCell.getStringCellValue());
             }
         }

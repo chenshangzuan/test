@@ -32,6 +32,10 @@ public class WordBreak {
         dp[0] = true;
         for (int i = 1; i <= s.length(); i++) {
             for (String word : wordDict) {
+                if(dp[i]){
+                    //如果已经匹配到，直接判断下一位
+                    break;
+                }
 //                if (word.endsWith(String.valueOf(s.charAt(i - 1))) && i - word.length() >= 0) {
                 if (s.substring(0, i).endsWith(word)) {
                     dp[i] = dp[i] | dp[i - word.length()];

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.zenlayer.wukongframework:wukong-boot-integration-swagger-starter:1.0.5-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-boot-integration-swagger-starter/1.0.5-SNAPSHOT/wukong-boot-integration-swagger-starter-1.0.5-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-boot-integration-swagger-starter/1.0.5-SNAPSHOT/wukong-boot-integration-swagger-starter-1.0.5-20211110.091509-1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-boot-integration-swagger-starter/1.0.5-SNAPSHOT/wukong-boot-integration-swagger-starter-1.0.5-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-boot-integration-swagger-starter/1.0.5-SNAPSHOT/wukong-boot-integration-swagger-starter-1.0.5-20211110.091509-1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-boot-integration-swagger-starter/1.0.5-SNAPSHOT/wukong-boot-integration-swagger-starter-1.0.5-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/wukongframework/wukong-boot-integration-swagger-starter/1.0.5-SNAPSHOT/wukong-boot-integration-swagger-starter-1.0.5-20211110.091509-1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

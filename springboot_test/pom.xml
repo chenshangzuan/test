@@ -98,11 +98,11 @@
 			<optional>true</optional>
 		</dependency>
 
-		<dependency>
-			<groupId>com.fabric4cloud.oxygen</groupId>
-			<artifactId>oxygen-common</artifactId>
-			<version>1.0.2</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.fabric4cloud.oxygen</groupId>-->
+<!--			<artifactId>oxygen-common</artifactId>-->
+<!--			<version>1.0.2</version>-->
+<!--		</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/org.javatuples/javatuples -->
 		<dependency>
@@ -176,6 +176,17 @@
 			<version>7.1.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.github.housepower</groupId>
+			<artifactId>clickhouse-native-jdbc-shaded</artifactId>
+			<version>zendata-0.0.1</version>
+		</dependency>
+		<!-- normal version -->
+		<dependency>
+			<groupId>com.github.housepower</groupId>
+			<artifactId>clickhouse-native-jdbc</artifactId>
+			<version>zendata-0.0.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

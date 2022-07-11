@@ -1,6 +1,7 @@
 package hadoop.mapreduce.CharCount;
 
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.filecache.DistributedCache;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -22,6 +23,9 @@ public class CharCountDriver extends Configured implements Tool {
     @Override
     public int run(String[] strings) throws Exception {
         Job job = Job.getInstance(getConf(), "char count");
+
+        //job.addCacheFile(); 分布式缓存，比如用于map join
+
         job.setJarByClass(getClass());
 
         job.setInputFormatClass(TextInputFormat.class/*默认单行读取*/); //可自定义输入格式化类
@@ -34,9 +38,9 @@ public class CharCountDriver extends Configured implements Tool {
 
         //Shuffle阶段
 //        job.setSortComparatorClass(); //排序
-        job.setPartitionerClass(CharCountPartitioner.class); //分区，默认按Key Hash
+        job.setPartitionerClass(CharCountPartitioner.class); //分区(mapper端)，默认按Key Hash，一个分区对应一个reducer
         //job.setCombinerClass(CharCountCombiner.class);    //局部合并
-        //分组？
+        //job.setGroupingComparatorClass();//分组(reducer端，一个分区内，每个分组调用一次reduce函数)
 
         //Reduce阶段 -> ReduceTask
         job.setReducerClass(CharCountReducer.class);

@@ -15,6 +15,7 @@ public class TestCondition {
     public static void main(String[] args) throws InterruptedException {
         ReentrantLock lock = new ReentrantLock();
         //Condition condition = lock.newCondition(); // ==> new ConditionObject() ==> Sync extends AbstractQueuedSynchronizer内部类
+        //每个Condition对于一个条件队列，多条件的好处是可以更细粒度的进行线程间通信
         Condition notFull = lock.newCondition();
         Condition notEmpty = lock.newCondition();
 

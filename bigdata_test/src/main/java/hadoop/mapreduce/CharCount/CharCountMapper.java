@@ -16,6 +16,8 @@ public class CharCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
 
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
+        //获取分布式缓存
+        context.getCacheFiles();
         //预处理
         super.setup(context);
     }

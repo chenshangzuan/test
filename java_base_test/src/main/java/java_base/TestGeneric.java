@@ -3,6 +3,7 @@ package java_base;
 
 import com.google.common.collect.Lists;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,7 +18,6 @@ public class TestGeneric<T> {
         this.s  = s;
     }
     public static void main(String[] args) {
-
         TestGeneric<Fruit>  testGeneric = new TestGeneric<>(new Orange());
         List<Fruit> list = Lists.newArrayList();
         testGeneric.test1(testGeneric.s,list);

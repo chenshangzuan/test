@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.zenlayer.commons:common-base:1.3.7-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/commons/common-base/1.3.7-SNAPSHOT/common-base-1.3.7-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/commons/common-base/1.3.7-SNAPSHOT/common-base-1.3.7-20210114.101254-34.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/commons/common-base/1.3.7-SNAPSHOT/common-base-1.3.7-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/commons/common-base/1.3.7-SNAPSHOT/common-base-1.3.7-20210114.101254-34-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/commons/common-base/1.3.7-SNAPSHOT/common-base-1.3.7-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/zenlayer/commons/common-base/1.3.7-SNAPSHOT/common-base-1.3.7-20210114.101254-34-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

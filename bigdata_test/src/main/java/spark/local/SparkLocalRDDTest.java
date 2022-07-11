@@ -99,5 +99,7 @@ public class SparkLocalRDDTest {
         for (Tuple2<String, Iterable<Integer>> stringIterableTuple2 : tuple2List) {
             System.out.println("GroupBy key=" + stringIterableTuple2._1 + ", value=" + Lists.newArrayList(stringIterableTuple2._2));
         }
+
+        sparkContext.stop();
     }
 }

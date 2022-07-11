@@ -3,8 +3,7 @@ package java_base.thread;/*
  * Copyright (c) 2015-2018 All Rights Reserved.
  */
 
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.*;
 
 /**
  * @author chenpc
@@ -13,9 +12,12 @@ import java.util.concurrent.RecursiveTask;
 public class TestForkJoin {
 
     public static void main(String[] args) {
-        ForkJoinPool forkJoinPool = new ForkJoinPool();
+        //ExecutorService executorService = Executors.newWorkStealingPool();
+        ForkJoinPool forkJoinPool = ForkJoinPool.commonPool();
         ForkJoinTask forkJoinTask = new ForkJoinTask();
         forkJoinPool.invoke(forkJoinTask);
+        forkJoinPool.submit(forkJoinTask);
+        forkJoinPool.execute(forkJoinTask);
         forkJoinTask.fork();
     }
 
